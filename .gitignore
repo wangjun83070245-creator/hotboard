@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+logs/
+data/snapshots/
+data/latest.json
+site/
+selftest/
+*.part
+
+tests/
+PUBLIC_FILES.md
+gitleaks-report.json
+gitleaks-scan.log

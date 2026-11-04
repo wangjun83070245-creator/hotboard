@@ -1,0 +1,23 @@
+# 实时热榜数据源（只读公开 API/RSS，不登录、不绕 WAF）
+# kind: algolia / lobsters / hf / rss / gnews ; family: 源家族（跨源分 D 按家族去重）
+# every_hours: 抓取间隔（Reddit=2，按 UTC 小时整除判断）
+sources:
+  - {name: "Hacker News", kind: algolia, family: hn, weight: 1.0, cats: [], url: "https://hn.algolia.com/api/v1/search?tags=front_page&hitsPerPage=60"}
+  - {name: "Lobsters", kind: lobsters, family: lobsters, weight: 0.6, cats: [], url: "https://lobste.rs/hottest.json"}
+  - {name: "HF Papers", kind: hf, family: huggingface, weight: 0.7, cats: [AI], url: "https://huggingface.co/api/daily_papers"}
+  - {name: "Reddit r/technology", kind: rss, family: reddit, weight: 0.7, cats: [], every_hours: 2, url: "https://www.reddit.com/r/technology/hot/.rss"}
+  - {name: "Reddit r/worldnews", kind: rss, family: reddit, weight: 0.7, cats: [重大新闻], every_hours: 2, url: "https://www.reddit.com/r/worldnews/hot/.rss"}
+  - {name: "Google News 头条", kind: gnews, family: google_news, weight: 1.0, cats: [重大新闻], url: "https://news.google.com/rss?hl=en-US&gl=US&ceid=US:en"}
+  - {name: "Google News AI", kind: gnews, family: google_news, weight: 0.8, cats: [AI], url: "https://news.google.com/rss/search?q=AI+OR+OpenAI+OR+Anthropic+when:1d&hl=en-US&gl=US&ceid=US:en"}
+  - {name: "Google News 芯片", kind: gnews, family: google_news, weight: 0.8, cats: [芯片], url: "https://news.google.com/rss/search?q=Nvidia+OR+TSMC+OR+semiconductor+when:1d&hl=en-US&gl=US&ceid=US:en"}
+  - {name: "Google News 马斯克", kind: gnews, family: google_news, weight: 0.8, cats: [马斯克系], url: "https://news.google.com/rss/search?q=Musk+OR+Tesla+OR+SpaceX+OR+xAI+when:1d&hl=en-US&gl=US&ceid=US:en"}
+  - {name: "BBC World", kind: rss, family: bbc, weight: 0.9, cats: [重大新闻], url: "https://feeds.bbci.co.uk/news/world/rss.xml"}
+  - {name: "NYT World", kind: rss, family: nyt, weight: 0.9, cats: [重大新闻], url: "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"}
+  - {name: "NHK", kind: rss, family: nhk, weight: 0.8, cats: [重大新闻], url: "https://www3.nhk.or.jp/rss/news/cat0.xml"}
+  - {name: "TechCrunch", kind: rss, family: techcrunch, weight: 0.7, cats: [], url: "https://techcrunch.com/feed/"}
+  - {name: "The Verge", kind: rss, family: verge, weight: 0.7, cats: [], url: "https://www.theverge.com/rss/index.xml"}
+  - {name: "Ars Technica", kind: rss, family: ars, weight: 0.7, cats: [], url: "https://feeds.arstechnica.com/arstechnica/index"}
+  - {name: "IT之家", kind: rss, family: ithome, weight: 0.6, cats: [], url: "https://www.ithome.com/rss/"}
+  - {name: "量子位", kind: rss, family: qbitai, weight: 0.6, cats: [AI], url: "https://www.qbitai.com/feed"}
+  - {name: "Electrek", kind: rss, family: electrek, weight: 0.6, cats: [], url: "https://electrek.co/feed/"}
+  - {name: "Teslarati", kind: rss, family: teslarati, weight: 0.5, cats: [马斯克系], url: "https://www.teslarati.com/feed/"}

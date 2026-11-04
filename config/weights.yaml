@@ -1,0 +1,26 @@
+# 热度公式参数（design.md §1）
+a_eng: 0.65
+a_dup: 0.35
+half_life_h: 8.0
+secondary_factor: 0.3
+top_sources: 3
+e_norm: 1.6
+k_cap: 6
+max_age_h: 48
+# 采集
+concurrency: 8
+timeout_s: 20
+retry_backoff_s: 2.0
+user_agent: "laoma-hotboard/1.0 (public-reader)"
+# 聚类（跨快照匹配同一规则）
+jaccard_min: 0.34
+shared_tokens_min: 3
+# 快照
+keep_snapshots: 168
+snapshot_top: 60
+page_top: 20
+new_threshold: 30
+max_gap_h: 3
+hist_len: 12
+# Q4：本轮计划抓取源数 → 最少成功数（偶数小时 19→16，奇数小时 17→14）
+min_ok_by_due: {19: 16, 17: 14}
