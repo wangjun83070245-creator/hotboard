@@ -1,4 +1,4 @@
-"""M3 快照：Clusters + 历史快照 → data/snapshots/YYYYMMDD-HH.json（JST）、latest.json、升降/NEW/轨迹。
+"""快照：Clusters + 历史快照 → data/snapshots/YYYYMMDD-HH.json（JST）、latest.json、升降/NEW/轨迹。
 公开字段白名单：id,title,url,source,family,rank,heat,time,category。原子写入；只删固定目录+固定文件名。"""
 import json
 import os
@@ -7,11 +7,12 @@ import tempfile
 from datetime import datetime
 from pathlib import Path
 
-from .common import JST, UTC, canon_url, entities, iso, parse_iso, same_event, tokens
+from .common import JST, UTC, canon_url, iso, parse_iso
+from .match import conflict, features, same
 from .score import in_tab
 
 PUBLIC_FIELDS = ("id", "title", "url", "source", "family", "rank", "heat", "time", "category",
-                 "delta", "trend", "engagement", "E", "D", "k", "families")   # Q2：自算数字可公开；正文/片段不放
+                 "delta", "trend", "engagement", "E", "D", "k", "families")   # 只放标题、链接和自算数字；不放正文/片段
 PUBLIC_TOP = ("at", "prev_at", "gap_h", "failed", "rows")
 SNAP_RE = re.compile(r"^\d{8}-\d{2}\.json$")   # 固定文件名格式
 
@@ -71,7 +72,11 @@ def _match(c, row):
     cu = canon_url(row["url"])
     if cu and cu in c["urls"]:
         return True
-    return same_event(set(c["tk"]), tokens(row["title"]), set(c.get("ent") or entities(c["title"])), entities(row["title"]))
+    # 逐个成员标题比较，不用簇内并集；与代表标题冲突则不认为是同一条
+    if conflict(features(c["title"]), features(row["title"])):
+        return False
+    titles = [c["title"]] + [m.get("title", "") for m in c.get("members", [])]
+    return any(same(t, row["title"]) for t in titles if t)
 
 
 def find(c, data, tab):
@@ -130,7 +135,9 @@ def compare(clusters, snaps, now, tabs, w):
 def prune(snap_dir, keep, log=print):
     """只在固定快照目录里删，只匹配 YYYYMMDD-HH.json，删前打印数量。"""
     d = Path(snap_dir)
-    files = sorted(p for p in d.iterdir() if p.is_file() and SNAP_RE.match(p.name) and p.parent == d)
+    if d.is_symlink():
+        raise ValueError("快照目录是符号链接，拒绝 prune")
+    files = sorted(p for p in d.iterdir() if not p.is_symlink() and p.is_file() and SNAP_RE.match(p.name) and p.parent == d)
     old = files[:-keep] if len(files) > keep else []
     log(f"prune: 快照 {len(files)} 份，保留 {keep}，将删除 {len(old)} 份")
     for p in old:

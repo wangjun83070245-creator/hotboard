@@ -24,7 +24,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install --no-cache-dir -r requirements.txt
-      # 上一轮快照（升降/NEW/轨迹）只存 Actions cache（Q1 已定）；cache 丢失 → 按首次运行，页面照常
+      # 上一轮快照（升降/NEW/轨迹）只存 Actions cache；cache 丢失 → 按首次运行，页面照常
       - uses: actions/cache/restore@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3
         with:
           path: data/snapshots

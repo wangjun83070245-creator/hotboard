@@ -1,0 +1,56 @@
+# 同事件合并规则：主体 / 事件 / 时间地点分开匹配，冲突优先阻止
+# 规则只看标题，用词表近似，不理解语义。词表是通用新闻词，不含任何样本编号或原始标题。
+generic_entities: [democrats, republicans, ai, us, uk, eu, un, 5g, 6g, ceo, ipo, etf, gpu, llm, hbm]   # 保留为实体参与计数，但不算“具名主体”
+aliases:            # 词形/主体别名 → 统一写法
+  u.s.: us
+  u.s: us
+  usa: us
+  american: us
+  americans: us
+  dems: democrats
+  dem: democrats
+  democrat: democrats
+  democratic: democrats
+  gop: republicans
+  republican: republicans
+  elon: musk
+  nvda: nvidia
+  tsla: tesla
+# 具名主体（公司/人物/产品），取自 categories.yaml 关键词里的专名；另外混合大小写词（SpaceX）、
+# 全大写缩写（AMD，generic_entities 除外）、句中非句首的大写词（标题不是每词大写时）也算具名主体
+named: [openai, chatgpt, gemini, deepmind, anthropic, claude, llama, mistral, deepseek, qwen, grok,
+        nvidia, amd, tsmc, intel, qualcomm, asml, arm, musk, tesla, spacex, starship, starlink, xai,
+        neuralink, optimus, robotaxi, cybertruck, fsd, apple, google, microsoft, meta, amazon, samsung,
+        huawei, alibaba, tencent, baidu, bytedance, tiktok, debian, linux]
+# 地点：两边都出现地点且完全不重合 → 阻止（不同地点）
+places: [us, uk, china, japan, korea, india, taiwan, israel, iran, russia, ukraine, germany, france, italy,
+         spain, canada, mexico, brazil, australia, chile, argentina, turkey, egypt, singapore, vietnam,
+         indonesia, europe, africa, texas, california, florida, ohio, arizona, nevada, georgia, michigan,
+         pennsylvania, virginia, washington, oregon, colorado, utah, alabama, louisiana, tennessee,
+         carolina, wisconsin, minnesota, iowa, kansas, missouri, kentucky, oklahoma, beijing, shanghai,
+         tokyo, london, paris, berlin, moscow, gaza]
+# 事件类型：两边都能判出类型且类型完全不交 → 阻止（同主体不同事件）
+event_types:
+  launch: [launch, launches, launched, unveil, unveils, unveiled, debut, debuts, release, releases, released, introduce, introduces]
+  legal: [sue, sues, sued, lawsuit, court, judge, ruling, fined, fine, probe, investigation, antitrust, charged, indicted, verdict]
+  recall: [recall, recalls, recalled]
+  deal: [acquire, acquires, acquired, acquisition, merger, deal, partnership, partners]
+  earnings: [earnings, revenue, profit, quarterly]
+  election: [election, elections, midterm, midterms, vote, votes, voted, voters, ballot, ballots, referendum]
+  labor: [layoff, layoffs, strike, strikes, union]
+  accident: [crash, crashes, explosion, explodes, fire, outage, accident, earthquake, killed, attack]
+  security: [vulnerability, vulnerabilities, breach, hack, hacked, exploit, cve]
+  market: [stock, stocks, shares, rally, tumble, tumbles, plunge, plunges, slide, slides, sink, sinks, drop, drops, fall, falls, soar, soars, surge, surges]
+# 立场方向：一边只有正向、另一边只有负向 → 阻止（相反立场）
+stance_pos: [rise, rises, rose, rally, rallies, gain, gains, jump, jumps, soar, soars, surge, surges, climb, climbs, beat, beats, boost, boosts, wins, approve, approves, approved]
+stance_neg: [fall, falls, fell, drop, drops, slide, slides, sink, sinks, tumble, tumbles, plunge, plunges, slump, slumps, lose, loses, fail, fails, failure, defeat, defeated, reject, rejects, rejected, backfires, setback, threaten, threatens, ban, bans, oppose, opposes, deny, denies]
+# 判定门槛（冲突检查通过后）
+base_jaccard_min: 0.34     # 规则 B：共同词≥3 且 Jaccard≥0.34，且两边具名主体都有时至少共享 1 个
+base_shared_min: 3
+a_entities_min: 2          # 规则 A：共同实体≥2、共同词≥3、Jaccard≥0.25
+a_shared_min: 3
+a_jaccard_min: 0.25
+d_shared_min: 3            # 规则 D：同一具体事件类型（market 除外）、共同词≥3、Jaccard≥0.25
+d_jaccard_min: 0.25
+c_entities_min: 3          # 规则 C：共同实体≥3 且其中具名主体≥2、共同词≥3（主体完全对上，冲突检查已通过）
+c_named_min: 2

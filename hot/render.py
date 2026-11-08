@@ -1,4 +1,4 @@
-"""M4 渲染：view（run.py 内存生成）+ summaries.json → site/index.html 单文件。无 CDN、CSP、全部转义、不调用 AI。
+"""渲染：view（run.py 内存生成）+ summaries.json → site/index.html 单文件。无 CDN、CSP、全部转义、不调用 AI。
 用法：python -m hot.render view.json out.html [summaries.json]"""
 import json
 import sys
@@ -27,6 +27,10 @@ def _blob(obj):
     return json.dumps(obj, ensure_ascii=False).replace("<", "\\u003c").replace(">", "\\u003e").replace("&", "\\u0026")
 
 
+# 试发布提示：页面顶部静态文字（非弹窗、不可聚焦、不影响键盘操作）
+TRIAL_NOTICE = "试发布：新闻合并未完成，可能有重复报道"
+
+
 def render(view, summaries, out_path):
     css = (HERE / "_style.css").read_text(encoding="utf-8")
     js = (HERE / "_app.js").read_text(encoding="utf-8")
@@ -38,6 +42,7 @@ def render(view, summaries, out_path):
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
 <title>信息雷达 · 实时热榜</title>
 <style>{css}</style></head><body><div class="wrap">
+<p class="trial" id="trial" role="note">{TRIAL_NOTICE}</p>
 <header class="top"><div><h1>信息雷达 · 实时热榜<small>每小时更新</small></h1>
 <div class="upd" id="upd"></div></div>
 <button class="icon" id="theme" type="button" aria-label="切换深浅色">◐ 主题</button></header>

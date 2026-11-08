@@ -1,16 +1,20 @@
-# 分类（design.md §4）。页面 Tab 顺序：
+# 分类。页面 Tab 顺序：
 tabs: [全部, AI, 重大新闻, 芯片, 马斯克系]
 keywords:
   AI: '(?<![A-Za-z0-9])AI(?![A-Za-z0-9])|(?<![A-Za-z0-9])OpenAI(?![A-Za-z0-9])|(?<![A-Za-z0-9])ChatGPT(?![A-Za-z0-9])|(?<![A-Za-z0-9])GPT-|(?<![A-Za-z0-9])Gemini(?![A-Za-z0-9])|(?<![A-Za-z0-9])DeepMind(?![A-Za-z0-9])|(?<![A-Za-z0-9])Anthropic(?![A-Za-z0-9])|(?<![A-Za-z0-9])Claude(?![A-Za-z0-9])|(?<![A-Za-z0-9])Llama(?![A-Za-z0-9])|(?<![A-Za-z0-9])LLM(?![A-Za-z0-9])|(?<![A-Za-z0-9])Mistral(?![A-Za-z0-9])|(?<![A-Za-z0-9])DeepSeek(?![A-Za-z0-9])|(?<![A-Za-z0-9])Qwen(?![A-Za-z0-9])|(?<![A-Za-z0-9])Grok(?![A-Za-z0-9])|(?<![A-Za-z0-9])agents?(?![A-Za-z0-9])|大模型|人工智能|智能体|机器学习|(?<![A-Za-z0-9])machine learning(?![A-Za-z0-9])|(?<![A-Za-z0-9])neural(?![A-Za-z0-9])'
   芯片: '(?<![A-Za-z0-9])Nvidia(?![A-Za-z0-9])|英伟达|(?<![A-Za-z0-9])AMD(?![A-Za-z0-9])|(?<![A-Za-z0-9])TSMC(?![A-Za-z0-9])|台积电|(?<![A-Za-z0-9])Intel(?![A-Za-z0-9])|英特尔|(?<![A-Za-z0-9])GPUs?(?![A-Za-z0-9])|(?<![A-Za-z0-9])HBM(?![A-Za-z0-9])|芯片|半导体|晶圆|(?<![A-Za-z0-9])ASML(?![A-Za-z0-9])|(?<![A-Za-z0-9])Qualcomm(?![A-Za-z0-9])|高通|(?<![A-Za-z0-9])Arm(?![A-Za-z0-9])|(?<![A-Za-z0-9])chips?(?![A-Za-z0-9])|(?<![A-Za-z0-9])semiconductor(?![A-Za-z0-9])|(?<![A-Za-z0-9])foundry(?![A-Za-z0-9])'
   马斯克系: '(?<![A-Za-z0-9])Musk(?![A-Za-z0-9])|马斯克|(?<![A-Za-z0-9])Tesla(?![A-Za-z0-9])|特斯拉|(?<![A-Za-z0-9])SpaceX(?![A-Za-z0-9])|(?<![A-Za-z0-9])Starship(?![A-Za-z0-9])|(?<![A-Za-z0-9])Starlink(?![A-Za-z0-9])|星链|星舰|(?<![A-Za-z0-9])xAI(?![A-Za-z0-9])|(?<![A-Za-z0-9])Grok(?![A-Za-z0-9])|(?<![A-Za-z0-9])Neuralink(?![A-Za-z0-9])|(?<![A-Za-z0-9])Optimus(?![A-Za-z0-9])|(?<![A-Za-z0-9])Robotaxi(?![A-Za-z0-9])|(?<![A-Za-z0-9])Cybertruck(?![A-Za-z0-9])|(?<![A-Za-z0-9])FSD(?![A-Za-z0-9])'
 major_news_min_families: 4
-# 股价类（design §4 01:32 收窄版）：只看主标题。强词命中 1 个，或 市场词+动作词 同时出现 → 股价类
-# share/shares 只是市场词（Q6）。→ 不进 AI/芯片榜，加 finance 桶，H 不打折。例外：含发布词且无强词 → 不算。已去掉金额正则和 trillion-dollar。
+# 股价类：只看主标题。强词命中 1 个，或 市场词+动作词 同时出现 → 股价类
+# share/shares 只是市场词。→ 不进 AI/芯片榜，加 finance 桶，H 不打折。例外：含发布词且无强词 → 不算。已去掉金额正则和 trillion-dollar。
 finance_exclude:
   from_tabs: [AI, 芯片]
   strong: [share price, stock price, market cap, market value, price target, buy rating, sell rating, Nasdaq, "S&P 500", Dow Jones, ETF, 股价, 市值, 涨停, 跌停, 目标价, 收涨, 收跌, 盘前, 盘后]
-  market: [stock, stocks, share, shares, investors, valuation, earnings, IPO, 股票, 美股, 港股, A股, 财报, 评级]
+  market: [stock, stocks, share, shares, investors, valuation, earnings, IPO, rally, 股票, 美股, 港股, A股, 财报, 评级]
   action: [rally, tumble, plunge, soar, surge, slump, jump, jumps, sink, drop, fall, climb, sell-off, selloff, upgrade, downgrade, buy, sell, 大涨, 大跌, 暴涨, 暴跌]
+  # 模式类强词与动作词（正则）
+  strong_regex: ['\bwhy [\w.\-’'' ]{1,30} stock\b']
+  strong_regex_cs: ['\$[A-Z]{1,5}\b', '\([A-Z]{1,5}\.(US|HK)\)']
+  action_regex: ['\b(rall(y|ies|ied)|tumbl\w*|plung\w*|soar\w*|surg\w*|slump\w*|jump\w*|sink\w*|sank|drop\w*|fall\w*|fell|climb\w*|sell-?off|upgrad\w*|downgrad\w*|buy|sell|mov(e|es|ing)|biggest moves|lower|higher|retreat\w*|ris(e|es|ing)|rose|slid(e|es|ing)?|gain\w*|is up|is down|sat out)\b', '\b\d+(\.\d+)?%']
   exception_launch: [launch, release, unveil, 发布, 推出]
 

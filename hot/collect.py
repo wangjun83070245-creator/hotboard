@@ -1,4 +1,4 @@
-"""M1 采集：config/sources.yaml → (items, source_status, request_log)。
+"""采集：config/sources.yaml → (items, source_status, request_log)。
 规则：并发 ≤8、单源超时 20s；Reddit 每 2 小时 1 次、429 直接跳过不重试；
 其他源 429/403/超时/5xx 最多重试 1 次、退避 ≥2 秒；UA 不冒充浏览器；不保留 raw。"""
 import html

@@ -74,7 +74,7 @@ _ENT_STOP = {"The", "A", "An", "And", "Or", "But", "For", "With", "From", "That"
 
 
 def entities(t):
-    """主体实体近似（Q3）：大写开头/全大写的英文词（去常见虚词）、含数字的型号、中文标题里的英文名。
+    """主体实体近似：大写开头/全大写的英文词（去常见虚词）、含数字的型号、中文标题里的英文名。
     不理解语义；中文专名无法可靠抽取 → 返回空集时由调用方按“无实体信息”处理。"""
     t = t or ""
     ents = set()
@@ -88,7 +88,11 @@ def entities(t):
 
 
 def same_event(tk_a, tk_b, ent_a, ent_b, jmin=0.34, shared_min=3):
-    """标题相似 且 主体实体至少 1 个相同（两边都没有可抽取实体时只看相似度）。"""
+    """旧版词集判定，仅保留作对照；聚类与快照匹配使用 hot.match。"""
+    if ent_a and ent_b and len(ent_a & ent_b) >= 2:
+        inter = len(tk_a & tk_b)
+        if inter >= 3 and inter / max(1, len(tk_a | tk_b)) >= 0.25:
+            return True
     if not similar(tk_a, tk_b, jmin, shared_min):
         return False
     if ent_a and ent_b:

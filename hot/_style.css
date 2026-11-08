@@ -59,3 +59,4 @@ footer li{margin:2px 0}
 .rest.wl li{grid-template-columns:minmax(0,1fr) auto}
 @media (max-width:760px){.rest.wl li{grid-template-columns:minmax(0,1fr)}.rest.wl .side{grid-column:1}}
 .tiny{font-size:12px;color:var(--mut)}
+.trial{margin:0 0 10px;padding:6px 12px;border-left:3px solid var(--acc);border-radius:6px;background:var(--chip);color:var(--fg);font-size:13.5px;line-height:1.5;overflow-wrap:anywhere}

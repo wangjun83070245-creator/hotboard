@@ -1,35 +1,63 @@
-"""M2 打分：Items → Clusters。公式见 design.md §1；D 按源家族去重；股价类硬排除出 AI/芯片榜。"""
+"""打分：Items → Clusters；D 按源家族去重；股价类硬排除出 AI/芯片榜。"""
 import hashlib
 import math
 import re
 from datetime import datetime
 
-from .common import UTC, JST, canon_url, entities, load_yaml, parse_iso, same_event, similar, tokens
+from .common import UTC, JST, canon_url, load_yaml, parse_iso
+from .match import conflict, features, same
 
 
-def cluster_items(items, jmin=0.34, shared_min=3):
-    """同 URL（规范化后）必合并；否则标题词集 Jaccard ≥ jmin 且共有 ≥ shared_min 词。"""
+def cluster_items(items, jmin=None, shared_min=None):
+    """聚类：
+    1) 规范化 URL 相同必合并（并查集，与输入顺序无关）；
+    2) 各 URL 组按确定键（规范 URL、标题）排序后依次归簇——输入顺序打乱结果不变；
+    3) 成员一致性：只和簇里每个成员的标题逐一比较（不用簇内词/实体并集），
+       与任一成员冲突（主体/地点/时间/事件类型/立场）即不能入簇，且须与过半成员判为同事件。
+    jmin/shared_min 保留参数位兼容旧调用，实际门槛见 config/merge.yaml。"""
+    groups = {}
+    for idx, it in enumerate(items):
+        cu = canon_url(it["url"]) or f"__nourl__{it.get('title','')}__{it.get('source','')}__{idx}"
+        groups.setdefault(cu, []).append(it)
+    def gkey(kv):
+        cu, mem = kv
+        return (cu.startswith("__nourl__"), cu, min(m.get("title", "") for m in mem))
     cl = []
-    url_index = {}
-    for it in items:
-        cu = canon_url(it["url"])
-        tk = tokens(it["title"])
-        ent = entities(it["title"])
-        best = url_index.get(cu) if cu else None
-        if best is None:
-            for c in cl:
-                if same_event(tk, c["tk"], ent, c["ent"], jmin, shared_min):
-                    best = c
+    for cu, mem in sorted(groups.items(), key=gkey):
+        titles = sorted({m.get("title", "") for m in mem})
+        best, best_score = None, 0.0
+        for c in cl:
+            ok_conflict = True
+            hits = 0
+            for ct in c["titles"]:
+                hit = False
+                for t in titles:
+                    if conflict(features(t), features(ct)):
+                        ok_conflict = False
+                        break
+                    hit = hit or same(t, ct)
+                if not ok_conflict:
                     break
+                hits += hit
+            if not ok_conflict:
+                continue
+            need = (len(c["titles"]) + 1) // 2
+            frac = hits / len(c["titles"])
+            if hits >= max(1, need) and frac > best_score:
+                best, best_score = c, frac
         if best is None:
-            best = dict(members=[], urls=set(), tk=set(), ent=set())
+            best = dict(members=[], urls=set(), titles=[], tk=set(), ent=set())
             cl.append(best)
-        best["members"].append(it)
-        best["urls"].add(cu)
-        best["tk"] |= tk
-        best["ent"] |= ent
-        if cu:
-            url_index[cu] = best
+        best["members"].extend(sorted(mem, key=lambda m: (m.get("source", ""), m.get("title", ""))))
+        if not cu.startswith("__nourl__"):
+            best["urls"].add(cu)
+        for t in titles:
+            if t not in best["titles"]:
+                best["titles"].append(t)
+            best["tk"] |= set(features(t)["tok"])
+            best["ent"] |= set(features(t)["ent"])
+    for c in cl:
+        c["members"].sort(key=lambda m: (m.get("source", ""), canon_url(m.get("url", "")), m.get("title", "")))
     return cl
 
 
@@ -46,16 +74,18 @@ class FinanceRule:
     def __init__(self, cfg):
         f = cfg["finance_exclude"]
         self.strong, self.market, self.action = _rx(f["strong"]), _rx(f["market"]), _rx(f["action"])
-        # 发布词按词首匹配（launch/launches/launched…）——待设计确认（问题 Q6）
+        # 发布词按词首匹配（launch/launches/launched…）
         self.launch = re.compile("|".join((r"(?<![A-Za-z])" + re.escape(w) + r"[a-z]*") if re.match(r"[A-Za-z]", w)
                                           else re.escape(w) for w in f["exception_launch"]), re.I)
         self.tabs = set(f["from_tabs"])
+        self.strong_x = [re.compile(r, re.I) for r in f.get("strong_regex", [])] + [re.compile(r) for r in f.get("strong_regex_cs", [])]
+        self.action_x = [re.compile(r, re.I) for r in f.get("action_regex", [])]
 
     def explain(self, title):
         t = title or ""
-        return dict(strong=[m.group(0) for m in self.strong.finditer(t)],
+        return dict(strong=[m.group(0) for m in self.strong.finditer(t)] + [m.group(0) for r in self.strong_x for m in r.finditer(t)],
                     market=[m.group(0) for m in self.market.finditer(t)],
-                    action=[m.group(0) for m in self.action.finditer(t)],
+                    action=[m.group(0) for m in self.action.finditer(t)] + [m.group(0) for r in self.action_x for m in r.finditer(t)],
                     launch=[m.group(0) for m in self.launch.finditer(t)])
 
     def is_finance(self, title):
@@ -86,7 +116,7 @@ def score_cluster(c, now, w, cat_cfg, fin):
     by = {}
     for it in c["members"]:  # 同源只取最高
         s = it["source"]
-        if s not in by or it["norm"] > by[s]["norm"]:
+        if s not in by or (it["norm"], it.get("url", "")) > (by[s]["norm"], by[s].get("url", "")):
             by[s] = it
     contrib = sorted((it["weight"] * it["norm"] for it in by.values()), reverse=True)[: int(w["top_sources"])]
     E = contrib[0] + w["secondary_factor"] * sum(contrib[1:])
