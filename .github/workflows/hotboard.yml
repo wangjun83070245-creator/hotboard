@@ -2,7 +2,7 @@
 name: hotboard
 on:
   schedule:
-    - cron: "23,53 * * * *"  # UTC 每小时第 23、53 分
+    - cron: "21,51 * * * *"  # UTC 每小时第 21、51 分
   workflow_dispatch: {}
 permissions: {}
 concurrency:
