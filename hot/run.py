@@ -15,6 +15,7 @@ from .common import JST, ROOT, UTC, iso, load_yaml, parse_iso
 from .render import load_summaries, render
 from .score import score
 from .snapshot import compare, load_snapshots, prune, write_latest, write_snapshot
+from .github_snapshot import run_module as run_github
 
 
 class Log:
@@ -65,7 +66,8 @@ def main(argv=None, sources=None, timeout=None):
 def _dry_run(a):
     """dry-run：不采集、不联网；只写隔离目录；不读写/裁剪正式快照。"""
     protected = [ROOT, ROOT / "data", ROOT / "site", ROOT / "logs", ROOT / "data" / "snapshots",
-                 a.data, a.site, a.logs, Path(a.data) / "snapshots"]
+                 a.data, a.site, a.logs, Path(a.data) / "snapshots",
+                 ROOT / "data" / "github_snapshots", Path(a.data) / "github_snapshots"]
     try:
         out = validate_out(a.out, protected)
     except UnsafeOutput as e:
@@ -127,7 +129,9 @@ def _run(a, sources, timeout, fixed=None, recheck=None):
     if recheck:
         recheck()
     view = build_view(clusters, cmp, status, now, tabs)
-    out = render(view, load_summaries(Path(a.data) / "summaries.json"), Path(a.site) / "index.html")
+    gh_view = run_github(now, a.data, log=log, skip_network=(fixed is not None))
+    out = render(view, load_summaries(Path(a.data) / "summaries.json"), Path(a.site) / "index.html",
+                 github=gh_view, github_summaries=load_summaries(Path(a.data) / "github_summaries.json"))
     # 页面断网检查要读同目录 latest.json
     (Path(a.site) / "latest.json").write_text((Path(a.data) / "latest.json").read_text(encoding="utf-8"), encoding="utf-8")
     log(f"done: 簇 {len(clusters)}，页面 {out.name}")

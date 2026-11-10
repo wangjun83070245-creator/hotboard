@@ -1,0 +1,147 @@
+# Category tags for the GitHub projects boards.
+# Match topics (lowercase, exact) first, then language. Keep table order.
+# A repo may have multiple categories; the page shows at most 4.
+categories:
+  - id: AI
+    topics: [ai, llm, machine-learning, deep-learning, chatgpt, openai, artificial-intelligence, generative-ai, agent, rag, transformers]
+    languages: []
+  - id: 开发工具
+    topics: [cli, vscode, neovim, ide, linter, formatter, developer-tools, devtools]
+    languages: []
+  - id: 前端
+    topics: [react, vue, angular, svelte, nextjs, frontend, css, ui]
+    languages: [JavaScript, TypeScript, CSS, HTML, Vue]
+  - id: 后端
+    topics: [backend, api, graphql, microservice, server]
+    languages: [Go, Java, "C#", PHP, Ruby, Elixir]
+  - id: 移动
+    topics: [android, ios, flutter, react-native, mobile]
+    languages: [Swift, Kotlin, Dart, Objective-C]
+  - id: DevOps
+    topics: [kubernetes, docker, devops, terraform, ci, github-actions, aws, azure]
+    languages: [Dockerfile, HCL]
+  - id: 数据
+    topics: [database, sql, mysql, postgresql, redis, elasticsearch, data-science]
+    languages: [Jupyter Notebook]
+  - id: 安全
+    topics: [security, cybersecurity, infosec, vulnerability]
+    languages: []
+  - id: 系统
+    topics: [linux, kernel, operating-system, embedded, os]
+    languages: [C, C++, Assembly, Zig]
+  - id: 文档
+    topics: [documentation, docs, awesome-list, awesome, tutorial]
+    languages: [Markdown]
+other: 其他
+max_tags: 4
+# Conservative star-spam heuristic (rising board only). Change here, not in multiple code sites.
+spam:
+  max_age_h: 48
+  min_delta: 2000
+  max_forks: 5
+# Ranking thresholds
+rising_min_delta: 50
+hot_min_7d: 50
+# Candidate history filter
+delta_24h_min: 50
+delta_1h_min: 5
+window_24h_min_h: 21
+window_24h_max_h: 27
+window_1h_min_min: 30
+window_1h_max_min: 90
+history_reuse_h: 26
+history_cap: 300
+# Rows kept in each public board list (20 shown + reserve). The on-page shown cap is GH_SHOW in hot/_app.js; it is not a YAML key.
+page_public: 60
+# Ranked rows kept in each snapshot board list. Keep equal to page_public. The on-page shown cap remains GH_SHOW in hot/_app.js.
+snapshot_top: 60
+keep_hours: 48
+e_max: 200
+api_version: "2022-11-28"
+
+# Block rules for ranking. Case-insensitive. Word lists and repo lists live only here.
+# ASCII terms (letters, digits, hyphen, spaces): whole word or phrase. Boundaries are ASCII
+# letter/digit/underscore, so "crack" does not match "crackle" and "kms" does not match "kms38".
+# Spaces inside a phrase may be any whitespace. CJK terms: substring.
+# Terms in block_terms_need_signal also need a companion in the SAME field
+# (block_patch_signals or block_patch_signal_patterns), except as noted below.
+# So "git patch", "security patch", and "monkey patch" in a description with no companion are kept.
+# allowlist (full_name) wins over term/phrase/name rules. blocklist_repos wins over allowlist.
+block_terms:
+  - crack
+  - cracked
+  - keygen
+  - activated
+  - activation
+  - activation script
+  - activator
+  - KMS
+  - alt-access
+  - free download full version
+  - 预激活
+  - 破解
+  - 注册机
+  - patch
+  - patched
+block_terms_need_signal:
+  - patch
+  - patched
+block_patch_signals:
+  - full version
+  - pro
+  - premium
+  - license
+  - serial
+# Companion regexes, case-insensitive, used only with block_terms_need_signal.
+# The first pattern is a version like v1, v2.0, v2024.
+block_patch_signal_patterns:
+  - "\\bv\\d+(?:\\.\\d+)*\\b"
+
+allowlist:
+  - labuladong/fucking-algorithm
+blocklist_repos:
+  - Thormass007/substance-3d-alt-access
+  - radim-hossain94/abbyy-finereader-pdf
+  - 21041979/rufus-usb-formatter
+  - aliligs37-collab/anydesk-remote-desktop-installer
+  - amnakhalid13/tenorshare-4ukey-installer
+  - anas7757/android-unlocker-desktop
+  - Arda313131882/aion-2-trainer-tool
+  - bhaviammu06-collab/adobe-air-desktop-tool
+  - abhijot11/fabfilter-total
+  - mahmoudtawfik1998/secure-pdf-document-processor
+  - nabilaolivia2104-commits/adobe-indesign-deployment-pipeline
+  - FaRHaD0098/vfx-motion-studio-deployment
+  - RolandoV3/metatrader-5-bot
+  - jmanalabe/hwid-spoofer
+  - thiagoaureliomartins-programador/chief-architect-premier
+  - blockacc12345/music-maker-unlimited
+  - Cybertechbear101/grayket-config
+  - daiphu2708-crypto/melodyne-5-desktop-setup
+  - DiddalaMadhavi/tenorshare-key-recovery-desktop
+  - dikshantghimire321-droid/kontakt-8-config
+  - ebtsamalhakmy-sketch/desktop-backup-suite
+  - farhatullah0006-art/rx-11-audio-editor-config
+  - flgomes/dxo-photolab-10-desktop
+  - Gacktadactle/fortnite-skin-swapper-enhancement
+  - GUFRAN7998/passfab-unlocker-desktop
+  - guoyaping5-del/autodesk-3ds-max-desktop
+# Strong terms matched against full_name only. In names, hyphen, underscore, and dot are word boundaries
+# (so "alt-access" matches substance-3d-alt-access; "crack" does not match crackle-app).
+block_name_terms:
+  - crack
+  - cracked
+  - keygen
+  - alt-access
+  - activator
+# In topics only: these terms match with no companion. Hyphen, underscore, and dot in a topic
+# are word boundaries, so "exitlag-patched" matches "patched".
+block_topic_free_terms:
+  - patched
+# Description-only regexes, case-insensitive.
+block_description_patterns:
+  - "standalone (desktop )?setup"
+  - "desktop installer"
+  - "full installer"
+  - "ready-to-run desktop edition"
+  - "all features (pre-)?activated"

@@ -2,6 +2,8 @@
 __pycache__/
 logs/
 data/snapshots/
+data/github_snapshots/
+data/github_latest.json
 data/latest.json
 site/
 selftest/

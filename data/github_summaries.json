@@ -1,0 +1,566 @@
+{
+  "521xueweihan/HelloGitHub": {
+    "summary": "分享 GitHub 上有趣、适合入门的开源项目。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "996icu/996.ICU": {
+    "summary": "主要用于计星和接受贡献的仓库。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "AUTOMATIC1111/stable-diffusion-webui": {
+    "summary": "Stable Diffusion 的网页界面。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "AbhiKamane/ai-app-builder-open": {
+    "summary": "开源的 AI 应用搭建工具，用于生成带托管和登录功能的全栈 Next.js 应用。",
+    "generated_at": "2026-11-10T18:36:00+09:00"
+  },
+  "AbhramJohn/instagram-engagement-bot": {
+    "summary": "社区维护的 Instagram 自动点赞等互动机器人。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "BryceYuuu/RUN": {
+    "summary": "面向中国护照持有人的海外移居手册，收录多条移民路线并附官方来源。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "CyC2018/CS-Notes": {
+    "summary": "技术面试基础知识整理，覆盖算法、操作系统、计算机网络和系统架构等。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "DIYgod/pinky": {
+    "summary": "让 AI 智能体使用你的手机，并由你在一旁确认。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "DhvanilPatel/swarm-cursors": {
+    "summary": "浏览器扩展：把网页清空成画布，再用一群可多人一起用的光标把页面现场画回去。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "DietrichGebert/ponytail": {
+    "summary": "一组让 AI 智能体尽量少写代码、按资深开发习惯工作的技能或规则。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "DigitalPlatDev/FreeDomain": {
+    "summary": "提供免费域名注册和 DNS 学习资料。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "EbookFoundation/free-programming-books": {
+    "summary": "免费编程书籍的汇总列表。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "Eglantine-Community/Eglantine": {
+    "summary": "实验性的 Nintendo Switch 2 模拟器。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "Gathin23/cleanyourtv": {
+    "summary": "通过 Wi-Fi 给 Android 或 Google TV 精简预装应用，并换成偏 Apple TV 风格的主界面。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "HeyPuter/everything": {
+    "summary": "宣称从零重建并开源各类常用软件。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "IainKay/ram-altman": {
+    "summary": "戏仿脚本：监控本机内存，并把所谓闲置容量“汇报”给 OpenAI 的 CEO。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "Jakeschincariol/day-trader-skill": {
+    "summary": "一套共 11 个用于日内交易的 Claude 技能，覆盖扫描图表、跟踪新闻和回放交易。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "JenkinWoo/sheeridVerify": {
+    "summary": "基于 Node.js 的验证流程学习项目，提供本地 Web 工作台和任务队列。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "JosssphZhou/poki": {
+    "summary": "让 AI 智能体操作真实 iPhone 的本地 MCP 服务；说明中写无需越狱和额外硬件。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "JuneYaooo/rea-video": {
+    "summary": "按镜头拆解视频，区分实拍、AI 生成或代码制作，并说明如何复刻。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "KKKKhazix/agent-autoloop": {
+    "summary": "让命令行 Agent 在后台自动接任务并跟进；平时少打扰，拿不准时再通知你确认。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "LNPANDY/NX2Apple": {
+    "summary": "把自备的 Switch 游戏装到 iPhone 或 iPad：在 macOS 上用图形界面一键构建，不必使用命令行。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "Minireel/HGhub": {
+    "summary": "YellowFruit 的第三方客户端。公开 topics 标有 Android、Windows，以及影视和短视频相关标签。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "MrsanjayYT/cellebrite-ufed-forensic-suite": {
+    "summary": "仓库说明是 Cellebrite UFED 2026 的独立安装包，面向取证工作流。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "N1nEmAn/sapper-v2": {
+    "summary": "由 AI 指挥节点与工作节点组成的自动渗透测试系统。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "NotRexed/Hookshot": {
+    "summary": "将《塞尔达传说：时之笛》的 Nintendo Switch 2 重制版做原生重编译的项目。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "NousResearch/hermes-agent": {
+    "summary": "一个 AI 代理项目，项目说明称会随使用者一起成长。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "Pika-Labs/Pika-H3-Flex": {
+    "summary": "Pika H3 Flex：用于视频和音频生成推理。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "Significant-Gravitas/AutoGPT": {
+    "summary": "一套让人使用和扩展 AI 能力的工具。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "Snailclimb/JavaGuide": {
+    "summary": "Java 与后端面试指南，覆盖计算机基础、数据库、分布式和 AI 应用开发等。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "Th0rgal/satmux": {
+    "summary": "通过 TCP 多路复用等技术加速高延迟的卫星机上 Wi-Fi。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "TheAlgorithms/Python": {
+    "summary": "用 Python 实现的各类算法集合。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "Verlintas/NOIR": {
+    "summary": "用 adb 检查 Android 应用权限、上报端点和数据流向的隐私审计工具。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "WoYun520/gif-factory": {
+    "summary": "按不同风格制作 GIF 的技能，覆盖像素、人物宠物、粘土吉祥物等。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "Zagitta/gpu-unlock": {
+    "summary": "面向 GeForce 20/30/40 系列，试图改善其 AI 计算偏慢的情况。项目说明称 FP16、BF16、TF32 张量吞吐最高可约 2 倍。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "affaan-m/ECC": {
+    "summary": "面向 Claude Code、Codex、Opencode、Cursor 等的 agent harness 优化，说明中包含 skills、记忆、安全以及研究优先的开发方式。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "amosblomqvist/learnharness": {
+    "summary": "用于学习较难内容的 Agent harness。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "anefzaoui/misterdownloadmanager": {
+    "summary": "用 Rust 从零编写的开源下载管理器，适用于 Windows、Mac 和 Linux。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "anomalyco/opencode": {
+    "summary": "开源的编程智能体。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "anomalyco/rune": {
+    "summary": "一个原生 UI 框架。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "anthropics/claude-code": {
+    "summary": "终端里的编程代理工具，可用自然语言处理日常编码任务、解释代码并处理 git 工作流。",
+    "generated_at": "2026-11-10T18:36:00+09:00"
+  },
+  "anthropics/skills": {
+    "summary": "公开的 Agent Skills 仓库。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "avelino/awesome-go": {
+    "summary": "精选的 Go 框架、库和软件列表。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "awesome-selfhosted/awesome-selfhosted": {
+    "summary": "可自行部署的自由软件网络服务和 Web 应用清单。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "benjitaylor/skills": {
+    "summary": "面向 AI 编程智能体的技能集合。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "ccch1mneyyy/dsh-Go": {
+    "summary": "把 DeepSeek Harness 放到手机上使用：可在手机本机运行，也可遥控电脑。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "clash-verge-rev/clash-verge-rev": {
+    "summary": "基于 Tauri 的代理客户端，可用于 Windows、macOS 和 Linux。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "codecrafters-io/build-your-own-x": {
+    "summary": "通过从零实现各种知名技术来学习编程的教程合集。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "deepseek-ai/deepseek-harness": {
+    "summary": "DeepSeek 的插件化 Agent 运行环境（Harness），项目说明为“一切皆插件”。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "deepseek-ai/dsh-superagent-prototype": {
+    "summary": "一个探索更自主代理系统的原型。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "dhruvthakur11/youtube-ai-video-editing-system": {
+    "summary": "把提词器与剪辑智能体结合起来的动画和动态图形工作流，使用 JSON 驱动。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "donnemartin/system-design-primer": {
+    "summary": "讲解如何做大规模系统方案，并用于相关面试准备。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "egoist/mygo-music": {
+    "summary": "可用插件扩展的原生音乐播放器。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "elvarofficial/teardown": {
+    "summary": "把机器变成可拆解 3D 模拟器的 Claude Code 技能。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "f/prompts.chat": {
+    "summary": "社区分享和收集提示词的开源站点，可自行部署。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "firecrawl/firecrawl": {
+    "summary": "为 AI 智能体提供网页等来源数据的抓取与检索库。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "flutter/flutter": {
+    "summary": "用于构建移动及其他平台应用的 UI 框架。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "freeCodeCamp/freeCodeCamp": {
+    "summary": "freeCodeCamp 的开源代码库与课程，用于免费学习数学、编程和计算机科学。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "getify/You-Dont-Know-JS": {
+    "summary": "一套讲解 JavaScript 语言的系列书籍。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "github/gitignore": {
+    "summary": "常用的 .gitignore 模板集合。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "govijr/terminal-mac": {
+    "summary": "让整个 macOS 在终端里运行。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "haydenschmitty/floorplan": {
+    "summary": "用交互式示意图展示代码库结构，可由 Claude 或 Codex 生成。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "heydamir/unslop": {
+    "summary": "一个 Claude skill，用来把看起来像 AI 生成的界面改成更有人工排版痕迹的界面。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "huamidev/GestaltX": {
+    "summary": "面向 iOS 27.x 的 MobileGestalt 编辑器，说明中包含区码调整、设备预设、备份，以及七种语言支持。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "huggingface/transformers": {
+    "summary": "用于定义和运行文本、图像、音频等多种机器学习模型的框架。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "jackfrued/Python-100-Days": {
+    "summary": "一套从入门到进阶的 Python 学习材料，按约 100 天编排。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "jamesondh/chimera-vocal-synth": {
+    "summary": "人声合成器，可用于演唱、说话和口技等。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "janestreet/agent_skills": {
+    "summary": "一套给 AI 代理和聊天机器人用的技能合集；每个技能是含 SKILL.md 的目录。其中有用苏格拉底问答法做辅导的 socratic-tutor。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "jhaizhou-ops/S2Arm": {
+    "summary": "把自备的 Switch 游戏原生运行到 iPhone、iPad 和 Mac：游戏代码改写为 ARM64，图形直出 Metal。需自备游戏和密钥。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "jlevy/the-art-of-command-line": {
+    "summary": "一页篇幅的命令行使用指南。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "jwasham/coding-interview-university": {
+    "summary": "一份面向软件工程师的计算机科学自学计划。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "kingcharleslzy-ai/dsh-purge": {
+    "summary": "DeepSeek Harness 的社区维护版，提供宿主兼容、状态诊断、提示词管理、更新和本机备份回滚。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "l0ng-ai/openidea": {
+    "summary": "用 Rust 重做的桌面 IDE，键位和工具窗口风格接近 IntelliJ IDEA，包含编辑器、代码洞察、调试器、Git、终端、数据库和 HTTP 客户端，说明支持 60 种以上语言。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "langflow-ai/langflow": {
+    "summary": "用于构建和部署 AI 智能体与工作流的工具。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "langgenius/dify": {
+    "summary": "用于构建智能体工作流和 RAG 流程的平台，可在云端或本地部署。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "livliv-dev/player": {
+    "summary": "轻量的网页 2.5D 角色播放器，支持对口型和摄像头面部跟踪。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "longbridge/nsh": {
+    "summary": "用 Rust 编写的原生 UI 框架，可用于 iOS、Android、macOS、Windows、Linux 和 Web。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "massgravel/Microsoft-Activation-Scripts": {
+    "summary": "开源的 Windows 与 Office 激活脚本，说明中列出 HWID、Ohook、TSforge 和在线 KMS 等方法。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "mattpocock/skills": {
+    "summary": "一组给工程师用的 Agent skill，来自维护者的 .agents 目录。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "microsoft/TokenEconomizer": {
+    "summary": "面向编程智能体的黑盒成本控制工具。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "microsoft/markitdown": {
+    "summary": "把文件和办公文档转换成 Markdown 的 Python 工具。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "microsoft/vscode": {
+    "summary": "代码编辑器 Visual Studio Code。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "mmdoctor/google-pro-helper": {
+    "summary": "包含浏览器扩展版和用于批量账号任务的本地控制台。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "mmparko/dsh-purge": {
+    "summary": "DeepSeek Harness 相关仓库的镜像，说明里称为「破甲」，并写明上游即将删库。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "modelflare-ai/AnyModelBot": {
+    "summary": "开源、以本地为优先的 AI 机器人，可在多种模型上运行。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "morluto/rea": {
+    "summary": "用代理辅助逆向工程，范围可从应用行为到原生二进制。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "mromidev/claude-animated-shorts": {
+    "summary": "用 three.js 和 Remotion 制作动画短片的 Claude 技能。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "msitarzewski/agency-agents": {
+    "summary": "一组覆盖多种角色的 AI 智能体集合。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "multica-ai/andrej-karpathy-skills": {
+    "summary": "一份用于改进 Claude Code 行为的 CLAUDE.md，整理自相关编程注意事项。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "n8n-io/n8n": {
+    "summary": "带可视化编排和自定义代码的工作流自动化平台，可自行部署，并带有 AI 能力。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "nilbuild/developer-roadmap": {
+    "summary": "为开发者提供互动式学习路线图、指南等职业成长内容。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "obra/superpowers": {
+    "summary": "一套代理技能框架及配套的软件开发方法。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "ohmyzsh/ohmyzsh": {
+    "summary": "社区维护的 zsh 配置框架，包含大量插件和主题。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "ollama/ollama": {
+    "summary": "用于在本地运行和调用多种大模型的工具。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "open-webui/open-webui": {
+    "summary": "面向使用者的 AI 网页界面，可对接 Ollama 和 OpenAI 等接口。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "openclaw/openclaw": {
+    "summary": "一个可在多种操作系统和平台上使用的 AI 助手项目。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "ossu/computer-science": {
+    "summary": "一条免费自学计算机科学的课程路径。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "patch-gg/pixelfx": {
+    "summary": "提供 244 种像素画效果（各为一段小代码），并附带用于自制效果的 Claude Code skill。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "pengchujin/aerial-tv": {
+    "summary": "面向国产电视的开源 Android TV 桌面，参照 tvOS；说明中写没有广告并在开机时接管。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "practical-tutorials/project-based-learning": {
+    "summary": "精选的项目驱动教程列表。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "public-apis/public-apis": {
+    "summary": "一份免费公开 API 的汇总列表。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "qybaihe/bla": {
+    "summary": "对抗性防护项目，用来保护二进制、Electron 应用、JS 打包、Python 和 WebAssembly，抵御 AI 逆向代理。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "rddmwmddr/android-ad-cleaner": {
+    "summary": "用于关闭部分国产 Android 系统广告、热搜和营销推送的工具；说明中写不需要 root 且可还原。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "reacher-z/Awesome-REA": {
+    "summary": "逆向工程相关工具、案例和论文的精选列表，覆盖网站、游戏、应用、二进制、固件和协议。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "react/react": {
+    "summary": "用于构建 Web 和原生用户界面的库。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "sarpstar/cinecode": {
+    "summary": "用代码制作短片、广告和讲解视频，由 AI 编程智能体撰写影片。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "seedds/nxnative": {
+    "summary": "让 Switch 游戏在 iPhone、iPad 和 Mac 上原生运行：把 NSP 目录转成未签名的 IPA。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "shammahcharumbira/universal-neural-injector-center": {
+    "summary": "仓库说明是面向 RTX 游戏的通用 Neural DLSS 5 注入与游戏中心。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "sindresorhus/awesome": {
+    "summary": "收录各类主题精选清单的合集。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "sostenesfreitas/ocarina-recomp": {
+    "summary": "将《塞尔达传说：时之笛》编译为 Windows 原生程序；仓库不含游戏文件，需自备正版。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "storytold/craft-anything": {
+    "summary": "用来理解各类软件如何工作，并据此自己动手制作的项目。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "tangerineturtle1/NX2navi": {
+    "summary": "将《塞尔达传说：时之笛》Nintendo Switch 2 版（游戏版本 1.1.1）静态重编译为 Windows 上的原生 x86-64 程序，并使用 Vulkan 渲染。仓库不含游戏文件，需自备合法来源的游戏。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "tensorflow/tensorflow": {
+    "summary": "开源机器学习框架。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "torvalds/linux": {
+    "summary": "Linux 内核源代码。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "trekhleb/javascript-algorithms": {
+    "summary": "用 JavaScript 实现的算法和数据结构，并附说明和延伸阅读链接。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "trimstray/the-book-of-secret-knowledge": {
+    "summary": "汇集清单、手册、速查表、博客、技巧以及命令行和网页工具等资料的合集。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "twbs/bootstrap": {
+    "summary": "用于开发响应式、移动优先网页的 HTML、CSS 和 JavaScript 框架。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "ultraworkers/claw-code": {
+    "summary": "用 Rust 编写、由智能体维护的博物馆展览项目。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "valentderah/totk-pc-recomp": {
+    "summary": "将《塞尔达传说：王国之泪》静态重编译为 Windows 和 Linux 原生程序，使用 Vulkan 渲染。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "vinta/awesome-python": {
+    "summary": "按“我想用 Python 做某事该用什么工具”整理的 Python 库与工具清单。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "voyager-so/vork": {
+    "summary": "面向智能体的无界面 3D 与视觉特效引擎，目前是研究预览。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "vuejs/vue": {
+    "summary": "Vue 2 的代码仓库；Vue 3 在另一个仓库。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "wangzan101/Mika": {
+    "summary": "运行在设备上的 Android AI 智能体，可操作应用和网页来完成任务。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "wquguru/cicada": {
+    "summary": "开源的会议与直播实时字幕、同声传译和会议纪要工具，可用于 Mac、Windows、Linux 和 Android。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "xiaoyang111222/cn-math-taxonomy": {
+    "summary": "中小学数学、英语和初中物理的知识图谱，含知识点和练习题，并附自适应前置诊断。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "yappologistic/CUI": {
+    "summary": "一套约 150 个用于 C 语言的原生 UI 组件，支持弹簧动画和键盘操作，可用于 Windows、macOS 和 Linux。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "yt-dlp/yt-dlp": {
+    "summary": "功能较多的命令行音视频下载工具。",
+    "generated_at": "2026-11-10T17:45:00+09:00"
+  },
+  "zortos293/Lichii": {
+    "summary": "实验性的 Nintendo Switch 2 模拟器。",
+    "generated_at": "2026-11-10T15:25:27+09:00"
+  },
+  "bilalbilllu/mgs-hd-fix": {
+    "summary": "面向 Metal Gear Solid Master Collection 的画面修复补丁（MGSHDFix），用于改善画质、减少崩溃并扩展分辨率。",
+    "generated_at": "2026-11-10T18:44:00+09:00"
+  },
+  "charlie1425/portfolio-rebalancer": {
+    "summary": "跨平台的桌面投资组合再平衡工具，带预配置安装和自动分配。",
+    "generated_at": "2026-11-10T18:44:00+09:00"
+  },
+  "hk0299093-debug/autodesk-inventor-desktop-edition": {
+    "summary": "仓库说明是功能齐全的 Autodesk Inventor 2026 独立桌面构建。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "hoodbrompage/acrobat-pro-pdf-master-2026": {
+    "summary": "仓库说明是 2026 年版 Acrobat Pro，用于在 Windows 上做 PDF 编辑、OCR、表单和电子签名。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "janitoff0/ninjatrader-bot": {
+    "summary": "仓库说明是 2026 年版、由社区维护的 NinjaTrader 交易助手。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "jeevijk/secure-asset-deploy": {
+    "summary": "仓库说明是带增强安全协议的 Adobe InDesign 安装程序，用于安全部署数字资源。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "johnampire818-dev/samfw-tool-desktop": {
+    "summary": "仓库说明是功能齐全、用于三星固件操作的独立桌面工具。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "kcgeekedup-hash/delta-force-trainer-tool": {
+    "summary": "仓库说明是附带全部工具与配置、可直接使用的 Delta Force 训练器安装程序。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "Kiryukenzo/mobile-unlock-audit-suite": {
+    "summary": "仓库说明是 Dr.Fone Mobile start Suite，用于在 Windows 上移除 Android 和 iPhone 的屏幕锁、FRP 和 SIM 锁。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "Komal-Gawali/glary-utilities-suite": {
+    "summary": "仓库说明是用于系统维护与配置核查的 Glary Utilities Pro 安全评估工具包。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "krishnasaim762-boop/melodyne-5-desktop-installer": {
+    "summary": "仓库说明是功能齐全的 Melodyne 5 专业桌面音频编辑工具。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "ma7401153-sketch/daemon-pro-installer": {
+    "summary": "仓库说明是用于桌面部署的 DAEMON Pro 全功能安全安装程序。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  },
+  "mamoon-ansari/easy-worship": {
+    "summary": "仓库说明是 Easy Worship 2026 的专业桌面工具配置安装程序。",
+    "generated_at": "2026-11-10T18:47:00+09:00"
+  }
+}
