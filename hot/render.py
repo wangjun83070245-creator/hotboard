@@ -48,7 +48,7 @@ def render(view, summaries, out_path, github=None, github_summaries=None):
                 names.add(r["full_name"])
     if names:
         ghs = {k: v for k, v in ghs.items() if k in names}
-    html = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+    html = f"""<!doctype html><html lang="zh-CN" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="{CSP}">

@@ -15,8 +15,9 @@ function load(){try{var w=JSON.parse(localStorage.getItem(WKEY)||"{}");return w&
 function save(w){try{localStorage.setItem(WKEY,JSON.stringify(w))}catch(e){}}
 var W=load();
 var th=null;try{th=localStorage.getItem(TKEY)}catch(e){}
-if(th==="dark"||th==="light")document.documentElement.dataset.theme=th;
-document.getElementById('theme').onclick=function(){var r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=dark?"light":"dark";try{localStorage.setItem(TKEY,r.dataset.theme)}catch(e){}};
+if(th!=="dark"&&th!=="light")th="dark";
+document.documentElement.dataset.theme=th;
+document.getElementById('theme').onclick=function(){var r=document.documentElement,dark=r.dataset.theme!=="light";r.dataset.theme=dark?"light":"dark";try{localStorage.setItem(TKEY,r.dataset.theme)}catch(e){}};
 function rowOf(id,c){var L=D.cats[c]||[];for(var i=0;i<L.length;i++)if(L[i].id===id)return L[i];return null}
 function zh(x){var s=S[x.id];return s&&typeof s.title==="string"&&s.title.trim()?s:null}
 function title(x){var s=zh(x);return s?s.title:x.title}
