@@ -19,6 +19,21 @@ from .common import UTC, iso, load_yaml, parse_iso
 RETRYABLE = {429, 403, 500, 502, 503, 504}
 MAX_CONCURRENCY = 8
 MIN_BACKOFF = 2.0
+TEASER_MAX = 400
+
+
+def _teaser_text(entry, limit=TEASER_MAX):
+    """Strip HTML from RSS description/summary. Internal only; not a public field."""
+    raw = entry.get("summary") or entry.get("description") or ""
+    if not isinstance(raw, str) or not raw.strip():
+        return ""
+    s = re.sub(r"(?is)<script\b[^>]*>.*?</script>", " ", raw)
+    s = re.sub(r"(?is)<style\b[^>]*>.*?</style>", " ", s)
+    s = re.sub(r"(?s)<[^>]+>", " ", s)
+    s = html.unescape(s)
+    s = re.sub(r"\s+", " ", s).strip()
+    chars = list(s)
+    return "".join(chars[: int(limit)])
 
 
 class FetchError(Exception):
@@ -90,7 +105,8 @@ def _rss_items(body, kind):
             m["related"] = rel
         n = len(entries)
         out.append(dict(title=t, url=e.get("link", ""), pub=pub, metrics=m,
-                        _eng=(n - i) / n * (1 + 0.15 * (rel - 1)), disc=None))
+                        _eng=(n - i) / n * (1 + 0.15 * (rel - 1)), disc=None,
+                        _teaser=_teaser_text(e)))
     return out
 
 
@@ -169,9 +185,12 @@ def collect(now=None, sources=None, cfg=None, timeout=None, backoff=None):
                 items[i]["norm"] = round(1 - r / N, 4)
             out = []
             for it in items:
-                out.append(dict(title=it["title"], url=it["url"], published=iso(it["pub"]), source=src["name"],
+                rec=dict(title=it["title"], url=it["url"], published=iso(it["pub"]), source=src["name"],
                                 family=src["family"], weight=float(src["weight"]), cats=list(src.get("cats") or []),
-                                metrics=it["metrics"], norm=it["norm"], disc=it["disc"]))
+                                metrics=it["metrics"], norm=it["norm"], disc=it["disc"])
+                if it.get("_teaser"):
+                    rec["_teaser"] = it["_teaser"]
+                out.append(rec)
             st.update(ok=True, n=len(out))
             return st, out
         except FetchError as e:

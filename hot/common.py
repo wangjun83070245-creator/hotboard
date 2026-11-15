@@ -98,3 +98,72 @@ def same_event(tk_a, tk_b, ent_a, ent_b, jmin=0.34, shared_min=3):
     if ent_a and ent_b:
         return bool(ent_a & ent_b)
     return True
+
+
+class UnsafePath(ValueError):
+    pass
+
+
+def validate_project_path(path, root=None):
+    """Resolved destination must stay inside the project (or given) root."""
+    base = (Path(root) if root is not None else ROOT).resolve()
+    if not str(path or "").strip():
+        raise UnsafePath("path is empty")
+    dest = Path(path).expanduser()
+    if not dest.is_absolute():
+        dest = base / dest
+    dest = dest.resolve()
+    try:
+        dest.relative_to(base)
+    except ValueError:
+        raise UnsafePath("path is outside the project directory")
+    return dest
+
+
+ALLOWED_WRITE_DIRS = ("data", "selftest")
+
+
+def validate_allowed_write_path(path, root=None, allowed=ALLOWED_WRITE_DIRS):
+    """Write targets must resolve under <root>/data or <root>/selftest.
+
+    Rejects empty paths, NUL, ".." components, symlink escapes, and paths
+    whose resolved location is outside those two directories. Absolute
+    paths are allowed only when they still land inside those directories.
+    """
+    import os
+    base = (Path(root) if root is not None else ROOT)
+    if not base.is_absolute():
+        base = Path(os.path.abspath(str(base)))
+    raw = str(path or "").strip()
+    if not raw or "\x00" in raw:
+        raise UnsafePath("path is empty or illegal")
+    dest = Path(path).expanduser()
+    if ".." in dest.parts:
+        raise UnsafePath("path must not contain ..")
+    if not dest.is_absolute():
+        dest = base / dest
+    dest = Path(os.path.abspath(str(dest)))
+    # Refuse symlink components on the existing prefix (do not follow them).
+    cursor = Path(dest.anchor) if dest.anchor else Path("/")
+    for part in dest.parts[1:]:
+        cursor = cursor / part
+        if os.path.islink(cursor):
+            raise UnsafePath("path contains a symlink")
+        if not os.path.lexists(cursor):
+            break
+    allowed_roots = []
+    for name in allowed:
+        allowed_roots.append(Path(os.path.abspath(str(base / name))))
+    if any(os.path.islink(r) for r in allowed_roots if os.path.lexists(r)):
+        raise UnsafePath("allowed write directory is a symlink")
+    def _under(child, parent):
+        return child == parent or parent in child.parents
+    if not any(_under(dest, r) for r in allowed_roots):
+        raise UnsafePath("path must be under data/ or selftest/")
+    # If the destination already exists, its real path must stay inside.
+    if os.path.lexists(dest):
+        real = Path(os.path.realpath(str(dest)))
+        real_allowed = [Path(os.path.realpath(str(r))) for r in allowed_roots if os.path.lexists(r)]
+        if not any(_under(real, r) for r in real_allowed):
+            raise UnsafePath("path escapes via symlink")
+    return dest

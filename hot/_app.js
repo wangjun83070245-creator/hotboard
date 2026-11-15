@@ -8,20 +8,22 @@ function readHash(){var h="";try{h=decodeURIComponent(location.hash.slice(1))}ca
  if(!h)return"全部";if(h==="★"||CATS.indexOf(h)>=0)return h;notice="没有这个分类，已显示全部";history.replaceState(null,"","#"+encodeURIComponent("全部"));return"全部"}
 var cur=readHash();
 function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]})}
-function safeUrl(u){return /^https?:\/\//i.test(u||"")?u:"#"}
+function safeUrl(u){return /^https:\/\//i.test(u||"")?u:"#"}
 function p2(n){return(n<10?"0":"")+n}
 function jst(iso,short){if(!iso)return"—";var d=new Date(iso);if(isNaN(d))return"—";var j=new Date(d.getTime()+9*3600e3);return(short?"":p2(j.getUTCMonth()+1)+"-"+p2(j.getUTCDate())+" ")+p2(j.getUTCHours())+":"+p2(j.getUTCMinutes())+(short?"":" JST")}
 function load(){try{var w=JSON.parse(localStorage.getItem(WKEY)||"{}");return w&&typeof w==="object"?w:{}}catch(e){return{}}}
 function save(w){try{localStorage.setItem(WKEY,JSON.stringify(w))}catch(e){}}
 var W=load();
-var th=null;try{th=localStorage.getItem(TKEY)}catch(e){}
-if(th==="dark"||th==="light")document.documentElement.dataset.theme=th;
-document.getElementById('theme').onclick=function(){var r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia('(prefers-color-scheme:dark)').matches;r.dataset.theme=dark?"light":"dark";try{localStorage.setItem(TKEY,r.dataset.theme)}catch(e){}};
+var ls;try{ls=window.localStorage}catch(e){}
+if(window.hotradarTheme){hotradarTheme.applyTheme(document.documentElement,ls)}
+else{var th=null;try{th=ls?ls.getItem(TKEY):null}catch(e){}document.documentElement.setAttribute("data-theme",(th==="dark"||th==="light")?th:"dark")}
+document.getElementById('theme').onclick=function(){var ls2;try{ls2=window.localStorage}catch(e){}
+if(window.hotradarTheme){hotradarTheme.toggleTheme(document.documentElement,ls2);return}
+var r=document.documentElement,cur=r.getAttribute("data-theme")==="light"?"light":"dark";r.setAttribute("data-theme",cur==="dark"?"light":"dark");try{if(ls2)ls2.setItem(TKEY,r.getAttribute("data-theme"))}catch(e){}};
 function rowOf(id,c){var L=D.cats[c]||[];for(var i=0;i<L.length;i++)if(L[i].id===id)return L[i];return null}
 function zh(x){var s=S[x.id];return s&&typeof s.title==="string"&&s.title.trim()?s:null}
-function title(x){var s=zh(x);return s?s.title:x.title}
+function title(x){var s=zh(x);return s?s.title:""}
 function summ(x){var s=zh(x);if(!s||typeof s.summary!=="string"||!s.summary.trim())return"";var t=Array.from(s.summary.trim());return t.length>50?t.slice(0,49).join("")+"…":t.join("")}
-var missing=0;Object.keys(IT).forEach(function(k){if(!zh(IT[k]))missing++});
 function delta(r){if(r.delta===null||r.delta===undefined)return'<span class="dl same" title="首次快照，无上一小时数据">首次</span>';
  if(r.delta==="new")return'<span class="dl new">NEW</span>';if(r.delta>0)return'<span class="dl up" title="较上次快照上升">▲'+r.delta+'</span>';
  if(r.delta<0)return'<span class="dl down" title="较上次快照下降">▼'+(-r.delta)+'</span>';return'<span class="dl same" title="持平">—</span>'}
@@ -46,7 +48,7 @@ function render(){var fk=null,a=document.activeElement;if(a&&a.tagName==="BUTTON
  if(cur==="★"){var ks=Object.keys(W);if(!ks.length){m.innerHTML=h+'<div class="emp">还没有关注的条目。点任一条目的“☆ 关注”即可加入，保存在本机浏览器。</div>'}
   else m.innerHTML=h+'<h2>我的关注（'+ks.length+'）</h2><ol class="rest wl">'+ks.map(function(k){var w=W[k],c=w.cat||"全部",r=rowOf(k,c),x=IT[k];
    var st=r?'当前「'+esc(c)+'」#'+r.rank+' · 🔥 '+x.H.toFixed(1):'<span class="down">已掉出前 20</span> · 最后「'+esc(c)+'」#'+esc(w.lastRank)+'（'+esc(jst(w.lastAt))+'）';
-   return'<li><div><h3 class="ttl"><a class="lk" href="'+esc(safeUrl(w.url))+'" target="_blank" rel="noopener noreferrer">'+esc(x?title(x):w.title)+'</a></h3><div class="meta">'+st+'</div></div><div class="side">'+(r?detBtn(x,c):"")+'<button class="btn" type="button" data-w="'+esc(k)+'" aria-pressed="true">移除</button></div></li>'}).join("")+'</ol>'}
+   return'<li><div><h3 class="ttl"><a class="lk" href="'+esc(safeUrl(w.url))+'" target="_blank" rel="noopener noreferrer">'+esc((x&&title(x))||"已撤下")+'</a></h3><div class="meta">'+st+'</div></div><div class="side">'+(r?detBtn(x,c):"")+'<button class="btn" type="button" data-w="'+esc(k)+'" aria-pressed="true">移除</button></div></li>'}).join("")+'</ol>'}
  else{var L=D.cats[cur]||[];if(!L.length)m.innerHTML=h+'<div class="emp">本小时「'+esc(cur)+'」暂无上榜条目（可能对应数据源未返回）。其他分类不受影响。</div>';
   else{var A=L.slice(0,10),B=L.slice(10,20);m.innerHTML=h+'<h2>前 10 名</h2><ol class="top10">'+A.map(card).join("")+'</ol>'+(B.length?'<h2>第 11–'+(10+B.length)+' 名</h2><ol class="rest">'+B.map(row).join("")+'</ol>':"")}}
  if(fk){var e=document.querySelector('button'+fk);if(e)e.focus()}}
@@ -55,13 +57,13 @@ function status(){var age=(Date.now()-new Date(D.at).getTime())/3600e3,bad=(D.so
  if(net)s+='<p class="warn" role="status">'+esc(net)+'</p>';
  if(age>2)s+='<p class="warn" id="stale">数据已 '+age.toFixed(1)+' 小时未更新，可能是定时任务停了。</p>';
  if(bad.length)s+='<p class="warn" id="srcfail">本次 '+bad.length+' 个源未取到（该源本小时失败）：'+bad.map(function(b){return esc(b.name)}).join("、")+'。排名基于其余源。</p>';
- if(missing)s+='<p class="tiny">部分标题未翻译</p>';
+ if(D.zh_banner)s+='<p class="warn" id="zh-drop" role="status">'+esc(D.zh_banner)+'</p>';
  document.getElementById('status').innerHTML=s}
 function upd(){var nx=new Date(new Date(D.at).getTime()+3600e3).toISOString();
  document.getElementById('upd').innerHTML='数据时间 <b>'+esc(jst(D.at))+'</b> · 对比 '+(D.prev_at?esc(jst(D.prev_at))+(D.gap_h>1?'（跨 '+D.gap_h+' 小时）':''):"无（首次快照）")+' · 下次约 '+esc(jst(nx));
  status();
  var _ghb=document.getElementById('gh-basis'),_ght=_ghb?_ghb.textContent:"";
- document.getElementById('foot').innerHTML='<p id="basis">排序依据：名次、互动数、跨源数，不含点击率</p><p>热度 = 100 ×（0.65×互动分 + 0.35×跨源分）× 0.5^(小时/8)。中文标题与摘要为人工维护，没有记录时显示原标题。</p>'+(_ght?'<p id="gh-basis">'+esc(_ght)+'</p>':"")}
+ document.getElementById('foot').innerHTML='<p id="basis">排序依据：名次、互动数、跨源数，不含点击率</p><p>热度 = 100 ×（0.65×互动分 + 0.35×跨源分）× 0.5^(小时/8)。主榜只展示中文标题与摘要；未能译成中文的条目已撤下，由后面的条目补上。</p>'+(_ght?'<p id="gh-basis">'+esc(_ght)+'</p>':"")}
 var dlg=document.getElementById('dlg'),opener=null;
 function detail(id,c,btn){var x=IT[id];if(!x)return;c=c&&c!=="★"?c:"全部";var r=rowOf(id,c)||rowOf(id,"全部");opener=btn||null;
  document.getElementById('dt').textContent=(r?'#'+r.rank+'（'+c+'） ':'')+title(x);
@@ -84,7 +86,7 @@ document.addEventListener('click',function(e){var t=e.target.closest('button');i
  if(t.dataset.ghc){ghCat=t.dataset.ghc;ghNotice="";ghList="";ghRender();return}
  if(t.dataset.c){cur=t.dataset.c;notice="";history.replaceState(null,"","#"+encodeURIComponent(cur));t.focus();render();return}
  if(t.dataset.d){detail(t.dataset.d,t.dataset.dc,t);return}
- if(t.dataset.w){var k=t.dataset.w;t.focus();if(W[k])delete W[k];else{var x=IT[k],c=t.dataset.wc||"全部",r=rowOf(k,c);W[k]={title:x.title,url:x.url,cat:c,addedAt:new Date().toISOString(),lastRank:r?r.rank:null,lastAt:D.at}}save(W);render()}});
+ if(t.dataset.w){var k=t.dataset.w;t.focus();if(W[k])delete W[k];else{var x=IT[k],c=t.dataset.wc||"全部",r=rowOf(k,c);W[k]={title:title(x)||"",url:x.url,cat:c,addedAt:new Date().toISOString(),lastRank:r?r.rank:null,lastAt:D.at}}save(W);render()}});
 window.addEventListener('hashchange',function(){cur=readHash();render()});
 Object.keys(W).forEach(function(k){var r=rowOf(k,W[k].cat||"全部");if(r){W[k].lastRank=r.rank;W[k].lastAt=D.at}});save(W);
 upd();render();
@@ -129,20 +131,20 @@ function ghSafeUrl(u){if(!u)return"";try{var p=new URL(String(u).trim());if(p.pr
 function h(tag,attrs,kids){var e=document.createElement(tag);if(attrs)Object.keys(attrs).forEach(function(k){var v=attrs[k];if(v==null||v===false)return;if(k==="cls")e.className=v;else if(k==="text")e.textContent=v;else if(k==="dataset")Object.keys(v).forEach(function(d){e.dataset[d]=v[d]});else e.setAttribute(k,v===true?"":String(v))});(kids||[]).forEach(function(c){if(c)e.appendChild(c)});return e}
 function ghCatalog(){var map={},boards=(GH&&GH.boards)||{};["rising","hot","all"].forEach(function(b){(boards[b]||[]).forEach(function(r){if(r&&r.full_name){var k=String(r.full_name).toLowerCase();if(!map[k])map[k]=r}})});return map}
 function ghZh(r){if(!r||!r.full_name)return"";var s=GHS[r.full_name];if(s&&typeof s.summary==="string"&&s.summary.trim())return s.summary.trim();return""}
-function ghIntro(r,allowEn){if(r&&typeof r.list_intro==="string"&&r.list_intro.trim())return r.list_intro.trim();var z=ghZh(r);if(z)return z;if(allowEn&&r&&typeof r.description==="string"&&r.description.trim())return r.description.trim();return""}
+function ghIntro(r){if(r&&typeof r.list_intro==="string"&&r.list_intro.trim())return r.list_intro.trim();var z=ghZh(r);return z||""}
 function ghItem(fn){return MK_STORE.items[String(fn||"").toLowerCase()]||null}
 function ghIsMarked(fn){var it=ghItem(fn);return !!(it&&MK_LABELS[it.state])}
 function ghSnapFor(fn){var r=ghCatalog()[String(fn).toLowerCase()]||{full_name:fn};var url=ghSafeUrl(r.url);return{full_name:r.full_name||fn,url:url||"",summary:ghZh(r)||"",description:(r.description&&String(r.description))||"",stars:r.stars!=null?r.stars:null,language:r.language||"",topics:Array.isArray(r.topics)?r.topics.slice():[]}}
 function ghSetMark(fn,kind){if(!fn||!MK_LABELS[kind])return;var key=String(fn).toLowerCase(),prev=MK_STORE.items[key]||{},pub=ghCatalog()[key],snap=pub?ghSnapFor(fn):(prev.snap||{full_name:fn,url:"",summary:"",description:"",stars:null,language:"",topics:[]});MK_STORE.items[key]={state:kind,at:new Date().toISOString(),snap:snap};mkSave()}
 function ghClearMark(fn){if(!fn)return;delete MK_STORE.items[String(fn).toLowerCase()];mkSave()}
 function ghUnmarked(rows){var out=[];(rows||[]).forEach(function(r){if(!r||!r.full_name||ghIsMarked(r.full_name))return;out.push(r)});return out}
-function ghShown(rows,cat,limit){var list=ghUnmarked(rows);if(cat&&cat!=="全部")list=list.filter(function(r){return(r.tags||[]).indexOf(cat)>=0});return list.map(function(r,i){var x=Object.assign({},r);x.orig_rank=r.rank;x.rank=i+1;return x}).slice(0,limit||GH_SHOW)}
+function ghShown(rows,cat,limit){var list=ghUnmarked(rows).filter(function(r){return!!ghIntro(r)});if(cat&&cat!=="全部")list=list.filter(function(r){return(r.tags||[]).indexOf(cat)>=0});return list.map(function(r,i){var x=Object.assign({},r);x.orig_rank=r.rank;x.rank=i+1;return x}).slice(0,limit||GH_SHOW)}
 function ghDelta(r){if(!r||r.board==="all")return"";if(r.stars_delta==null)return"";var w=r.stars_window==="24h_snapshot"?"约24h":"上一日";return(r.stars_delta>=0?"+":"")+r.stars_delta+" · "+w}
 function ghNameEl(name,url){var href=ghSafeUrl(url),text=name||"";if(href){var a=h("a",{href:href,target:"_blank",rel:"noopener noreferrer"});a.textContent=text;return a}var s=h("span");s.textContent=text;return s}
 function ghMarkBtns(fn,pressed){var wrap=h("div",{cls:"ops gh-ops"});MK_ORDER.forEach(function(k){var b=h("button",{cls:"btn",type:"button",dataset:{ghm:k,ghfn:fn}});if(pressed===k)b.setAttribute("aria-pressed","true");b.textContent=MK_LABELS[k];wrap.appendChild(b)});return wrap}
 function ghRankBox(r){var box=h("div",{},[h("div",{cls:"rk",text:String(r.rank)})]);if(r.orig_rank!=null)box.appendChild(h("div",{cls:"rk-orig",text:"原 #"+r.orig_rank}));return box}
 function ghTagEls(r){var out=[];(r.tags||[]).forEach(function(t){out.push(h("span",{cls:"tag",text:String(t)}))});if(r.language)out.push(h("span",{cls:"tag",text:String(r.language)}));return out}
-function ghCard(r,extraBtns){var intro=ghIntro(r,true),stars=r.stars!=null?String(r.stars):"—",metaKids=[h("span",{cls:"heat",title:"当前星数",text:"★ "+stars})],d=ghDelta(r);
+function ghCard(r,extraBtns){var intro=ghIntro(r),stars=r.stars!=null?String(r.stars):"—",metaKids=[h("span",{cls:"heat",title:"当前星数",text:"★ "+stars})],d=ghDelta(r);
  if(d)metaKids.push(h("span",{text:d}));
  if(r.stars_7d!=null&&r.board==="hot")metaKids.push(h("span",{text:"7日 +"+String(r.stars_7d)}));
  ghTagEls(r).forEach(function(tg){metaKids.push(tg)});
@@ -159,7 +161,7 @@ function ghCard(r,extraBtns){var intro=ghIntro(r,true),stars=r.stars!=null?Strin
  return h("li",{cls:"card"+(r.no_rank?"":(" r"+r.rank))+(r.no_rank?" gh-card-norank":"")},kids)}
 function ghCount(state){var n=0;Object.keys(MK_STORE.items).forEach(function(k){var it=MK_STORE.items[k];if(it.state!==state)return;if(ghRepoBlocked(ghMarkFields(k,it)))return;n++});return n}
 function ghListView(kind,box){box.textContent="";
- var items=[];Object.keys(MK_STORE.items).forEach(function(k){var it=MK_STORE.items[k];if(it.state!==kind)return;if(ghRepoBlocked(ghMarkFields(k,it)))return;var snap=it.snap||{},pub=ghCatalog()[k],name=(snap.full_name||(pub&&pub.full_name)||k),url=snap.url||(pub&&pub.url)||"",summary=(snap.summary&&String(snap.summary).trim())||"",desc=(snap.description&&String(snap.description).trim())||"",intro=summary||desc||"";items.push({key:k,it:it,name:name,url:url,intro:intro})});
+ var items=[];Object.keys(MK_STORE.items).forEach(function(k){var it=MK_STORE.items[k];if(it.state!==kind)return;if(ghRepoBlocked(ghMarkFields(k,it)))return;var snap=it.snap||{},pub=ghCatalog()[k],name=(snap.full_name||(pub&&pub.full_name)||k),url=snap.url||(pub&&pub.url)||"",summary=(snap.summary&&String(snap.summary).trim())||"",desc=(snap.description&&String(snap.description).trim())||"",intro=summary||desc||"";items.push({key:k,it:it,name:name,url:url,intro:summary})});
  items.sort(function(a,b){return String(a.name).localeCompare(String(b.name))});
  if(!items.length){var emp=h("div",{cls:"emp"});emp.textContent="还没有标记为「"+(MK_LABELS[kind]||kind)+"」的项目。点榜单条目上的按钮即可加入，保存在本机浏览器。";box.appendChild(emp);return}
  box.appendChild(h("h2",{text:(MK_LABELS[kind]||kind)+"（"+items.length+"）"}));
@@ -190,7 +192,7 @@ function ghRender(){var root=document.getElementById("gh-mod");if(!root)return;
  var shown=ghShown(boards[ghBoard]||[],ghCat,GH_SHOW);
  if(ghCat==="全部"&&unmarked.length<GH_SHOW){var tip=h("p",{cls:"warn",id:"gh-reserve",role:"status"});tip.textContent="备用已用完，等下次刷新";document.getElementById("gh-status").appendChild(tip)}
  var missing=0;shown.forEach(function(r){if(!ghZh(r))missing++});
- if(missing){var p=h("p",{cls:"tiny"});p.textContent="部分项目尚无中文简介";document.getElementById("gh-status").appendChild(p)}
+ if(GH.zh_banner){var p=h("p",{cls:"warn",id:"zh-drop-gh",role:"status"});p.textContent=GH.zh_banner;document.getElementById("gh-status").appendChild(p)}
  box.textContent="";
  if(!shown.length){var emp=h("div",{cls:"emp"});emp.textContent=ghCat==="全部"?"本小时暂无上榜项目":"本小时该类别暂无上榜项目";box.appendChild(emp);return}
  var top=h("ol",{cls:"top10",id:"gh-top"});shown.slice(0,10).forEach(function(r){top.appendChild(ghCard(r))});box.appendChild(top);

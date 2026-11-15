@@ -16,6 +16,7 @@ from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta
 
 from .common import UTC, load_yaml, parse_iso
+from .httputil import urlopen_no_redirect
 
 RETRYABLE = {429, 403, 500, 502, 503, 504}
 MIN_BACKOFF = 2.0
@@ -91,7 +92,7 @@ def _one_get(url, cfg, token, timeout):
         raise FetchError("只允许请求 api.github.com", None)
     req = urllib.request.Request(url, headers=_headers(cfg, token))
     try:
-        with urllib.request.urlopen(req, timeout=timeout) as r:
+        with urlopen_no_redirect(req, timeout=timeout) as r:
             body = r.read(5_000_000)
             return r.status, dict(r.headers), body, _read_remaining(r)
     except urllib.error.HTTPError as e:

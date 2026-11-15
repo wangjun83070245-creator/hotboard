@@ -1,0 +1,74 @@
+# Translation settings. Actions sets I18N_ENGINE=none and reads the
+# committed data/i18n_cache.json; no paid or card-linked engine is the
+# default. Local runs still default to the stub engine "fake".
+# Azure / Google are pluggable frames only; they never run unless both
+# the engine is selected and allow_network is true. Keys are read from
+# environment variables and are never written to files or logs.
+local_engine: fake
+official_engine: ""
+allow_network: false
+pool: 40
+page_top: 20
+summary_max: 50
+teaser_max: 400
+banner: "本轮有 {n} 条未能译成中文，已撤下"
+placeholder_intro: "暂无简介"
+# Environment variable names only (not values).
+engines:
+  fake: {}
+  azure:
+    env_key: AZURE_TRANSLATOR_KEY
+    env_region: AZURE_TRANSLATOR_REGION
+    env_endpoint: AZURE_TRANSLATOR_ENDPOINT
+    default_endpoint: "https://api.cognitive.microsofttranslator.com"
+  google:
+    env_key: GOOGLE_TRANSLATE_API_KEY
+    endpoint: "https://translation.googleapis.com/language/translate/v2"
+  argos: {}
+proper_nouns:
+  - GitHub
+  - AI
+  - A.I.
+  - OpenAI
+  - ChatGPT
+  - BBC
+  - CNN
+  - NYT
+  - CEO
+  - FCC
+  - IPO
+  - GPU
+  - CPU
+  - Nvidia
+  - NVIDIA
+  - AMD
+  - Intel
+  - TSMC
+  - Tesla
+  - SpaceX
+  - xAI
+  - Starlink
+  - Meta
+  - Apple
+  - Google
+  - Microsoft
+  - iOS
+  - iPadOS
+  - macOS
+  - Linux
+  - Android
+  - API
+  - RSS
+  - HTTP
+  - HTTPS
+  - URL
+  - PDF
+  - SQL
+  - SDK
+  - CSS
+  - HTML
+  - LLM
+  - GPT
+  - Cybertruck
+  - Verizon
+  - AT&T

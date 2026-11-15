@@ -73,3 +73,4 @@ footer li{margin:2px 0}
 #gh-mod .gh-card-norank{grid-template-columns:minmax(0,1fr)}
 #gh-note{font-size:12px;color:var(--mut);margin:0 0 8px}
 @media (max-width:760px){#gh-mod .gh-ops .btn{padding:0 8px;font-size:13px;flex:1 1 auto;min-width:44px}}
+#zh-drop,#zh-drop-gh{margin:0 0 12px}

@@ -33,11 +33,54 @@ TRIAL_NOTICE = "试发布：新闻合并未完成，可能有重复报道"
 
 
 
+
+def _https_url(u):
+    s = u if isinstance(u, str) else ""
+    return s if s.lower().startswith("https://") else ""
+
+
+def _sanitize_view_urls(view):
+    """Copy the news view and drop non-https URLs from the embedded #data blob."""
+    if not isinstance(view, dict):
+        return view
+    out = dict(view)
+    items = {}
+    for k, it in (view.get("items") or {}).items():
+        if not isinstance(it, dict):
+            items[k] = it
+            continue
+        rec = dict(it)
+        rec["url"] = _https_url(rec.get("url"))
+        members = []
+        for m in rec.get("members") or []:
+            if isinstance(m, dict):
+                mm = dict(m)
+                mm["url"] = _https_url(mm.get("url"))
+                if "disc" in mm:
+                    mm["disc"] = _https_url(mm.get("disc"))
+                members.append(mm)
+            else:
+                members.append(m)
+        rec["members"] = members
+        items[k] = rec
+    out["items"] = items
+    return out
+
+
 def render(view, summaries, out_path, github=None, github_summaries=None):
     css = (HERE / "_style.css").read_text(encoding="utf-8")
     js = (HERE / "_app.js").read_text(encoding="utf-8")
+    theme_js = (HERE / "_theme.js").read_text(encoding="utf-8")
     ids = set(view["items"])
-    summ = {k: v for k, v in summaries.items() if k in ids}
+    def _pub(d, fields):
+        out = {}
+        for k, v in (d or {}).items():
+            if isinstance(v, dict):
+                rec = {f: v[f] for f in fields if isinstance(v.get(f), str)}
+                if rec:
+                    out[str(k)] = rec
+        return out
+    summ = {k: v for k, v in _pub(summaries, ("title", "summary", "generated_at")).items() if k in ids}
     gh = github if isinstance(github, dict) else {}
     ghs = github_summaries if isinstance(github_summaries, dict) else {}
     names = set()
@@ -46,12 +89,14 @@ def render(view, summaries, out_path, github=None, github_summaries=None):
         for r in rows or []:
             if isinstance(r, dict) and r.get("full_name"):
                 names.add(r["full_name"])
+    ghs = _pub(ghs, ("summary", "generated_at"))
     if names:
         ghs = {k: v for k, v in ghs.items() if k in names}
-    html = f"""<!doctype html><html lang="zh-CN"><head><meta charset="utf-8">
+    html = f"""<!doctype html><html lang="zh-CN" data-theme="dark"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="referrer" content="no-referrer">
 <meta http-equiv="Content-Security-Policy" content="{CSP}">
+<script>{theme_js}</script>
 <title>信息雷达 · 实时热榜</title>
 <style>{css}</style></head><body><div class="wrap">
 <p class="trial" id="trial" role="note">{TRIAL_NOTICE}</p>
@@ -72,7 +117,7 @@ def render(view, summaries, out_path, github=None, github_summaries=None):
 <footer id="foot"><p id="basis">排序依据：名次、互动数、跨源数，不含点击率</p>
 <p id="gh-basis">{GH_FOOTER}</p></footer></div>
 <dialog id="dlg" aria-labelledby="dt"><div class="dh"><h2 id="dt" style="margin:4px 0;color:var(--fg);font-size:16px"></h2><button class="icon" id="dx" type="button" aria-label="关闭详情">✕</button></div><div class="db" id="db"></div></dialog>
-<script type="application/json" id="data">{_blob(view)}</script>
+<script type="application/json" id="data">{_blob(_sanitize_view_urls(view))}</script>
 <script type="application/json" id="sum">{_blob(summ)}</script>
 <script type="application/json" id="gh">{_blob(gh)}</script>
 <script type="application/json" id="ghsum">{_blob(ghs)}</script>

@@ -7,10 +7,11 @@ from datetime import timedelta
 from pathlib import Path
 
 from .common import JST, iso, parse_iso
+from .httputil import redact_text
 from .snapshot import atomic_write
 
 # 新文件精确到分钟，避免每小时第 23 与 53 分互相覆盖；旧的整点小时名仍能加载
-GH_SNAP_RE = re.compile(r"^\d{8}-\d{2}(\d{2})?\.json$")
+GH_SNAP_RE = re.compile(r"[0-9]{8}-[0-9]{2}(?:[0-9]{2})?\.json", re.ASCII)   # 只用 fullmatch
 
 ITEM_KEYS = (
     "full_name", "name", "owner_login", "url", "description", "language", "topics", "tags",
@@ -57,7 +58,7 @@ def load_snapshots(snap_dir):
         return []
     out = []
     for p in sorted(d.iterdir(), reverse=True):
-        if p.is_symlink() or not p.is_file() or not GH_SNAP_RE.match(p.name):
+        if p.is_symlink() or not p.is_file() or not GH_SNAP_RE.fullmatch(p.name):
             continue
         try:
             data = json.loads(p.read_text(encoding="utf-8"))
@@ -144,7 +145,7 @@ def prune(snap_dir, now, keep_hours=48, log=print):
     if not d.is_dir():
         log("prune: github 快照目录不存在，跳过")
         return []
-    files = sorted(p for p in d.iterdir() if not p.is_symlink() and p.is_file() and GH_SNAP_RE.match(p.name) and p.parent == d)
+    files = sorted(p for p in d.iterdir() if not p.is_symlink() and p.is_file() and GH_SNAP_RE.fullmatch(p.name) and p.parent == d)
     cutoff = now.astimezone(JST) - timedelta(hours=keep_hours)
     old = []
     for p in files:
@@ -288,7 +289,7 @@ def run_module(now, data_dir, log=print, base="https://api.github.com", skip_net
             log("部分项目未取到星数历史")
         return view
     except Exception as e:
-        log(f"github 模块失败：{type(e).__name__}: {str(e)[:160]}")
+        log(f"github 模块失败：{type(e).__name__}: {redact_text(str(e))[:160]}")
         if prev_view:
             at = parse_iso(prev_view.get("at"))
             stale = (now - at).total_seconds() / 3600.0 if at else None
