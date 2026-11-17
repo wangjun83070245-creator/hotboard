@@ -31,7 +31,11 @@ HARD_STR_MAX = 2000
 STAGING_MAX_BYTES = 2_000_000
 MERGED_MAX_BYTES = 1_000_000
 NEW_ITEMS_MAX = 300
-NEWS_TTL_HOURS = 336
+# Keys missing from the latest pending list are dropped once their
+# translation is this old. Each 3-hourly round adds about 200 keys
+# (news:id + news:title per item, ~80 KB); a 336 h window would need
+# several MB, far over MERGED_MAX_BYTES, so keep about one day.
+NEWS_TTL_HOURS = 24
 KEY_NEWS_ID = re.compile(r"^news:id:.+$")
 KEY_NEWS_TITLE = re.compile(r"^news:title:.+$")
 KEY_GITHUB = re.compile(r"^gh:[a-z0-9._-]+/[a-z0-9._-]+$")
@@ -307,7 +311,7 @@ def check_staging(staging_path, pending_path, cfg=None, cache=None):
 
 
 def _is_stale(generated_at, now):
-    """True when generated_at is at least NEWS_TTL_HOURS (336) old."""
+    """True when generated_at is at least NEWS_TTL_HOURS old."""
     at = parse_iso(generated_at)
     if at is None:
         return True
@@ -320,10 +324,14 @@ def _is_stale(generated_at, now):
 
 
 def _cleanup(cache, pending_by_key, now):
-    """Drop keys missing from the latest list after 336 hours;
+    """Drop keys missing from the latest list after NEWS_TTL_HOURS;
     also drop gh: keys that are in the list but whose src_hash no longer matches.
+    An empty or unreadable list prunes nothing (it would look like every key
+    had left the board).
     """
     removed = []
+    if not pending_by_key:
+        return removed
     for key in list(cache):
         rec = cache.get(key) or {}
         if key.startswith("news:") or key.startswith("gh:"):
