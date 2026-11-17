@@ -247,16 +247,13 @@ def _check_item(item, pending_by_key, cfg):
             break
 
     if pending:
+        # Rule 6 checks only the text that is translated: the news title
+        # (teaser digits are not required) and the GitHub description.
+        # no_desc repos have no description, so there is nothing to check.
         if is_news:
-            source = (pending.get("title") or "") + "\n" + (pending.get("teaser") or "")
+            source = pending.get("title") or ""
         elif pending.get("no_desc"):
-            topics = pending.get("topics") or []
-            topic_s = " ".join(x for x in topics if isinstance(x, str))
-            source = " ".join([
-                pending.get("full_name") or "",
-                pending.get("name") or "",
-                topic_s,
-            ])
+            source = ""
         else:
             source = pending.get("description") or ""
         dest = title + summary
