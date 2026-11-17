@@ -399,6 +399,38 @@ def _is_news_id_key(key):
     return bool(KEY_NEWS_ID.match(key or ""))
 
 
+CACHE_WARN_BYTES = 700_000
+CLEANED_KEEP_DAYS = 7
+
+
+def cleaned_log_path(cache_path):
+    """Side file next to the cache: keys pruned in earlier rounds -> pruned time.
+    Used only to count re-translated old entries; the cache format is unchanged."""
+    return Path(cache_path).with_name("i18n_cleaned.json")
+
+
+def _load_cleaned(path):
+    try:
+        data = json.loads(Path(path).read_text(encoding="utf-8"))
+    except Exception:
+        return {}
+    if not isinstance(data, dict):
+        return {}
+    return {k: v for k, v in data.items() if isinstance(k, str) and isinstance(v, str)}
+
+
+def _save_cleaned(path, log, now):
+    cutoff = now - timedelta(days=CLEANED_KEEP_DAYS)
+    kept = {}
+    for k, v in log.items():
+        t = parse_iso(v)
+        if t is not None and t.tzinfo is None:
+            t = t.replace(tzinfo=timezone.utc)
+        if t is not None and t >= cutoff:
+            kept[k] = v
+    atomic_write(Path(path), json.dumps(kept, ensure_ascii=False, indent=2, sort_keys=True) + "\n")
+
+
 def merge_staging(staging_path, pending_path, cache_path, now=None, cfg=None, max_bytes=MERGED_MAX_BYTES):
     now = now or datetime.now(timezone.utc)
     if now.tzinfo is None:
@@ -413,12 +445,16 @@ def merge_staging(staging_path, pending_path, cache_path, now=None, cfg=None, ma
     _, pending_by_key = load_pending(pending_path)
     added, updated = 0, 0
     changed_keys = []
+    cleaned_log = _load_cleaned(cleaned_log_path(cache_path))
+    retranslated_keys = []
     for item in result["accepted"]:
         key = item["key"]
         rec = _build_record(item, now_iso)
         prev = cache.get(key)
         if prev is None:
             added += 1
+            if key in cleaned_log:
+                retranslated_keys.append(key)
             cache[key] = rec
             changed_keys.append(key)
         else:
@@ -439,6 +475,16 @@ def merge_staging(staging_path, pending_path, cache_path, now=None, cfg=None, ma
         return {"ok": False, "reason": "item7", "result": result, "added": 0,
                 "updated": 0, "cleaned": 0, "samples": [], "cache": load_cache(cache_path)}
     save_cache(cache_path, cache)
+    cache_bytes = len(raw.encode("utf-8"))
+    for k in retranslated_keys:
+        cleaned_log.pop(k, None)
+    for k in cleaned_keys:
+        if k.startswith("news:id:") or k.startswith("gh:"):
+            cleaned_log[k] = now_iso
+    try:
+        _save_cleaned(cleaned_log_path(cache_path), cleaned_log, now)
+    except Exception:
+        pass  # the count is informational; never block the merge on it
     samples = _sample_items(changed_keys, result["accepted"], pending_by_key, cache, n=5)
     return {
         "ok": True,
@@ -448,6 +494,10 @@ def merge_staging(staging_path, pending_path, cache_path, now=None, cfg=None, ma
         "updated": updated,
         "cleaned": len(cleaned_keys),
         "cleaned_keys": cleaned_keys,
+        "retranslated": len(retranslated_keys),
+        "retranslated_keys": retranslated_keys,
+        "cache_bytes": cache_bytes,
+        "cache_warn": cache_bytes > CACHE_WARN_BYTES,
         "samples": samples,
         "cache": cache,
         "before": len(before_keys),
@@ -483,8 +533,12 @@ def format_diff(merge_result):
         "updated: {}".format(merge_result.get("updated") or 0),
         "cleaned: {}".format(merge_result.get("cleaned") or 0),
         "rejected: {}".format(len((merge_result.get("result") or {}).get("rejected") or [])),
-        "samples:",
+        "retranslated: {}".format(merge_result.get("retranslated") or 0),
+        "cache bytes: {}".format(merge_result.get("cache_bytes") or 0),
     ]
+    if merge_result.get("cache_warn"):
+        lines.append("缓存超 700KB 预警")
+    lines.append("samples:")
     for s in merge_result.get("samples") or []:
         lines.append("- key: " + s["key"])
         if s.get("source_title") or s.get("source_teaser"):
