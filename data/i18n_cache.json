@@ -29,12 +29,6 @@
     "src_hash": "3745e782d6512a49e757cdfeafdbc1f67e41cd032438f682aa0e4a1d54112f8b",
     "summary": "让你始终掌控智能体的工作区：制定、决策、规划、批注、审查代码、团队共享，并把反馈发回智能体。"
   },
-  "gh:copilotkit/openbot": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T12:33:14+09:00",
-    "src_hash": "36a08523042358dee019496b57b4f676a24c0991c82a6784597e3f71b988442b",
-    "summary": "开放、可自托管的封闭AI机器人替代品，可接入任意智能体、模型和工具"
-  },
   "gh:cursor/plugins": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T15:34:22+09:00",
@@ -89,12 +83,6 @@
     "src_hash": "7a42e25d76e2fc9a40dc13629db4bb5079125a0bb02cb58d7dde9dfa7571a5c8",
     "summary": "帮助你上手SDD或其他流程的工具包"
   },
-  "gh:googlechrome/modern-web-guidance-src": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T09:32:25+09:00",
-    "src_hash": "a91cb804076e96e1afab4ea265c5964222cc1064142df14ad6aa125e01688e65",
-    "summary": "让你的编程智能体跟上最新的网页开发最佳实践"
-  },
   "gh:graphify-labs/graphify": {
     "engine": "zh-v1",
     "generated_at": "2026-11-15T23:33:05+09:00",
@@ -125,23 +113,11 @@
     "src_hash": "5dd816c7a390009b49765c40e57c29be97c4a9cd8fbc46dd244a3060ae464e16",
     "summary": "用 Rust 从零重写 Minecraft Java 版 26.3，经 281 个差分测试校验。"
   },
-  "gh:huami-dev/gestaltx": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "159677093c9e7a5dcd1379c5020c8eb551f56a40e400898a1e7c212055ef17e9",
-    "summary": "面向iOS 27.x的MobileGestalt编辑器，含地区码调整、设备预设和备份。"
-  },
   "gh:huami1314/gestaltx": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
     "src_hash": "159677093c9e7a5dcd1379c5020c8eb551f56a40e400898a1e7c212055ef17e9",
     "summary": "面向iOS 27.x的MobileGestalt编辑器，支持区域代码调整、设备预设和备份。"
-  },
-  "gh:illson/rusttext": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T15:26:57+09:00",
-    "src_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "summary": "暂无项目描述"
   },
   "gh:immortal-protocols/lastbook": {
     "engine": "zh-v1",
@@ -227,17 +203,29 @@
     "src_hash": "7325a118557bb0bcdaac93f240dba9510f4d2e6628fd2580a972e106fecc5835",
     "summary": "开源文档签名平台，与DocuSign无关联"
   },
-  "gh:open-jarvis/openjarvis": {
+  "gh:openai/codex-security": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "a6cf426c447e29917016af5bfe5dafbff1c37f9f66229c7c7757ea0778c18d57",
-    "summary": "运行在个人设备上的个人AI"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1500121ba7620a690c90fc37fa781acafab71b79d69be22c6d8d9adca7a84a99",
+    "summary": "OpenAI的Codex安全命令行工具与TypeScript SDK，用于发现、验证并修复安全漏洞"
+  },
+  "gh:openvinotoolkit/openvino": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "9617226aa653db4a7f205015ef1416f68edf1cfde1b69840d900b8d66ce7aee4",
+    "summary": "用于优化和部署AI推理的开源工具包OpenVINO"
   },
   "gh:shanselman/gputaskman": {
     "engine": "zh-v1",
     "generated_at": "2026-11-17T06:28:52+09:00",
     "src_hash": "51f11636d5fabaa019abd5d7939a1c19c564ccb6354c59c78146ebda49e108ce",
     "summary": "适用于Windows、Linux和WSL的GPU任务管理器，显示各进程显存与GPU活动"
+  },
+  "gh:siliconjungle/shapeshift-labs-ink-studio": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "f70596a7ead1d34bc4eea9a65e55346d7cb270e5733d6a4f8110d51726ff919c",
+    "summary": "面向像素风高斯点云的雕刻、动画与仿真工具包"
   },
   "gh:stablyai/orca": {
     "engine": "zh-v1",
@@ -263,6 +251,12 @@
     "src_hash": "4cf366ae87942f7c637ce5ec6621846d60430f9f11cc755504919b62e89648fb",
     "summary": "让安卓手机与电脑合为一体，支持Windows和Linux，本地优先、端到端加密、无需账号。"
   },
+  "gh:toyxyz/toyxyz_rgbmocap": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "d79cd209e997a8326e5f516c18083f1d79663c4971d668bb18c0a8bb26ed4f2e",
+    "summary": "原生Windows视频动捕，支持接触校正、人形重定向及FBX/VMD导出"
+  },
   "gh:tradermonty/claude-trading-skills": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -280,19 +274,6 @@
     "generated_at": "2026-11-18T21:28:08+09:00",
     "src_hash": "2ffa43fb16d297ab376a847b8d82359905fc0b7c61f0533f077a7d446ab038c4",
     "summary": "按知名品牌设计系统整理的 DESIGN.md 合集，让编程智能体生成匹配的界面。"
-  },
-  "gh:we-promise/sure": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "9d49ebb8a2d71d55247df2c184f977c7763c458550d3da96c74119c70c9dcb73",
-    "summary": "人人可用（由大家共建）的个人理财应用"
-  },
-  "news:id:00323dc7ab": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "1d52ca288280a6dd4e3d4e17f874556e6ce1bb8c73337bbd6149e76257afbb4c",
-    "summary": "英伟达公布2027财年第三季度财务业绩",
-    "title": "英伟达公布2027财年第三季度财务业绩"
   },
   "news:id:0086ceb378": {
     "engine": "zh-v1",
@@ -336,19 +317,19 @@
     "summary": "乌克兰用中继无人机绕过星链限制，炸毁普京的大桥",
     "title": "乌克兰用中继无人机绕过星链限制，炸毁普京的大桥"
   },
+  "news:id:017d8c4868": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "c4638c787577124c381f08735a4c3b35269c6e6fb7254de6de672a658e22c593",
+    "summary": "Anthropic在历史性IPO中估值超1万亿美元",
+    "title": "Anthropic在历史性IPO中估值超1万亿美元"
+  },
   "news:id:01bd0450e8": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
     "src_hash": "bcb6ebf42f2f93dd22e6dd831fbde689d27dd28d902a387a3f3232c0ebcb5b14",
     "summary": "达特茅斯“AI at 70”大会的声音",
     "title": "达特茅斯“AI at 70”大会的声音"
-  },
-  "news:id:025ea8086a": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "a3784bb867c5fc99c5d853ee5b6f0663c2f48a63d69b52cd5bafba27f795cf16",
-    "summary": "人类历史上首次：旅行者 1 号抵达 1 光日位置，还需约 3 万年才能真正飞出太阳系",
-    "title": "人类历史上首次：旅行者 1 号抵达 1 光日位置，还需约 3 万年才能真正飞出太阳系"
   },
   "news:id:0285d87de5": {
     "engine": "zh-v1",
@@ -441,6 +422,13 @@
     "summary": "Rivian分拆公司Also因电池和软件缺陷暂停电动自行车交付",
     "title": "Rivian分拆公司Also因电池和软件缺陷暂停电动自行车交付"
   },
+  "news:id:05c18a9297": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "c215f1b4b40c8a5af8444d138bd29e9b85a149e38bdb9210aa79f96f717ff95d",
+    "summary": "Anthropic散户投资者在大型IPO中面临挤压",
+    "title": "Anthropic散户投资者在大型IPO中面临挤压"
+  },
   "news:id:061145ca3b": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T09:26:26+09:00",
@@ -504,19 +492,19 @@
     "summary": "纽森州长全美领先的AI安全框架更进一步，加州发布强制安全标准与监管的后续步骤",
     "title": "纽森州长全美领先的AI安全框架更进一步，加州发布强制安全标准与监管的后续步骤"
   },
+  "news:id:08af4fc9fd": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "d8813cf0d620f8043b8d89a13b58bd4984e679e76101e1f5287e04d273c3b32b",
+    "summary": "AI正在改变世界，计算与人工智能学院希望帮助决定其走向",
+    "title": "AI正在改变世界，计算与人工智能学院希望帮助决定其走向"
+  },
   "news:id:094e0a9dcf": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
     "src_hash": "f33068fc6d16cbe1f4ad714e192fb823fc757c5430cd105e333093d9d95229eb",
     "summary": "英伟达已较峰值下跌32%，这是我愿意买入的价格",
     "title": "英伟达已较峰值下跌32%，这是我愿意买入的价格"
-  },
-  "news:id:09504d23d6": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c92039e09675bcbd3fe892b973efd8d015e2048a52ee7baf16daa93016051686",
-    "summary": "贝佐斯就英伟达董事会的CEO人选给出建议",
-    "title": "贝佐斯就英伟达董事会的CEO人选给出建议"
   },
   "news:id:0953939f77": {
     "engine": "zh-v1",
@@ -553,12 +541,26 @@
     "summary": "英伟达无意让黄仁勋回归",
     "title": "英伟达无意让黄仁勋回归"
   },
+  "news:id:09d2d57901": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "85893263c79ab74d7fe2c55f0239120d5e93814a93f7bdd9414e0f245ac3a4a9",
+    "summary": "特朗普、习近平、普京会晤的别墅曾接待金正日",
+    "title": "特朗普、习近平、普京会晤的别墅曾接待金正日"
+  },
   "news:id:0a7ebac963": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T15:34:22+09:00",
     "src_hash": "3a9218ff46a68c2779165317d5f9e07aeb57cad67ff2f781c460e1e567f3b2c5",
     "summary": "风暴来临前，南加州部分火灾烧毁区域发布撤离警告",
     "title": "风暴来临前，南加州部分火灾烧毁区域发布撤离警告"
+  },
+  "news:id:0b82291ee7": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "7674dfa0ad5a87ef249a6595fd186ca728b410a0449a662bbbc495594692c88b",
+    "summary": "普通投资者如何参与英伟达风波中的交易",
+    "title": "普通投资者如何参与英伟达风波中的交易"
   },
   "news:id:0c55f594af": {
     "engine": "zh-v1",
@@ -574,6 +576,13 @@
     "summary": "特朗普在马尼拉短暂会见老朋友：伊梅尔达·马科斯",
     "title": "特朗普在马尼拉短暂会见老朋友：伊梅尔达·马科斯"
   },
+  "news:id:0cf3238bce": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "a5d974224040f669dd1ef94dbd57d31d918eba34b0f6bed1d5a2d822aa5a288d",
+    "summary": "中国官媒称马斯克承诺提高特斯拉中国工厂产量",
+    "title": "中国官媒称马斯克承诺提高特斯拉中国工厂产量"
+  },
   "news:id:0cf76f625b": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -588,12 +597,12 @@
     "summary": "OpenAI高管称必须在AI安全与进步之间取得平衡",
     "title": "OpenAI高管称必须在AI安全与进步之间取得平衡"
   },
-  "news:id:103aae1f5c": {
+  "news:id:0fed877082": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "bc90951878ed6004b29cd60ef913fc8f83c7e4ca91445352486b1f729ec543a6",
-    "summary": "一加 Turbo7 Pro 手机疑似入网：支持 100W 闪充，电池不低于 9000mAh",
-    "title": "一加 Turbo7 Pro 手机疑似入网：支持 100W 闪充，电池不低于 9000mAh"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "fbeead929352823db34269a974815a73be28413ef0a110a62d26d3c3c1f2c531",
+    "summary": "最新进展如下。",
+    "title": "最新进展如下。"
   },
   "news:id:1053166afc": {
     "engine": "zh-v1",
@@ -625,10 +634,10 @@
   },
   "news:id:1233d89474": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T12:30:48+09:00",
-    "src_hash": "91cd07184cb387ed4862bb5e8233311ce03b4dab6eabdbcbafdf0263d6f15c28",
-    "summary": "俄官员称克里米亚大桥再遭袭击",
-    "title": "俄官员称克里米亚大桥再遭袭击"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "dba5cc53cdd56ca2f369d486db561a1636ff2325a8dd4b68c5e9b4c576ba6ad6",
+    "summary": "俄方称克里米亚大桥再遭袭击",
+    "title": "俄方称克里米亚大桥再遭袭击"
   },
   "news:id:12681fe99e": {
     "engine": "zh-v1",
@@ -672,13 +681,6 @@
     "summary": "特斯拉在RE+ 2026上推出Powercore，进入固态变压器市场",
     "title": "特斯拉在RE+ 2026上推出Powercore，进入固态变压器市场"
   },
-  "news:id:13aebf50b3": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "33e98fb1811faf813e2447c7c0a5b5aa1dd913351a0d61c65777cf5edfbaa0b5",
-    "summary": "Anthropic IPO将重塑风投权力排名",
-    "title": "Anthropic IPO将重塑风投权力排名"
-  },
   "news:id:13b8890a41": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T15:34:22+09:00",
@@ -720,6 +722,13 @@
     "src_hash": "70fbf2f99ae6c853a49735698b6476ef96de20c31718353f21b5695d89bd23b1",
     "summary": "独家：特朗普政府考虑强制美国公司披露使用中国AI的情况",
     "title": "独家：特朗普政府考虑强制美国公司披露使用中国AI的情况"
+  },
+  "news:id:1520f061c3": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "47666a0cbe913affd25160f9f86b156b8e79a148b6dc979b27ed812a1970a0d6",
+    "summary": "昂山素季没有谴责针对罗兴亚人的迫害",
+    "title": "昂山素季没有谴责针对罗兴亚人的迫害"
   },
   "news:id:1528355783": {
     "engine": "zh-v1",
@@ -777,13 +786,6 @@
     "summary": "是黑客、AI还是更新拖延？为何近来宕机频发",
     "title": "是黑客、AI还是更新拖延？为何近来宕机频发"
   },
-  "news:id:1815ed211a": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "07477442b4312a36ebda52da959cab2ef119726f63d9d9a18f055cf3d94bf4ba",
-    "summary": "微软 Win11 预览版提速“此电脑”搜索：基于索引方案，缩短找文件时间",
-    "title": "微软 Win11 预览版提速“此电脑”搜索：基于索引方案，缩短找文件时间"
-  },
   "news:id:18cb1f75af": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -812,12 +814,33 @@
     "summary": "散户对Anthropic IPO的热情有望媲美SpaceX上市",
     "title": "散户对Anthropic IPO的热情有望媲美SpaceX上市"
   },
+  "news:id:1a351c6079": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "0b39d5d976bd8eb3b90989a5e0ec2e0e6de2e5eb3127df25065d071699de322e",
+    "summary": "“我不是MAGA”：马斯克在中期选举失利后淡化对共和党的支持",
+    "title": "“我不是MAGA”：马斯克在中期选举失利后淡化对共和党的支持"
+  },
+  "news:id:1a54b3aa71": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "af82d7cf8e22ffce513288283eb882f4bae07ca1ab16bebd537dc11c8ea04295",
+    "summary": "韩国高风险大学入学考试被AI作弊丑闻搅乱",
+    "title": "韩国高风险大学入学考试被AI作弊丑闻搅乱"
+  },
   "news:id:1ae4907d6b": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
     "src_hash": "d384cd01468c28a3736b86aa6f517ceba25880f568456ee43dd8605b2a7031a0",
     "summary": "SpaceX股票粉丝们，请标记11月19日",
     "title": "SpaceX股票粉丝们，请标记11月19日"
+  },
+  "news:id:1b69c69123": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "48fb365949bf625d18887bccdfe93f7492e4992fd6bd75126151c27a9d966cd6",
+    "summary": "村庄被焚毁，居民被杀或流亡，这算种族灭绝吗？",
+    "title": "村庄被焚毁，居民被杀或流亡，这算种族灭绝吗？"
   },
   "news:id:1b97b185d1": {
     "engine": "zh-v1",
@@ -917,13 +940,6 @@
     "summary": "监督机构发现，AI 平台在被提示时会提供恐怖袭击蓝图",
     "title": "监督机构发现，AI 平台在被提示时会提供恐怖袭击蓝图"
   },
-  "news:id:239eb1b3d4": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "a9d05394db369d7f3a92cc7f8a511fb2e5d110cb2bc54ca6a769314440de1fea",
-    "summary": "AI太空话题走红，SpaceX股价增加540亿美元",
-    "title": "AI太空话题走红，SpaceX股价增加540亿美元"
-  },
   "news:id:242244cee8": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -937,6 +953,13 @@
     "src_hash": "6c594d1dcef13e4db9c3d63bf129708e910cb30d29323238c2edf7650011cc29",
     "summary": "Anthropic的IPO与SpaceX相比如何",
     "title": "Anthropic的IPO与SpaceX相比如何"
+  },
+  "news:id:2595480158": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "0e18c217c46e7f97afb2dc59e75c2d1b5a0296f36c00a629655b31810506d141",
+    "summary": "这是习近平的一个非凡外交时刻，但也伴随陷阱",
+    "title": "这是习近平的一个非凡外交时刻，但也伴随陷阱"
   },
   "news:id:25f3bbe24f": {
     "engine": "zh-v1",
@@ -965,13 +988,6 @@
     "src_hash": "f1bd736cc0f60e010c7c55b200269108c9c3d5e401d7d4a4386425aaa59dcf9c",
     "summary": "英伟达强劲业绩未能消除对其未来的疑问",
     "title": "英伟达强劲业绩未能消除对其未来的疑问"
-  },
-  "news:id:278a373c99": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "06a06c6dde5067557903c0e0d258c1513cc080af6f2a2303a5a36c80e3a81ce9",
-    "summary": "帮助AI文本检测器适应不断变化的条件",
-    "title": "帮助AI文本检测器适应不断变化的条件"
   },
   "news:id:27ce5f2d3d": {
     "engine": "zh-v1",
@@ -1078,6 +1094,13 @@
     "summary": "苹果股价延续突破，英伟达引领的AI热潮迎来警醒",
     "title": "苹果股价延续突破，英伟达引领的AI热潮迎来警醒"
   },
+  "news:id:2c06f9c91e": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "daeb6e14c4d4271608d0882f36271a8853b6efe6deb3a39881e286579eff13b4",
+    "summary": "凯西·伍德加码“最高信念”股英伟达、特斯拉和AMD",
+    "title": "凯西·伍德加码“最高信念”股英伟达、特斯拉和AMD"
+  },
   "news:id:2c82b1e891": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T15:34:22+09:00",
@@ -1113,6 +1136,13 @@
     "summary": "英伟达业绩显示AI需求依然强劲",
     "title": "英伟达业绩显示AI需求依然强劲"
   },
+  "news:id:2fb30e55ff": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "c0406a9aed50b75f62ecc830dbf3c7656c787a5e5a84130454798a389ec16d25",
+    "summary": "预测：这将是SpaceX到2030年底的股价",
+    "title": "预测：这将是SpaceX到2030年底的股价"
+  },
   "news:id:301009a44a": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -1126,6 +1156,13 @@
     "src_hash": "759dbfff3bf5d85e8c69f6447ec058c002abf1b5399d80129f0389ee050c6816",
     "summary": "ENGWE电动越野摩托新低799美元，M20 3.0电动车降647美元，eufy壁灯摄像头S4新低1",
     "title": "ENGWE电动越野摩托新低799美元，M20 3.0电动车降647美元，eufy壁灯摄像头S4新低150美元起"
+  },
+  "news:id:30671b7734": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "bf9aef816b7f152fdb5c26c9ab1182ab07db5c4be5d504ae46539446f5ae70db",
+    "summary": "马斯克后悔近5亿美元（约$500 million）中期选举支出，称自己不是MAGA",
+    "title": "马斯克后悔近5亿美元（约$500 million）中期选举支出，称自己不是MAGA"
   },
   "news:id:30d2062080": {
     "engine": "zh-v1",
@@ -1155,12 +1192,12 @@
     "summary": "2027款特斯拉Model Y L",
     "title": "2027款特斯拉Model Y L"
   },
-  "news:id:327bd10b2d": {
+  "news:id:32b3c69ca3": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e4ec64d19a61aeb961be8ed14113f2e041114aff97bb8d85d4a98a4f08c3fc0a",
-    "summary": "这些村民疑惑自己是否身处俄罗斯影子战争前线",
-    "title": "这些村民疑惑自己是否身处俄罗斯影子战争前线"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "582a568f5bb292db92152c1d317ea4b00fbcb995b2ae02aa3780c14f12ee0b3c",
+    "summary": "简讯：Anthropic IPO定价；特朗普、习近平、普京将在中国会晤",
+    "title": "简讯：Anthropic IPO定价；特朗普、习近平、普京将在中国会晤"
   },
   "news:id:32dc6b8b56": {
     "engine": "zh-v1",
@@ -1218,13 +1255,6 @@
     "summary": "爆炸性报告：美国人数十年来被社会保障误导，福利倒计时",
     "title": "爆炸性报告：美国人数十年来被社会保障误导，福利倒计时"
   },
-  "news:id:35a9e224c0": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c1c67dbd1789be8e57cda2f8f67c3a5349aaee3b1bebf17e3c7b45024130fb55",
-    "summary": "SpaceX筹备400亿美元表外芯片融资",
-    "title": "SpaceX筹备400亿美元表外芯片融资"
-  },
   "news:id:35b7db5b03": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -1248,10 +1278,10 @@
   },
   "news:id:362f4172b4": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "164d55f81c4a3c14c1ec7db1a34f5aa8a46ac778df5ec406b8e09375aeb03df5",
-    "summary": "AI作弊丑闻后，韩国对严苛的高考采取新限制",
-    "title": "AI作弊丑闻后，韩国对严苛的高考采取新限制"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1f787bbbfbf027d2d7492defc7517edecb526a1db9b9782c2375aea9dc182641",
+    "summary": "AI作弊丑闻后，韩国为严苛的高考采取新限制",
+    "title": "AI作弊丑闻后，韩国为严苛的高考采取新限制"
   },
   "news:id:367835f0ca": {
     "engine": "zh-v1",
@@ -1374,10 +1404,10 @@
   },
   "news:id:3b8805e9e7": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "801b6303983e8d9344eeb29577a07b3c0b2a726f6594d3ee060316cfde1a8150",
-    "summary": "科宁阻止特朗普的联邦地区法院提名，因其未选德州人",
-    "title": "科宁阻止特朗普的联邦地区法院提名，因其未选德州人"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "554f8ff358958bd2be3192927526d7b8c5dfe23e371757af67566cad5cd7b86b",
+    "summary": "参议员科宁阻止特朗普的联邦地区法院提名，因其人选不是得州人",
+    "title": "参议员科宁阻止特朗普的联邦地区法院提名，因其人选不是得州人"
   },
   "news:id:3b8c25d54d": {
     "engine": "zh-v1",
@@ -1388,17 +1418,10 @@
   },
   "news:id:3b933eacd5": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "92cbb1e1350f764e5a1dc68aee511c77c254436f4efc8231fa4ff5f4e0a216a1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "48ae279d534b17587a4c168d34a7d0670497969fd3721eafd5f15db1655c5429",
     "summary": "首批英伟达RTX Spark迷你电脑今日由华硕、戴尔和微星推出",
     "title": "首批英伟达RTX Spark迷你电脑今日由华硕、戴尔和微星推出"
-  },
-  "news:id:3ba51b8958": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "9c720cd64de19b51258b336b3519f00812e0de2abfbe22e837eebad98da25403",
-    "summary": "《与星共舞》选手表演双人舞，又一对高分组合在第35季决赛前出局：查看分数和淘汰者",
-    "title": "《与星共舞》选手表演双人舞，又一对高分组合在第35季决赛前出局：查看分数和淘汰者"
   },
   "news:id:3c624cef14": {
     "engine": "zh-v1",
@@ -1413,6 +1436,13 @@
     "src_hash": "bc7dd75f6b827bf1c0ecbf873cdaa2fa03f94cb69b6ab9f7bd02c7814afe1108",
     "summary": "英伟达芯片如何流入中国军方可及范围",
     "title": "英伟达芯片如何流入中国军方可及范围"
+  },
+  "news:id:3d2caa5905": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b5420fae978aef022821c4eda1be21e58c83ce57e67216a1ea73574162f8155a",
+    "summary": "列车事故后，西班牙反思高铁是否发展过快",
+    "title": "列车事故后，西班牙反思高铁是否发展过快"
   },
   "news:id:3d6d2be4dc": {
     "engine": "zh-v1",
@@ -1479,10 +1509,10 @@
   },
   "news:id:40d8678797": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T12:30:48+09:00",
-    "src_hash": "65723a8d155a0e57122e2227ea622f709af7155cacb6668039d05a10df81772a",
-    "summary": "最新消息如下。",
-    "title": "最新消息如下。"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "fbeead929352823db34269a974815a73be28413ef0a110a62d26d3c3c1f2c531",
+    "summary": "最新进展如下。",
+    "title": "最新进展如下。"
   },
   "news:id:4115a1d792": {
     "engine": "zh-v1",
@@ -1582,6 +1612,13 @@
     "summary": "SpaceX星舰着陆直播：观看捕获尝试",
     "title": "SpaceX星舰着陆直播：观看捕获尝试"
   },
+  "news:id:44efae5ab8": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "3e0335930a27a5737676ded062cf183b02d3cefc95135273211ca8db7abfa1d7",
+    "summary": "如何解读习近平与特朗普的拥抱",
+    "title": "如何解读习近平与特朗普的拥抱"
+  },
   "news:id:460a6dce70": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -1610,13 +1647,6 @@
     "summary": "一波个人 AI 小工具即将到来",
     "title": "一波个人 AI 小工具即将到来"
   },
-  "news:id:4752e653a6": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "8ae038c35a423bebcd7cdb1c0f322c264ce25630803ac6eba8aa84d1edfe2ddd",
-    "summary": "微软 Win11 测试新提醒：切换本地账号前，先备份 BitLocker 密钥",
-    "title": "微软 Win11 测试新提醒：切换本地账号前，先备份 BitLocker 密钥"
-  },
   "news:id:47997c96b3": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -1630,6 +1660,13 @@
     "src_hash": "893dbd357c74dfbfcc1380dfd322e3f29d0bbfd12a5f15111eead68849bd7b63",
     "summary": "为什么英伟达丑闻是国家安全问题",
     "title": "为什么英伟达丑闻是国家安全问题"
+  },
+  "news:id:48628536c6": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "ac95cf60ee9eef55233023bbb0e2f53d839f7a9028d3f8407ad1042f6cc38647",
+    "summary": "谷歌拒绝英国删除拉塞尔·布兰德YouTube视频的要求，消息人士称",
+    "title": "谷歌拒绝英国删除拉塞尔·布兰德YouTube视频的要求，消息人士称"
   },
   "news:id:486bd1919c": {
     "engine": "zh-v1",
@@ -1651,13 +1688,6 @@
     "src_hash": "0cffb2a5ba3a56878badff9e77285bf3eec1cca504ac6c4cabdf914d291d020c",
     "summary": "开票两周后，民主党赢得阿拉斯加参议院选举",
     "title": "开票两周后，民主党赢得阿拉斯加参议院选举"
-  },
-  "news:id:48cfa15d60": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "7a6f6d9dbd1d1cce5e6deb51947801d243d610eebe16d483e73aa963726290fb",
-    "summary": "英伟达财报显示AI竞赛没有黄仁勋也要继续",
-    "title": "英伟达财报显示AI竞赛没有黄仁勋也要继续"
   },
   "news:id:4935625979": {
     "engine": "zh-v1",
@@ -1694,13 +1724,6 @@
     "summary": "英伟达的混乱是Anthropic IPO的绝佳铺垫",
     "title": "英伟达的混乱是Anthropic IPO的绝佳铺垫"
   },
-  "news:id:4a80b988c7": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e98e4ad67656cc1c3790f9f66eb8dcb146becf040cb461b1d13f913e02984e71",
-    "summary": "独家：白宫撤回海蒂·奥弗顿的FDA提名",
-    "title": "独家：白宫撤回海蒂·奥弗顿的FDA提名"
-  },
   "news:id:4ad132563e": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -1708,19 +1731,12 @@
     "summary": "评论家称《侠盗猎车手6》是杰作",
     "title": "评论家称《侠盗猎车手6》是杰作"
   },
-  "news:id:4b04fe4bbd": {
+  "news:id:4af370a881": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "868b9f82c3284c4410acc483c7fb3759f9244f642f664cf8ed14379c06b6811c",
-    "summary": "英伟达财报超预期、展望稳健，股指期货上涨：实时更新",
-    "title": "英伟达财报超预期、展望稳健，股指期货上涨：实时更新"
-  },
-  "news:id:4b4b28f4de": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "2d27fc6fd45a24294b9b1818e146f191cb0f915cf53bbf338bdf42aef7973381",
-    "summary": "科莱特·克雷斯为英伟达投资者带来好消息",
-    "title": "科莱特·克雷斯为英伟达投资者带来好消息"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1ac58715bd9853cf072830ba30fc3ef922411032009dd9b2b48ef8ade869dfca",
+    "summary": "保护AI工作成果，同时不妨碍专家取证",
+    "title": "保护AI工作成果，同时不妨碍专家取证"
   },
   "news:id:4b9841d10a": {
     "engine": "zh-v1",
@@ -1731,10 +1747,10 @@
   },
   "news:id:4ba6e408a7": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "5c4b22ebb6c1807fff01653aba53d8cdd39138db55b4547b3bbe29534453b790",
-    "summary": "据称Anthropic IPO定价高于区间，每股83美元",
-    "title": "据称Anthropic IPO定价高于区间，每股83美元"
+    "generated_at": "2026-11-19T18:34:59+09:00",
+    "src_hash": "e090f279c45f098d3316819edd31bce2de5c4fdca5a397a896a5f62c56ebad8d",
+    "summary": "Anthropic融资107.3 Billion美元（约1073亿），超过SpaceX纪录首秀",
+    "title": "Anthropic融资107.3 Billion美元（约1073亿），超过SpaceX纪录首秀"
   },
   "news:id:4bace62e0f": {
     "engine": "zh-v1",
@@ -1799,13 +1815,6 @@
     "summary": "习近平称亚太需要开放贸易，普京谴责制裁，特朗普抵达中国",
     "title": "习近平称亚太需要开放贸易，普京谴责制裁，特朗普抵达中国"
   },
-  "news:id:4edb15b110": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "1a37e56aef31642b9fbbd3e315b8afa9e75821333d8988e6430e34e5ef74eb53",
-    "summary": "特斯拉将在多年销量不佳后停产Cybertruck（路透）",
-    "title": "特斯拉将在多年销量不佳后停产Cybertruck（路透）"
-  },
   "news:id:4f115349a5": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -1826,6 +1835,13 @@
     "src_hash": "690e750b62ac5360219be5c68b048b509791aff20e5e536d756fcf1f7babdfda",
     "summary": "坎特·菲茨杰拉德的英伟达业务利益成为民主党卢特尼克调查的目标",
     "title": "坎特·菲茨杰拉德的英伟达业务利益成为民主党卢特尼克调查的目标"
+  },
+  "news:id:5134ed0093": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "dd6f1bad88981d95fba9e55b9ca6ec04131ae2ccafa800d101f90c55e5dd82fa",
+    "summary": "英伟达黄仁勋卸任后首份财报中，头条遗漏的4件事",
+    "title": "英伟达黄仁勋卸任后首份财报中，头条遗漏的4件事"
   },
   "news:id:51cac4f8bd": {
     "engine": "zh-v1",
@@ -1862,13 +1878,6 @@
     "summary": "观看马斯克前顾问：“我们给了科技 CEO 们特权”",
     "title": "观看马斯克前顾问：“我们给了科技 CEO 们特权”"
   },
-  "news:id:529f02d0f5": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "26f1dcd10572cade0a550d0f774e7a265db8af5cc092bac6b349fac67165b355",
-    "summary": "特朗普在飞往中国前会见菲律宾领导人",
-    "title": "特朗普在飞往中国前会见菲律宾领导人"
-  },
   "news:id:5339dea787": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T09:26:26+09:00",
@@ -1896,6 +1905,13 @@
     "src_hash": "baace85ee83ef1e2e6ea29aef8ba4bd69a3aa3ac56e8950e4c59775f289d17e6",
     "summary": "腾讯：受芯片限制影响，训练下一代模型将需要更长时间",
     "title": "腾讯：受芯片限制影响，训练下一代模型将需要更长时间"
+  },
+  "news:id:59695ec34e": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "9fa8a5c518943169a1a914da3a15facacdb970fb541442ff4fca726263a3a19c",
+    "summary": "一位科技基金经理在风波前抛售英伟达，称不会抄底",
+    "title": "一位科技基金经理在风波前抛售英伟达，称不会抄底"
   },
   "news:id:597d01b973": {
     "engine": "zh-v1",
@@ -1960,6 +1976,13 @@
     "summary": "担心AI泡沫破裂？投资专家谈如何调整策略",
     "title": "担心AI泡沫破裂？投资专家谈如何调整策略"
   },
+  "news:id:5c300d4499": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "194315812c7fbe32ad48426adc8584eef58b42a4778b7eb92c61150bdcfd5831",
+    "summary": "黄仁勋回归英伟达“零”可能，记者预测他将融资500亿美元创办新企业",
+    "title": "黄仁勋回归英伟达“零”可能，记者预测他将融资500亿美元创办新企业"
+  },
   "news:id:5c8caa4b38": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -2009,13 +2032,6 @@
     "summary": "Anthropic完成IPO，跻身最具价值公司之列",
     "title": "Anthropic完成IPO，跻身最具价值公司之列"
   },
-  "news:id:5df1a54b9c": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "2366b93d54e9a261b0193dbba3aacd05df78148efbeb038973fdf1733035244e",
-    "summary": "英伟达财报：一切照常，预测显示形势良好、股价便宜",
-    "title": "英伟达财报：一切照常，预测显示形势良好、股价便宜"
-  },
   "news:id:5e0fbb9576": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -2023,26 +2039,12 @@
     "summary": "埃隆·马斯克让SNL“再努力点”，他的反应为每位社交媒体创始人敲响警钟",
     "title": "埃隆·马斯克让SNL“再努力点”，他的反应为每位社交媒体创始人敲响警钟"
   },
-  "news:id:5e481a2c61": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "fb6f8ec66b226c101851c8f802e09f436225838a66ee284ad028646624d110a4",
-    "summary": "黑鹰队的康纳·贝达德疑似肩伤离场，将接受检查",
-    "title": "黑鹰队的康纳·贝达德疑似肩伤离场，将接受检查"
-  },
   "news:id:5ebd15e383": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
     "src_hash": "9e038acf2cd8043bd045ffd4218bdfa4e52531f698b09673e081c9fe50ff4fa5",
     "summary": "英伟达交出令人安心的业绩与展望，但华尔街看法分歧",
     "title": "英伟达交出令人安心的业绩与展望，但华尔街看法分歧"
-  },
-  "news:id:5ed151fd8b": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e027055393c8e74e72bd795514268499a34019103cf22d3672726411c1a172fe",
-    "summary": "超三分之一的Z世代依赖AI获得友谊",
-    "title": "超三分之一的Z世代依赖AI获得友谊"
   },
   "news:id:603b5f6d73": {
     "engine": "zh-v1",
@@ -2071,13 +2073,6 @@
     "src_hash": "e7646ca370716806fb2fe5f5f19fcd23b28e64ec961d1ca4be5ff002b514d843",
     "summary": "独家：Palo Alto将以4.5十亿美元收购AI初创Applied Compute",
     "title": "独家：Palo Alto将以4.5十亿美元收购AI初创Applied Compute"
-  },
-  "news:id:6156d0082b": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "4abf5f28b4e9f5edc470c31cee0469553a8fd0cd31bcf80d9301fd601962e955",
-    "summary": "英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿",
-    "title": "英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿"
   },
   "news:id:622265facc": {
     "engine": "zh-v1",
@@ -2156,19 +2151,19 @@
     "summary": "帕尔默·勒基认为中国“很高兴黄仁勋离开”，因此希望被罢免的英伟达CEO复职",
     "title": "帕尔默·勒基认为中国“很高兴黄仁勋离开”，因此希望被罢免的英伟达CEO复职"
   },
-  "news:id:65902d055e": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "4c679a9b7835cee78e3056d45512d184874b7d4c3405c7ca7a63ad014bc6e500",
-    "summary": "菲律宾警方要求检察官就儿童性虐待材料指控托马斯·马克尔",
-    "title": "菲律宾警方要求检察官就儿童性虐待材料指控托马斯·马克尔"
-  },
   "news:id:674296ba6b": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
     "src_hash": "19da0fbcefde19ebd2ff59e2f0c5c97ac644b6daacf4355b391719cec29acaf6",
     "summary": "《侠盗猎车手6》Ars Technica 评测",
     "title": "《侠盗猎车手6》Ars Technica 评测"
+  },
+  "news:id:677e2534d7": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "6e97003d737a72c0e4ee02ccadfc9493f3424e124703eb2ef7c00844193e7859",
+    "summary": "OVHcloud推出欧洲托管的AI云产品",
+    "title": "OVHcloud推出欧洲托管的AI云产品"
   },
   "news:id:67c0d30d41": {
     "engine": "zh-v1",
@@ -2183,6 +2178,13 @@
     "src_hash": "6c93afa3ba585e141ad22b86c05b96c36073a9ea7bbab48fe56665b7b16bf558",
     "summary": "帕尔默·勒基警告：AI驱动的网络攻击正超过防御，“该开始奔跑了”",
     "title": "帕尔默·勒基警告：AI驱动的网络攻击正超过防御，“该开始奔跑了”"
+  },
+  "news:id:6859f7db4c": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "f1eea3f0e10c1c834c894d852a97473f8974defb87629e4689cdf549c9c86c05",
+    "summary": "在COP31上，委内瑞拉称AI是更清洁石油生产之路",
+    "title": "在COP31上，委内瑞拉称AI是更清洁石油生产之路"
   },
   "news:id:68701c5fad": {
     "engine": "zh-v1",
@@ -2233,6 +2235,13 @@
     "summary": "特斯拉 Robotaxi 服从手势指挥，车上 0 名司机",
     "title": "特斯拉 Robotaxi 服从手势指挥，车上 0 名司机"
   },
+  "news:id:69a5b1aff0": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "646bce79e84990c250fc113e0c69fce49effbb4e56c4c3a4196100a87c7262ec",
+    "summary": "直播：特朗普举行第1次与习近平、普京的峰会，称二人为“朋友”",
+    "title": "直播：特朗普举行第1次与习近平、普京的峰会，称二人为“朋友”"
+  },
   "news:id:69c35458cc": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -2282,12 +2291,12 @@
     "summary": "英伟达的兜底仍在，但有限度",
     "title": "英伟达的兜底仍在，但有限度"
   },
-  "news:id:6dafd5a993": {
+  "news:id:6cec5be37b": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e700b42eed3f23cb7b678d1aa10ded69fa2eb82c8d2b174e37bc827909c1dbfb",
-    "summary": "预测：Anthropic上市后SpaceX股价可能飙升",
-    "title": "预测：Anthropic上市后SpaceX股价可能飙升"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "6c4e28e480e6232a89d407ead60817d1fdb9323e2de041683251b98ef741bb31",
+    "summary": "优步联合创始人卡兰尼克暗示将在英伟达抗议，要求黄仁勋回归的呼声不断",
+    "title": "优步联合创始人卡兰尼克暗示将在英伟达抗议，要求黄仁勋回归的呼声不断"
   },
   "news:id:6dbf87ac66": {
     "engine": "zh-v1",
@@ -2317,6 +2326,13 @@
     "summary": "法国《费加罗报》集团与 OpenAI 合作，将《费加罗报》新闻内容引入 ChatGPT",
     "title": "法国《费加罗报》集团与 OpenAI 合作，将《费加罗报》新闻内容引入 ChatGPT"
   },
+  "news:id:6f2d8bd0e9": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "102f3b979f6801488d8e0edf8980344a16714378b4a89b7984e8f6a692346805",
+    "summary": "在“AI之年”，人文学科追问何为人",
+    "title": "在“AI之年”，人文学科追问何为人"
+  },
   "news:id:6fca2692f6": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -2326,10 +2342,10 @@
   },
   "news:id:6fcbbfcdbc": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "ea96af4b066a558601aa83c5c1cf2cbd127823f17978bf46fc8e6a357a6bf9b2",
-    "summary": "民主党人哈基姆·杰弗里斯获提名，将成为明年首位黑人众议院议长",
-    "title": "民主党人哈基姆·杰弗里斯获提名，将成为明年首位黑人众议院议长"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "533a32d1a69af2d80855f0097bb0138d185905a3279b7c5177912b772d8cf275",
+    "summary": "民主党人杰弗里斯获提名，将成明年首位黑人众议院议长",
+    "title": "民主党人杰弗里斯获提名，将成明年首位黑人众议院议长"
   },
   "news:id:7072765069": {
     "engine": "zh-v1",
@@ -2344,13 +2360,6 @@
     "src_hash": "e8057858ca6f4b475dfc37a6756a9013f7421db306961dc02dda93f25b653ed6",
     "summary": "特斯拉股票仍是对未来的高风险押注，这是我的目标价",
     "title": "特斯拉股票仍是对未来的高风险押注，这是我的目标价"
-  },
-  "news:id:7270fa955b": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "08bb78539e3fea44f14e9d976657e0ee6f8b9a585d64e0014a445131a305cade",
-    "summary": "马科斯在自己童年时期大部分时间生活的场地接待特朗普",
-    "title": "马科斯在自己童年时期大部分时间生活的场地接待特朗普"
   },
   "news:id:7289d66f29": {
     "engine": "zh-v1",
@@ -2387,13 +2396,6 @@
     "summary": "防止考生利用 AI 作弊，韩国临时屏蔽高考考场及周边 100 米内公共 WiFi",
     "title": "防止考生利用 AI 作弊，韩国临时屏蔽高考考场及周边 100 米内公共 WiFi"
   },
-  "news:id:73c9837e74": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "8574b8fa4378792f3e96b321294914cbfcc853ccbf73f4bbe24d464d5aa2024a",
-    "summary": "一座热带中国城市半空，为峰会做好准备",
-    "title": "一座热带中国城市半空，为峰会做好准备"
-  },
   "news:id:73ea4d89d6": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -2407,6 +2409,13 @@
     "src_hash": "b722847c2c6a45095339d56a81c063977d51b7c35dc5161ccff9e045bdc0b4ae",
     "summary": "Anthropic IPO定价83美元，这是我愿意为其股票支付的价格",
     "title": "Anthropic IPO定价83美元，这是我愿意为其股票支付的价格"
+  },
+  "news:id:7404361f16": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "ef981c7e07b2bdb3562a360c0d55e7b8cd09cfd9b284882d378fe18a542e328d",
+    "summary": "埃隆·马斯克转身背离MAGA",
+    "title": "埃隆·马斯克转身背离MAGA"
   },
   "news:id:744b9b7024": {
     "engine": "zh-v1",
@@ -2422,6 +2431,13 @@
     "summary": "腾讯高管：预计 2028 年 AI 投入产出效率改善，得益于基础设施复用、硬件降价与算力效率提升",
     "title": "腾讯高管：预计 2028 年 AI 投入产出效率改善，得益于基础设施复用、硬件降价与算力效率提升"
   },
+  "news:id:74736fde36": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "de1d4d6455528f01db53baebae021a491ed0fec55308b88c9757a9af6c40012f",
+    "summary": "远在海牙之外，罗兴亚难民对种族灭绝审判一无所知",
+    "title": "远在海牙之外，罗兴亚难民对种族灭绝审判一无所知"
+  },
   "news:id:75579a5180": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -2435,13 +2451,6 @@
     "src_hash": "ba991a216e53385c802ec392e9c02d6aa2b98ad75de6e85598fe2eb750862de9",
     "summary": "泄露的联想Legion Go Beam可能是我们需要的平价掌机",
     "title": "泄露的联想Legion Go Beam可能是我们需要的平价掌机"
-  },
-  "news:id:771bf9f1c2": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "117fa943f96c1635708e98134209d9e5154011e9c80717c1f04a4b8ebe038413",
-    "summary": "“接下来是谁、是什么”：分析师预计英伟达财报超预期后投资者仍存不确定性",
-    "title": "“接下来是谁、是什么”：分析师预计英伟达财报超预期后投资者仍存不确定性"
   },
   "news:id:77b502fecb": {
     "engine": "zh-v1",
@@ -2485,6 +2494,13 @@
     "summary": "马斯克：2002 年 SpaceX 有 90% 的几率失败",
     "title": "马斯克：2002 年 SpaceX 有 90% 的几率失败"
   },
+  "news:id:7a667d6200": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "2bb7a24ef8f6ef92abd984cb18e839c9a981ae300883daed7ef4005531dd5091",
+    "summary": "英伟达科莱特·克雷斯的2个词应能让投资者安心",
+    "title": "英伟达科莱特·克雷斯的2个词应能让投资者安心"
+  },
   "news:id:7a7079bdf1": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -2499,13 +2515,6 @@
     "summary": "英伟达上调展望，称没有黄仁勋也能蓬勃发展",
     "title": "英伟达上调展望，称没有黄仁勋也能蓬勃发展"
   },
-  "news:id:7a91038d45": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "44133177a212f8d93de4ba355fc3fae6ab3f33adec5934028d31bc333f1ffd21",
-    "summary": "英伟达以更强销售展望迈出积极一步，我们对该股的看法",
-    "title": "英伟达以更强销售展望迈出积极一步，我们对该股的看法"
-  },
   "news:id:7a945f5907": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -2513,12 +2522,19 @@
     "summary": "填补国内空白：“吉祥鸟”AC311A 国产轻型直升机完成应急漂浮装置验证试飞",
     "title": "填补国内空白：“吉祥鸟”AC311A 国产轻型直升机完成应急漂浮装置验证试飞"
   },
-  "news:id:7bfaeec00a": {
+  "news:id:7ac0ea3998": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "793bfb84e920ccf9e7042f32bdf8600aedded662684f85a66cfb979694b8a5de",
-    "summary": "被告知特斯拉1.6万亿美元市值已计入Cybercab中等成功，马斯克答“当然”",
-    "title": "被告知特斯拉1.6万亿美元市值已计入Cybercab中等成功，马斯克答“当然”"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "85e9e452e0ef31e54d193530dec070d28ff78430024ca0cc75bc942847373080",
+    "summary": "马斯克称6岁儿子喜欢中国，因为那是“玩具天堂”",
+    "title": "马斯克称6岁儿子喜欢中国，因为那是“玩具天堂”"
+  },
+  "news:id:7bcf4cdec6": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "95993d4c6e92e9eb73e53d1c2dea41db98c61b897ef3d568e458006504760a73",
+    "summary": "核武器与结束伊朗、乌克兰战争将成特朗普、习近平、普京会晤首要议题",
+    "title": "核武器与结束伊朗、乌克兰战争将成特朗普、习近平、普京会晤首要议题"
   },
   "news:id:7ce4aab1de": {
     "engine": "zh-v1",
@@ -2533,13 +2549,6 @@
     "src_hash": "fc88a95c2eab43f716462e697d56f185b0b4c816f9385a8f9c602d922938dc44",
     "summary": "英伟达、塔吉特、Take-Two、Applied Optoelectronics、劳氏等解释今日市场",
     "title": "英伟达、塔吉特、Take-Two、Applied Optoelectronics、劳氏等解释今日市场的股票"
-  },
-  "news:id:7dc36affd7": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "15e4fddee3970d5a99b21a8475cdf24aa118096c9045852b64a876bae3c30797",
-    "summary": "“一切照常”：英伟达克雷斯通过首次考验，董事会拒绝黄仁勋回归",
-    "title": "“一切照常”：英伟达克雷斯通过首次考验，董事会拒绝黄仁勋回归"
   },
   "news:id:7e180bc608": {
     "engine": "zh-v1",
@@ -2568,6 +2577,13 @@
     "src_hash": "811d4fb55f4e737ac3b09c2027b8185b29dd066d7b92545b3a73220050a6bf8f",
     "summary": "选民在惩罚独裁者，但许多人仍拥护他们，为什么？",
     "title": "选民在惩罚独裁者，但许多人仍拥护他们，为什么？"
+  },
+  "news:id:809cdef8c2": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "18d1cbadffb38ec07af00acef94ec1601dc2d966326a01be44dc6c9e387f81ed",
+    "summary": "特斯拉发布7.4兆瓦Powercore，对标前高管巴格利诺的Heron Link",
+    "title": "特斯拉发布7.4兆瓦Powercore，对标前高管巴格利诺的Heron Link"
   },
   "news:id:80a19a337a": {
     "engine": "zh-v1",
@@ -2611,13 +2627,6 @@
     "summary": "美国隐藏的 AI 优势",
     "title": "美国隐藏的 AI 优势"
   },
-  "news:id:821461448b": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "dcaceb357b0b6210b461e50b54eb8ea5c4f21586050c02e8413f319d1bd1f5e3",
-    "summary": "分析师：Arm的雷内·哈斯领跑英伟达CEO人选，但公司关联可能成障碍",
-    "title": "分析师：Arm的雷内·哈斯领跑英伟达CEO人选，但公司关联可能成障碍"
-  },
   "news:id:8286251e1e": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -2632,17 +2641,17 @@
     "summary": "共和党关键议员对500亿美元FAA拨款要求泼冷水",
     "title": "共和党关键议员对500亿美元FAA拨款要求泼冷水"
   },
-  "news:id:8338db9d94": {
+  "news:id:8405e0f797": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c9fd8f1af3528ea771cb04aa1e47ac9a1960e55319cbb1804392e8e449de7725",
-    "summary": "英伟达财报后亚洲股市震荡，Anthropic定价在即",
-    "title": "英伟达财报后亚洲股市震荡，Anthropic定价在即"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "760d0d17da23273cb0d665c38c034feb702bc3a3906f7341ad9a9f08efc43c50",
+    "summary": "耶鲁计算机协会将SpaceX赞助的AI黑客松带给程序员",
+    "title": "耶鲁计算机协会将SpaceX赞助的AI黑客松带给程序员"
   },
   "news:id:84700ae2e4": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "aaaf98ff04f8c5c0a73915c44c9bd792c35cbcff8e5ad7adf01d4770d4ed0ae6",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "978bb622868f0eb5039a9c74aca01855f4566e86499b54e78067927612e3a139",
     "summary": "Anthropic确定首次公开募股价格",
     "title": "Anthropic确定首次公开募股价格"
   },
@@ -2667,13 +2676,6 @@
     "summary": "马斯克：如果能倒带，我会在美国中期选举上少花些钱",
     "title": "马斯克：如果能倒带，我会在美国中期选举上少花些钱"
   },
-  "news:id:8679a518c1": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "715f7088ef9472f30f4e3731362ebc638e7bf717dbd2561eb9ce67c8d3fcf75b",
-    "summary": "英伟达将阿里巴巴介绍给爱丽丝·黄，以绕开美国出口管制",
-    "title": "英伟达将阿里巴巴介绍给爱丽丝·黄，以绕开美国出口管制"
-  },
   "news:id:87471bcf6e": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T09:26:26+09:00",
@@ -2694,13 +2696,6 @@
     "src_hash": "2f211a5a2c505c61b8e7e978feedfb26223c00c0d6104c1a4aaf690a8e0fe978",
     "summary": "马斯克的私人飞机第三季度停靠德州及其他多个州，航班追踪显示",
     "title": "马斯克的私人飞机第三季度停靠德州及其他多个州，航班追踪显示"
-  },
-  "news:id:893c780527": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "a719a23d06fd2b983731bcc615bd44ae2cb17dabee58bfbb48aaad5934d0ad68",
-    "summary": "顶刊论文中的实验图片被质疑用 AI 生成，湖南省科技厅同步核查学术不端",
-    "title": "顶刊论文中的实验图片被质疑用 AI 生成，湖南省科技厅同步核查学术不端"
   },
   "news:id:89479d7fe5": {
     "engine": "zh-v1",
@@ -2723,12 +2718,19 @@
     "summary": "尽管美国批准，英伟达仍停止向中国出售 AI 芯片",
     "title": "尽管美国批准，英伟达仍停止向中国出售 AI 芯片"
   },
-  "news:id:8a7477c1e0": {
+  "news:id:89d73cae78": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "fcf2a72baab0a5d76a6162108c22971d74d3db053c43103e1d4489557435c214",
-    "summary": "卢比奥称“没有任何”信息显示美国多地故障相关联或由恶意方造成",
-    "title": "卢比奥称“没有任何”信息显示美国多地故障相关联或由恶意方造成"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1f6664ad02980433c9e6d1a1a1a5678a63a78221f1f5c96e7d8c323f7284b81c",
+    "summary": "英伟达的危机提振了竞争对手股票",
+    "title": "英伟达的危机提振了竞争对手股票"
+  },
+  "news:id:8a4d0a0e77": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1ff06a56323a460a0fb8c13a4b27c77f0218b2cf10615a623093dd674a4478d5",
+    "summary": "国际法院将裁决罗兴亚人诉缅甸种族灭绝案：利害何在？",
+    "title": "国际法院将裁决罗兴亚人诉缅甸种族灭绝案：利害何在？"
   },
   "news:id:8ad2697835": {
     "engine": "zh-v1",
@@ -2746,10 +2748,17 @@
   },
   "news:id:8bd4b96e83": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T09:26:26+09:00",
-    "src_hash": "8330a87d3d65fa551475269670efc0572030489308ce3118a73a1ff532effcff",
-    "summary": "周五晚前沿海可能降雨超12英寸，局部达18英寸",
-    "title": "周五晚前沿海可能降雨超12英寸，局部达18英寸"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "a5d204a679119f4e18a0b92c43ceb1967bf7072116bab6e6f0e46565e9349659",
+    "summary": "周五晚前沿海可能降雨超12英寸，个别地区达18英寸",
+    "title": "周五晚前沿海可能降雨超12英寸，个别地区达18英寸"
+  },
+  "news:id:8cab0a1014": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "88628695ecf9a339d4a11d5ef6125172b506ad84e169aa9a4a8b4bf2022a4997",
+    "summary": "内塔尼亚胡身边人士承认在选举日抓捕行动中起了作用",
+    "title": "内塔尼亚胡身边人士承认在选举日抓捕行动中起了作用"
   },
   "news:id:8d1768dc27": {
     "engine": "zh-v1",
@@ -2778,6 +2787,13 @@
     "src_hash": "043bc900ad15c5c8e426312a7d10d28a735450ef68713d1c69301b579342a623",
     "summary": "播客：英伟达：业绩好，时机差？",
     "title": "播客：英伟达：业绩好，时机差？"
+  },
+  "news:id:8ea0f9d5ec": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "62eeb0ff3a746d6a0c68120ea8a2ea2ad325e8061d1839700c72faaf4a0b1619",
+    "summary": "风暴系统袭击湾区，强降雨和大风，旧金山降雨创纪录",
+    "title": "风暴系统袭击湾区，强降雨和大风，旧金山降雨创纪录"
   },
   "news:id:8f4f8d9d79": {
     "engine": "zh-v1",
@@ -2821,6 +2837,13 @@
     "summary": "理想汽车 CTO 谢炎台积电 OIP 论坛开讲，解读马赫 M100 从技术到应用全流程",
     "title": "理想汽车 CTO 谢炎台积电 OIP 论坛开讲，解读马赫 M100 从技术到应用全流程"
   },
+  "news:id:90e8e45dc0": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "4773af2ae2d384db5f38a40a70565f0b702f42ea07ce805ac67ce7b00c65bbf8",
+    "summary": "穆迪将英伟达评级展望由正面下调至稳定",
+    "title": "穆迪将英伟达评级展望由正面下调至稳定"
+  },
   "news:id:919a355873": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -2849,12 +2872,12 @@
     "summary": "马斯克谈中期选举花费：“我觉得自己挺傻的”",
     "title": "马斯克谈中期选举花费：“我觉得自己挺傻的”"
   },
-  "news:id:928fbf55eb": {
+  "news:id:9303c6838f": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "bc80879a61d1ea76dffbc710e1792fc7aaf7431f81487350f3f08975e710ef96",
-    "summary": "亚太经合组织峰会直播：习近平与普京开始会谈；卢比奥称特朗普认真考虑会见金正恩",
-    "title": "亚太经合组织峰会直播：习近平与普京开始会谈；卢比奥称特朗普认真考虑会见金正恩"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "ab958fb295273dcdb9b32844c20304296e1cc3f10eb9684a6e798524e76494cf",
+    "summary": "设备亮点：110马力Greenworks OPTIMUS电动多功能车［视频］",
+    "title": "设备亮点：110马力Greenworks OPTIMUS电动多功能车［视频］"
   },
   "news:id:942311c264": {
     "engine": "zh-v1",
@@ -2911,13 +2934,6 @@
     "src_hash": "be76b38d6a517716ab38b70f74edf7ee78f7813e09579cf418e8c563936a590e",
     "summary": "克雷斯对我们讲的关于后黄仁勋时代英伟达的一切",
     "title": "克雷斯对我们讲的关于后黄仁勋时代英伟达的一切"
-  },
-  "news:id:963067d508": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "101c5f7d3d09e75f5fc46424e00f6b2d3272d0a0498557511e644579c3afcf5f",
-    "summary": "马斯克深度伪造诈骗：Coinbase称AI拦截470万美元",
-    "title": "马斯克深度伪造诈骗：Coinbase称AI拦截470万美元"
   },
   "news:id:965a77e240": {
     "engine": "zh-v1",
@@ -2989,12 +3005,12 @@
     "summary": "斯凯丹斯将两家知名制片厂合并为一，震动电视业",
     "title": "斯凯丹斯将两家知名制片厂合并为一，震动电视业"
   },
-  "news:id:98945390ea": {
+  "news:id:995011f5b2": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "276d8bea01542178c7ba5b5d2ac25ed2bade96293a2be24d8c93edfff3651e5f",
-    "summary": "AMD的苏姿丰称“噪音终会平息”，称英伟达在黄仁勋事件后仍是“非凡公司”",
-    "title": "AMD的苏姿丰称“噪音终会平息”，称英伟达在黄仁勋事件后仍是“非凡公司”"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b05d5133ab9b07f7fed6e28dd9115c1a623cff103de69ae1bcf4e36bb60f1d7c",
+    "summary": "马斯克称在共和党选举支出狂潮后感到“愚蠢”",
+    "title": "马斯克称在共和党选举支出狂潮后感到“愚蠢”"
   },
   "news:id:99a274d9f4": {
     "engine": "zh-v1",
@@ -3026,10 +3042,17 @@
   },
   "news:id:9a4b291806": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T12:30:48+09:00",
-    "src_hash": "a3a8ba8d8b81c6d2d7c8bd5b8e0e827d7bddb271fdcbbc94bc220a77236513cf",
-    "summary": "Anthropic在强劲需求下将IPO定价为每股83美元",
-    "title": "Anthropic在强劲需求下将IPO定价为每股83美元"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "3e565bd0aa49602f3f2e27ae07d0ac1e817aa81602fe0d08daf611fe50a31dfb",
+    "summary": "Anthropic融资810亿美元，成史上最大IPO",
+    "title": "Anthropic融资810亿美元，成史上最大IPO"
+  },
+  "news:id:9a8dddfd60": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b941f71071bcd3fc8f9b75e589c8578791302bc170e63b1f1731f4d19643a7e3",
+    "summary": "非洲教育中的AI：益处、风险与政策方案",
+    "title": "非洲教育中的AI：益处、风险与政策方案"
   },
   "news:id:9aa153b52c": {
     "engine": "zh-v1",
@@ -3073,6 +3096,13 @@
     "summary": "英国黑客因GTA 6数据泄露和加密货币盗窃面临牢狱之灾",
     "title": "英国黑客因GTA 6数据泄露和加密货币盗窃面临牢狱之灾"
   },
+  "news:id:9d8364eedc": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "43e84c92f8c8c21104b9ba0680786f5529936cdff73e2d82e275cc089586b925",
+    "summary": "风暴临近，洛杉矶县发布疏散警告，预计降雪和洪水",
+    "title": "风暴临近，洛杉矶县发布疏散警告，预计降雪和洪水"
+  },
   "news:id:9e8ae5c7b8": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -3080,26 +3110,19 @@
     "summary": "APEC峰会最新：习近平破例在特朗普抵华时与其会面",
     "title": "APEC峰会最新：习近平破例在特朗普抵华时与其会面"
   },
+  "news:id:9ec1398977": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b1cd35f504c4575778cf8ba93726791ca316db0af3192268ef58280f68b65735",
+    "summary": "凯文·奥利里认为黄仁勋无法回归英伟达：“别管那些风流韵事……还有另一个问题”",
+    "title": "凯文·奥利里认为黄仁勋无法回归英伟达：“别管那些风流韵事……还有另一个问题”"
+  },
   "news:id:9f1eb3fa05": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
     "src_hash": "c96a3e900725685057ac5c55d3e78386ed994715861fee01239496044e442723",
     "summary": "医疗费用大涨。能相信AI帮你省钱吗？",
     "title": "医疗费用大涨。能相信AI帮你省钱吗？"
-  },
-  "news:id:9f82f1fa9f": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "6656f1ef1ef9ee29876babbaa9089035e7e8b9e4ff398cacf2fd0ace942c30ac",
-    "summary": "预测：这2只股票5年后市值将超过SpaceX",
-    "title": "预测：这2只股票5年后市值将超过SpaceX"
-  },
-  "news:id:9f9e8cf41f": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "fd91c2dd8fcbbc33927f937b9a9f88b3719320688ee210213dc203068b7e850d",
-    "summary": "SpaceX星舰历史性回归",
-    "title": "SpaceX星舰历史性回归"
   },
   "news:id:9ff8ca219a": {
     "engine": "zh-v1",
@@ -3206,6 +3229,13 @@
     "summary": "尼泊尔带着严峻需求来到COP31，这是对世界的一次考验",
     "title": "尼泊尔带着严峻需求来到COP31，这是对世界的一次考验"
   },
+  "news:id:a62fa85007": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "76c2c29110890d4ce4eb5675cf877cc7979e223082001fefb75360140056b681",
+    "summary": "谷歌 AI Ultra 升级新增 YouTube Premium 家庭版",
+    "title": "谷歌 AI Ultra 升级新增 YouTube Premium 家庭版"
+  },
   "news:id:a6b43b692e": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -3219,6 +3249,13 @@
     "src_hash": "1ff2cada54d3a5be681932435876ce85257d577eaae4db7742a5146a03402a88",
     "summary": "特朗普称阿拉斯加选民选错了 Dan Sullivan，数据怎么说？",
     "title": "特朗普称阿拉斯加选民选错了 Dan Sullivan，数据怎么说？"
+  },
+  "news:id:a7a7857a5e": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "5890e223ebfe6da63ed52a8703cfcbf6c3cb12275030c20836f8190db9b057bf",
+    "summary": "马斯克称星舰回收越过重大障碍，利好SpaceX将AI算力送入轨道的计划",
+    "title": "马斯克称星舰回收越过重大障碍，利好SpaceX将AI算力送入轨道的计划"
   },
   "news:id:a7ac6fdd16": {
     "engine": "zh-v1",
@@ -3276,19 +3313,19 @@
     "summary": "众议院民主党广撒网，准备调查特朗普",
     "title": "众议院民主党广撒网，准备调查特朗普"
   },
-  "news:id:ab3de5f1e1": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "dc7b5a587784854619046ce53ef937a0cf5e2a57eaa7a29e26222d6802537bd8",
-    "summary": "Anthropic的IPO是AI喧嚣中的信号",
-    "title": "Anthropic的IPO是AI喧嚣中的信号"
-  },
   "news:id:ab7d72cf56": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
     "src_hash": "9403d65e9ae5df39c300c96154c72ddbec12dd2fd5a573c53ba10b8bb0c7c0e0",
     "summary": "Muse侵犯隐私让Meta员工惊慌，内部聊天显示",
     "title": "Muse侵犯隐私让Meta员工惊慌，内部聊天显示"
+  },
+  "news:id:ab8a677140": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "bd2c4baf6fa2272514c7cd4143d04977f2cec477a38d8a6be82cf0945e6cd423",
+    "summary": "AI把多力多滋袋子误认为枪，四名马里兰高中生起诉",
+    "title": "AI把多力多滋袋子误认为枪，四名马里兰高中生起诉"
   },
   "news:id:abc818f03f": {
     "engine": "zh-v1",
@@ -3338,13 +3375,6 @@
     "src_hash": "fc0249d82ed403b50ee0bbb4e0734e3da3f0b1a7e2f866376459d0085d703a83",
     "summary": "中国AI安全组织向包括OpenAI在内的美国AI实验室做了通报",
     "title": "中国AI安全组织向包括OpenAI在内的美国AI实验室做了通报"
-  },
-  "news:id:aeb947d374": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "b2c943f318a81de7e542489ab21bcdd07a10165291511150f6dd08afbf908274",
-    "summary": "华尔街下跌后亚洲市场多数下跌，AI股剧烈波动",
-    "title": "华尔街下跌后亚洲市场多数下跌，AI股剧烈波动"
   },
   "news:id:aec93ce944": {
     "engine": "zh-v1",
@@ -3409,6 +3439,13 @@
     "summary": "英伟达面临\"绅士\"团伙勒索，倒计时不到10天",
     "title": "英伟达面临\"绅士\"团伙勒索，倒计时不到10天"
   },
+  "news:id:b24053d587": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "627415690fb5358944aa5d5e20167ccdc7458b782815e1fc43f002d393e16dd3",
+    "summary": "马斯克称在美国中期选举上创纪录的4.46亿美元（$446m）支出“相当愚蠢”",
+    "title": "马斯克称在美国中期选举上创纪录的4.46亿美元（$446m）支出“相当愚蠢”"
+  },
   "news:id:b25057494d": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -3429,6 +3466,13 @@
     "src_hash": "deb097861c02b53cdeff224e210d8d0ee7734f72ee22c7b25f7017faf056ee26",
     "summary": "Anthropic上市在即，批评者联合起来反对它",
     "title": "Anthropic上市在即，批评者联合起来反对它"
+  },
+  "news:id:b490647772": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "a71c1b8749269396aef9ab03b861e608d4d15d9bcb41210ded542a607f5b86d4",
+    "summary": "为挽救Cybertruck发声的特斯拉改装师还想打造CyberSUV",
+    "title": "为挽救Cybertruck发声的特斯拉改装师还想打造CyberSUV"
   },
   "news:id:b4db1bcce0": {
     "engine": "zh-v1",
@@ -3521,26 +3565,12 @@
     "summary": "吉姆·克莱默称英伟达有了新问题，且与财报无关",
     "title": "吉姆·克莱默称英伟达有了新问题，且与财报无关"
   },
-  "news:id:b7e1f06593": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "f0340d872ced46c2551622876484f6901593ac82ebeb2a1981305434a5bb1ae2",
-    "summary": "指控披露霍普金斯大学优步司机遇袭案细节，嫌疑人面临谋杀未遂指控",
-    "title": "指控披露霍普金斯大学优步司机遇袭案细节，嫌疑人面临谋杀未遂指控"
-  },
   "news:id:b8900667c0": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
     "src_hash": "d1bad3ac3859165dccb803e5bfbec8497f5ace001af7d33c9a2eaf2ae9cb278a",
     "summary": "黄仁勋丑闻后英伟达首份财报的四点要点",
     "title": "黄仁勋丑闻后英伟达首份财报的四点要点"
-  },
-  "news:id:b917b7ff34": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "5fb4f888eaba2294f2472a9fa42251e926fd75fa8548db81dcbf0a6e01ca34c6",
-    "summary": "马克韦恩·马林为停飞后前往路易斯安那州立大学对德克萨斯大学比赛的行程辩护",
-    "title": "马克韦恩·马林为停飞后前往路易斯安那州立大学对德克萨斯大学比赛的行程辩护"
   },
   "news:id:b95e8ca2a9": {
     "engine": "zh-v1",
@@ -3577,20 +3607,6 @@
     "summary": "英伟达一名高管的妻子卷入所称的AI芯片走私丑闻",
     "title": "英伟达一名高管的妻子卷入所称的AI芯片走私丑闻"
   },
-  "news:id:baca8ec8fb": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "4a10a6c46513e39d31470dba3eeb91aee42d6ada70d23d63f857e6481d79bdc7",
-    "summary": "特斯拉发布固态电源平台，效率达98.86%",
-    "title": "特斯拉发布固态电源平台，效率达98.86%"
-  },
-  "news:id:bace363f67": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "1a337ea8d26bc12ebed329608eec9a0fd80f1daae2b691c8bec6a0be3a6099f9",
-    "summary": "投资者消化英伟达季度业绩和指引，亚洲股市涨跌互现",
-    "title": "投资者消化英伟达季度业绩和指引，亚洲股市涨跌互现"
-  },
   "news:id:bb06360ebc": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T15:34:22+09:00",
@@ -3607,10 +3623,10 @@
   },
   "news:id:bb7939c8c1": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "eb2afb654a877cfaa00acbb21aa6c82f4632328f754eb98ab0d40cf0b27cd1de",
-    "summary": "Arm首席执行官哈斯被英伟达董事会的猎头公司接触",
-    "title": "Arm首席执行官哈斯被英伟达董事会的猎头公司接触"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1d9c974334cad2630c32b2a9c28961da67f06aa8f5667731c73f9c798f6ea374",
+    "summary": "英伟达评估Arm CEO哈斯，寻找黄仁勋接班人",
+    "title": "英伟达评估Arm CEO哈斯，寻找黄仁勋接班人"
   },
   "news:id:bb9f860ad8": {
     "engine": "zh-v1",
@@ -3625,13 +3641,6 @@
     "src_hash": "3eb70e570c405bfbabc6684a585c9008e2d0ca1c91f4fc965f9981472fb34197",
     "summary": "特斯拉能源新产品对公司“有意义的利好”，但对股价不然",
     "title": "特斯拉能源新产品对公司“有意义的利好”，但对股价不然"
-  },
-  "news:id:bce11bbbf6": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "9ce6f48badbb7f2bd357c88e93dd56f14d8cdec2c4fcee5a942422d4bc20c830",
-    "summary": "马斯克传记作者：特斯拉与SpaceX合并几乎无可避免，12月3日将有更多消息",
-    "title": "马斯克传记作者：特斯拉与SpaceX合并几乎无可避免，12月3日将有更多消息"
   },
   "news:id:bd135bcc07": {
     "engine": "zh-v1",
@@ -3717,6 +3726,13 @@
     "summary": "特斯拉向\"部分\"客户开放自动驾驶Cybercab销售",
     "title": "特斯拉向\"部分\"客户开放自动驾驶Cybercab销售"
   },
+  "news:id:c038558513": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "0e8cf6f81d2b54026aab36e18cd5623f2d0a92eac78987474369baff53b937e7",
+    "summary": "民主党赢得9个美国参议院席位，为近70年来最多",
+    "title": "民主党赢得9个美国参议院席位，为近70年来最多"
+  },
   "news:id:c0aeaa1d0c": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -3733,10 +3749,10 @@
   },
   "news:id:c100296ab7": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "b98e3cd848e807b139cc742fc8256e65e240e55e70b93623e1d2d280396a8694",
-    "summary": "AI巨头Anthropic在上市前估值最高达1.5万亿美元",
-    "title": "AI巨头Anthropic在上市前估值最高达1.5万亿美元"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "8ca6a03c13b73214d0ac914ad93c475b01102368d13bfa1d43e934ee3acec089",
+    "summary": "Anthropic在上市前估值达1.5万亿美元",
+    "title": "Anthropic在上市前估值达1.5万亿美元"
   },
   "news:id:c15cc751ec": {
     "engine": "zh-v1",
@@ -3745,26 +3761,12 @@
     "summary": "杜菲拒绝 Starlink 后，马斯克加倍批评 FAA：“18 个月前就写过这个”",
     "title": "杜菲拒绝 Starlink 后，马斯克加倍批评 FAA：“18 个月前就写过这个”"
   },
-  "news:id:c160568a1c": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e6cfd02b0c650aca416cbfe7701960abc57d4ef968980ecbcc3ffc6a76d75e59",
-    "summary": "黄仁勋同意在参议院作证",
-    "title": "黄仁勋同意在参议院作证"
-  },
   "news:id:c19ee5ae51": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
     "src_hash": "3f379fc127465f3e908ccdc650c7b28fe61e6af9aa7b40008d63f530a301242d",
     "summary": "Anthropic每股83美元的IPO定价将迎来华尔街创纪录首秀，这意味着什么",
     "title": "Anthropic每股83美元的IPO定价将迎来华尔街创纪录首秀，这意味着什么"
-  },
-  "news:id:c1c87363fe": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "13ed6789bf930579ddcd99faa7e52820a3b85603398bdb77325f429688f4fd53",
-    "summary": "卢比奥称急于加固系统可能导致故障",
-    "title": "卢比奥称急于加固系统可能导致故障"
   },
   "news:id:c21bb094fe": {
     "engine": "zh-v1",
@@ -3786,6 +3788,13 @@
     "src_hash": "1b7f46497a87b2b895e20c2fbeb7a7a07aa221ab26ab121dd69f7f769e5e4994",
     "summary": "马斯克称向落败的MAGA阵营巨额捐款后感觉“相当愚蠢”",
     "title": "马斯克称向落败的MAGA阵营巨额捐款后感觉“相当愚蠢”"
+  },
+  "news:id:c39c66ecd5": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "07f5155858c9505e393e7f921831ba67e95a2855ff432900f3e7337f5431f097",
+    "summary": "马斯克指责泽连斯基在乌克兰星盾限制问题上撒谎",
+    "title": "马斯克指责泽连斯基在乌克兰星盾限制问题上撒谎"
   },
   "news:id:c3ae612e70": {
     "engine": "zh-v1",
@@ -3850,6 +3859,13 @@
     "summary": "英伟达临时CEO克雷斯在黄仁勋离任后首次全员大会上说“向前看”",
     "title": "英伟达临时CEO克雷斯在黄仁勋离任后首次全员大会上说“向前看”"
   },
+  "news:id:c6935ded11": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "6d9855183c702787f3ad9b21324230b7e5b843b357328d3cbd0bc889f0cbbff6",
+    "summary": "伊朗战争将如何重塑全球能源秩序",
+    "title": "伊朗战争将如何重塑全球能源秩序"
+  },
   "news:id:c7db1075c0": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -3873,10 +3889,10 @@
   },
   "news:id:c8a9883033": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "68319732a21edf7c47f55899830367a8f80971fc28da9a509d0f68f9c2456ff4",
-    "summary": "2026年CMA奖实时更新：精彩亮点与重要时刻",
-    "title": "2026年CMA奖实时更新：精彩亮点与重要时刻"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "cc9a4d854775ee4c64d0c877a116d059c57814877dbbbb2404f2d264d3ceafe5",
+    "summary": "2026年CMA奖：精彩亮点与重大时刻回顾",
+    "title": "2026年CMA奖：精彩亮点与重大时刻回顾"
   },
   "news:id:c8b7c08b63": {
     "engine": "zh-v1",
@@ -3941,13 +3957,6 @@
     "summary": "Anthropic上市前需要了解的事",
     "title": "Anthropic上市前需要了解的事"
   },
-  "news:id:cc61df7700": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "afac8819851a9310caf8ead5404d3b80470cc7603698a2950d5c3d1fad2fd4a6",
-    "summary": "Pulsar发布X2 CrazyLight 2鼠标：低矮宽大对称设计，升级XS-2传感器",
-    "title": "Pulsar发布X2 CrazyLight 2鼠标：低矮宽大对称设计，升级XS-2传感器"
-  },
   "news:id:cc674cbc99": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -3961,20 +3970,6 @@
     "src_hash": "f9cf482269166ae0236dae69cd895dca1fc26d19250a7f82ad27b1c9752ca11a",
     "summary": "塔吉特财报大超预期，受通胀困扰的购物者看到超值优惠",
     "title": "塔吉特财报大超预期，受通胀困扰的购物者看到超值优惠"
-  },
-  "news:id:cd6c5efe43": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "b8fa85c717d3fba37ec042446beee543a0fb384b09097b22e129cee23b94e874",
-    "summary": "英伟达财报强劲，驳斥黄仁勋回归的呼声",
-    "title": "英伟达财报强劲，驳斥黄仁勋回归的呼声"
-  },
-  "news:id:cd70796cd1": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "ee577f900f6e17e75215c503419bee7f18156e968963e228c6fa7c72ebccb024",
-    "summary": "潜伏小红书48h：AI时代，顶尖技术人才都在聊什么？",
-    "title": "潜伏小红书48h：AI时代，顶尖技术人才都在聊什么？"
   },
   "news:id:cd7086c802": {
     "engine": "zh-v1",
@@ -4010,13 +4005,6 @@
     "src_hash": "61d601edf4c25876ee64ef92abd8002a43cd83f14b70e094efe534294bdb2d20",
     "summary": "旅行者1号距地球一光日：历史学家重访金唱片被遗忘的细节",
     "title": "旅行者1号距地球一光日：历史学家重访金唱片被遗忘的细节"
-  },
-  "news:id:ceaa25aaac": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "6a2c6e87c1f903b6fae93cf44ccc6943ae68459f03dafc535ba2e54f2e1e8823",
-    "summary": "波士顿动力人形机器人首次进入半导体制造领域，Atlas 明年在格罗方德工厂测试",
-    "title": "波士顿动力人形机器人首次进入半导体制造领域，Atlas 明年在格罗方德工厂测试"
   },
   "news:id:cee31e9927": {
     "engine": "zh-v1",
@@ -4060,12 +4048,12 @@
     "summary": "为何Anthropic IPO对投资者可能是个陷阱",
     "title": "为何Anthropic IPO对投资者可能是个陷阱"
   },
-  "news:id:d16421873a": {
+  "news:id:d164fc3b91": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "03820b72b20df9247e0a21419596c3dd92ef1f7778f39b0ae8fb6d101e52f2a7",
-    "summary": "苹果订阅版 Final Cut Pro 加入 MotionVFX，视频特效更省事",
-    "title": "苹果订阅版 Final Cut Pro 加入 MotionVFX，视频特效更省事"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b6a31e7e694414c6949d808f954cdb01ac0a79a6238f88921b8bb7900840b2f1",
+    "summary": "2026亚马逊黑五大促正式开启：苹果、谷歌、电视、家居等数百万件优惠",
+    "title": "2026亚马逊黑五大促正式开启：苹果、谷歌、电视、家居等数百万件优惠"
   },
   "news:id:d1b5625db1": {
     "engine": "zh-v1",
@@ -4074,12 +4062,12 @@
     "summary": "东南亚峰会接近尾声时特朗普抵达，仍笼罩谈判",
     "title": "东南亚峰会接近尾声时特朗普抵达，仍笼罩谈判"
   },
-  "news:id:d2850e5692": {
+  "news:id:d2a71cae2b": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "67fed74e4825d4489608399e642aa7f61c863712350d734326ec9b142f526daa",
-    "summary": "佩尔托拉在阿拉斯加击败共和党人沙利文，民主党获56个参议院席位",
-    "title": "佩尔托拉在阿拉斯加击败共和党人沙利文，民主党获56个参议院席位"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "857c8780b0a82e30c4106e0a67a1683f3c69d5536a17759186c72aae313786e0",
+    "summary": "特斯拉Cybercab车队迎来有史以来最繁忙的一天",
+    "title": "特斯拉Cybercab车队迎来有史以来最繁忙的一天"
   },
   "news:id:d2befe3df9": {
     "engine": "zh-v1",
@@ -4116,13 +4104,6 @@
     "summary": "独家：SpaceX 400亿美元芯片融资将不计入资产负债表",
     "title": "独家：SpaceX 400亿美元芯片融资将不计入资产负债表"
   },
-  "news:id:d63bb01d79": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "47e3d868804e9db291ec56a43997a7492b906e697c77b4b4a61cf26a0041f049",
-    "summary": "微软拟升级 Copilot，要给你的 Win11 电脑“看病”",
-    "title": "微软拟升级 Copilot，要给你的 Win11 电脑“看病”"
-  },
   "news:id:d67afa13f1": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -4136,13 +4117,6 @@
     "src_hash": "4d10ffa335b4cf4cf4527f683f5576bfa81bbdc9e52c43c77ab6b272a403a6c3",
     "summary": "英伟达董事会不考虑让黄仁勋复任 CEO",
     "title": "英伟达董事会不考虑让黄仁勋复任 CEO"
-  },
-  "news:id:d7a71bd926": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "65723a8d155a0e57122e2227ea622f709af7155cacb6668039d05a10df81772a",
-    "summary": "最新消息",
-    "title": "最新消息"
   },
   "news:id:d7d2245f40": {
     "engine": "zh-v1",
@@ -4185,13 +4159,6 @@
     "src_hash": "1e1c49b280101cb8d9adc8851340dd1b602d8600daff514da441de9b33190ac4",
     "summary": "威尔·赖特的下一款模拟游戏将用AI从你的记忆中挖掘内容",
     "title": "威尔·赖特的下一款模拟游戏将用AI从你的记忆中挖掘内容"
-  },
-  "news:id:da8fe3e223": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "9dd956219a96025655f10a12e221e4d2a105cfa355d714af4c2b260b1548593d",
-    "summary": "FAA就SpaceX扩大博卡奇卡发射申请举行首次线上公众会议",
-    "title": "FAA就SpaceX扩大博卡奇卡发射申请举行首次线上公众会议"
   },
   "news:id:da9f3f1502": {
     "engine": "zh-v1",
@@ -4326,12 +4293,12 @@
     "summary": "微软商业业务 CEO：黄仁勋辞任英伟达 CEO，或促使客户寻求 AI 芯片替代方案",
     "title": "微软商业业务 CEO：黄仁勋辞任英伟达 CEO，或促使客户寻求 AI 芯片替代方案"
   },
-  "news:id:e0a20e66e1": {
+  "news:id:e04917e2b2": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "28d62fe9f6671c4595dcdda6a45e4a8a766eda4cc6d2bd19647c4e516e64d673",
-    "summary": "Claude曾在大规模蛋白质序列上训练",
-    "title": "Claude曾在大规模蛋白质序列上训练"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "86adcc5ddf1f4cdf395a52b856a0875e19c0a3fb980f0c5b40c62d6ae17eed8a",
+    "summary": "我们如何揭开英伟达调查的内幕",
+    "title": "我们如何揭开英伟达调查的内幕"
   },
   "news:id:e0d0baf150": {
     "engine": "zh-v1",
@@ -4346,20 +4313,6 @@
     "src_hash": "5372b9d2f79825f5c0519c82bf3dd0d46ed1d63fdac752cd9c9ee9fb68b52802",
     "summary": "哈啰调整 Robotaxi 组织架构：整合成立“模型开发与数据闭环部”，由 CEO 杨磊直接负责",
     "title": "哈啰调整 Robotaxi 组织架构：整合成立“模型开发与数据闭环部”，由 CEO 杨磊直接负责"
-  },
-  "news:id:e13a5a4dae": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "9d1f506bbe65844ab52ee4ed28f7ad534c45e02182c358469474784399699fba",
-    "summary": "Gemini 4 Carbon为何拖了这么久？",
-    "title": "Gemini 4 Carbon为何拖了这么久？"
-  },
-  "news:id:e1675a8d6c": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "61fb6530feee006337d6f6bbeebc114b45b1917aecbb2bb045a8e671ed3dc081",
-    "summary": "大学橄榄球季后赛遴选委员会完成2026年第三次排名",
-    "title": "大学橄榄球季后赛遴选委员会完成2026年第三次排名"
   },
   "news:id:e1849bd256": {
     "engine": "zh-v1",
@@ -4431,6 +4384,20 @@
     "summary": "想在第一天买入Anthropic？财务顾问这样说",
     "title": "想在第一天买入Anthropic？财务顾问这样说"
   },
+  "news:id:e63f263395": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "00ba8fc086b87dd89556b311652337f218456faa154465418fbd9323eb36ae5b",
+    "summary": "普京重返APEC“全家福”，考验西方领导人",
+    "title": "普京重返APEC“全家福”，考验西方领导人"
+  },
+  "news:id:e6fafcab10": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "9e92bcecc1fd82e3d12f8f12ceeb5d424fead83344c0fc30175e71a9e19c9a70",
+    "summary": "视频：马斯克称自己是政治温和派，“不是MAGA”",
+    "title": "视频：马斯克称自己是政治温和派，“不是MAGA”"
+  },
   "news:id:e7c24d8072": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -4480,6 +4447,13 @@
     "summary": "英伟达临时CEO科莱特·克雷斯在黄仁勋辞职后对员工说了什么",
     "title": "英伟达临时CEO科莱特·克雷斯在黄仁勋辞职后对员工说了什么"
   },
+  "news:id:eb3782a589": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "d4678eacf6f99d3ad058e21a48ea54002122ea87ead99cebbcba85b5bd12323d",
+    "summary": "Anthropic IPO（直播更新）：融资810亿美元，打破SpaceX纪录",
+    "title": "Anthropic IPO（直播更新）：融资810亿美元，打破SpaceX纪录"
+  },
   "news:id:ebde916d37": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -4493,13 +4467,6 @@
     "src_hash": "e1b348ed7a4f7bae60ef16c62aa81b6fe25fe2ddaa53e17c9a091e0c1cdcee5c",
     "summary": "谷歌Gemini的“任务”个人助理现已免费",
     "title": "谷歌Gemini的“任务”个人助理现已免费"
-  },
-  "news:id:ecaf18a46c": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "2ef81397113b578b231a3fc0f214566b8a2c32573f0cd4f3c5621a774afb3381",
-    "summary": "在英国被捕的美国士兵移交美军羁押",
-    "title": "在英国被捕的美国士兵移交美军羁押"
   },
   "news:id:ed03f9514c": {
     "engine": "zh-v1",
@@ -4522,19 +4489,19 @@
     "summary": "奥尔特曼称 OpenAI 没法让所有人满意，必须平衡 AI 安全与发展",
     "title": "奥尔特曼称 OpenAI 没法让所有人满意，必须平衡 AI 安全与发展"
   },
-  "news:id:ed59f97aa1": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c818226f90210db82bcd41bdb74b966ccb62f79978a165e6dfc6af491e749797",
-    "summary": "基金经理竞相认购Anthropic股份，但需降低预期",
-    "title": "基金经理竞相认购Anthropic股份，但需降低预期"
-  },
   "news:id:ed71aa0134": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
     "src_hash": "90c1391d9e902d5b603e284cde94a151e664c303456afdd8c585c44e2ed52019",
     "summary": "2GB 内存的手机也能流畅用 AI，谷歌降低安卓 Gemini App 使用门槛",
     "title": "2GB 内存的手机也能流畅用 AI，谷歌降低安卓 Gemini App 使用门槛"
+  },
+  "news:id:edc3533e15": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "d6f6e59ffc791598596fb33e916570bfd8a97c27f36c8825448bab5f6161b8aa",
+    "summary": "众议院民主党领袖瞄准特朗普核心圈，启动首批调查",
+    "title": "众议院民主党领袖瞄准特朗普核心圈，启动首批调查"
   },
   "news:id:ee17d5e26c": {
     "engine": "zh-v1",
@@ -4571,6 +4538,13 @@
     "summary": "始终将水瓶、文件夹误认为枪支，美国一高中停用 AI 武器探测系统",
     "title": "始终将水瓶、文件夹误认为枪支，美国一高中停用 AI 武器探测系统"
   },
+  "news:id:effa814843": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "8ac1d09412bc8cccab28e437c7466c2eb26f22cd66fca971ba2b852517706a1e",
+    "summary": "特斯拉急需无线充电，否则30,000美元的Cybercab无法在家充电",
+    "title": "特斯拉急需无线充电，否则30,000美元的Cybercab无法在家充电"
+  },
   "news:id:f07dcb5bf8": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -4592,6 +4566,13 @@
     "summary": "马斯克在哪？追踪他的飞机飞越得州及其他地方",
     "title": "马斯克在哪？追踪他的飞机飞越得州及其他地方"
   },
+  "news:id:f162bbea2e": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "223a4ec907b0c66f5aefd4770655fd8cd792cda6d4589bdf3ce81ad36f22b020",
+    "summary": "共和党大金主、戴MAGA帽的马斯克称自己“不是MAGA”",
+    "title": "共和党大金主、戴MAGA帽的马斯克称自己“不是MAGA”"
+  },
   "news:id:f2e0f9f0db": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -4601,10 +4582,10 @@
   },
   "news:id:f34970395f": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T06:26:30+09:00",
-    "src_hash": "544ab5db8c9b4384c9adde3939f501594b35eb5f63bbcf58dca4ae6571a8ec75",
-    "summary": "俄罗斯誓言重建被毁的克里米亚大桥，可能需要数年",
-    "title": "俄罗斯誓言重建被毁的克里米亚大桥，可能需要数年"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "68b30064bffc6144fe9307d2861cde1263248e47cb2e31335ae4b16584c28ff6",
+    "summary": "重创克里米亚大桥后，乌克兰再次发动袭击",
+    "title": "重创克里米亚大桥后，乌克兰再次发动袭击"
   },
   "news:id:f3ffa984a9": {
     "engine": "zh-v1",
@@ -4627,26 +4608,12 @@
     "summary": "AMD 发布 26.17 Linux 版 Radeon 软件升级：新增支持高带宽 HDMI 等",
     "title": "AMD 发布 26.17 Linux 版 Radeon 软件升级：新增支持高带宽 HDMI 等"
   },
-  "news:id:f51ad669e7": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c428f24cccbad5374ec36d60a56e88d82492cc015aff78e58efb469f945387bc",
-    "summary": "凯利批评赫格塞思关于海军舰艇食物短缺的类比",
-    "title": "凯利批评赫格塞思关于海军舰艇食物短缺的类比"
-  },
   "news:id:f5b600d807": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
     "src_hash": "eb1c03d437034912078763bd655bf59287022ba6bdc6d59be45f9307cb8e3e12",
     "summary": "科威特称击退两个月来伊朗首次袭击，此前美国打击了一座岛屿",
     "title": "科威特称击退两个月来伊朗首次袭击，此前美国打击了一座岛屿"
-  },
-  "news:id:f5da8a11e8": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "916389b31e5ba280b145cc585bad98882f7d2a0e0844ef63360d4b205e4ce64e",
-    "summary": "思维链一作Jason Wei离职！怎么去Meta待一年都跑路",
-    "title": "思维链一作Jason Wei离职！怎么去Meta待一年都跑路"
   },
   "news:id:f5fa8f01f4": {
     "engine": "zh-v1",
@@ -4662,19 +4629,19 @@
     "summary": "Anduril 创始人拉奇谈 AI 网络安全：美国 AI 攻防失衡，长期来看善用 AI 防御的一",
     "title": "Anduril 创始人拉奇谈 AI 网络安全：美国 AI 攻防失衡，长期来看善用 AI 防御的一方将占据优势"
   },
-  "news:id:f7730682cb": {
+  "news:id:f63024d2e1": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "7c21e4c0d98a68368060567727e99dde34fb7505c0ce68f3ed602244fdec67ac",
-    "summary": "科威特报告遭无人机袭击，伊朗与美国在盖什姆岛和巴林互相攻击",
-    "title": "科威特报告遭无人机袭击，伊朗与美国在盖什姆岛和巴林互相攻击"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "94f71d51b98015e0c39ca5085464260aa50ae7052caf6e73887a78c10e07893c",
+    "summary": "英伟达（NVDA）排除黄仁勋回归，创纪录Q3业绩重塑领导层",
+    "title": "英伟达（NVDA）排除黄仁勋回归，创纪录Q3业绩重塑领导层"
   },
-  "news:id:f858a91942": {
+  "news:id:f6ca5ab549": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "5547fe18adf1dfd3882e54b431ed97893bdb8aa9cb94f64c3bc6f34fa53a3b2e",
-    "summary": "微软Windows Server 2028开放测试：默认启用NVMe，新增本地AI推理支持",
-    "title": "微软Windows Server 2028开放测试：默认启用NVMe，新增本地AI推理支持"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "268814aaa646669e536b0aaf9e78e76f945a5cad8741c51ecaab19fd4efe8f08",
+    "summary": "特朗普称与习近平交谈时“简短”提及前英伟达老板黄仁勋的情况",
+    "title": "特朗普称与习近平交谈时“简短”提及前英伟达老板黄仁勋的情况"
   },
   "news:id:f96a8cec9d": {
     "engine": "zh-v1",
@@ -4788,13 +4755,6 @@
     "summary": "SpaceX 数据中心 3.26 million 美元收入回馈孟菲斯，最高 25,000 美元",
     "title": "SpaceX 数据中心 3.26 million 美元收入回馈孟菲斯，最高 25,000 美元"
   },
-  "news:title:'Business as usual': Nvidia's Kress passes first test as board slams door on Huang": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "15e4fddee3970d5a99b21a8475cdf24aa118096c9045852b64a876bae3c30797",
-    "summary": "“一切照常”：英伟达克雷斯通过首次考验，董事会拒绝黄仁勋回归",
-    "title": "“一切照常”：英伟达克雷斯通过首次考验，董事会拒绝黄仁勋回归"
-  },
   "news:title:'The drones don't fly here' - BBC reports from Ukraine's new front line": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -4802,19 +4762,19 @@
     "summary": "“无人机在这里飞不起来”——BBC报道乌克兰新前线",
     "title": "“无人机在这里飞不起来”——BBC报道乌克兰新前线"
   },
-  "news:title:'Who and what comes next': Analysts expect Nvidia investor uncertainty despite earnings beat": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "117fa943f96c1635708e98134209d9e5154011e9c80717c1f04a4b8ebe038413",
-    "summary": "“接下来是谁、是什么”：分析师预计英伟达财报超预期后投资者仍存不确定性",
-    "title": "“接下来是谁、是什么”：分析师预计英伟达财报超预期后投资者仍存不确定性"
-  },
   "news:title:12+ inches of rain possible by Friday night along coast; 18 inches in isolated areas": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T09:26:26+09:00",
-    "src_hash": "8330a87d3d65fa551475269670efc0572030489308ce3118a73a1ff532effcff",
-    "summary": "周五晚前沿海可能降雨超12英寸，局部达18英寸",
-    "title": "周五晚前沿海可能降雨超12英寸，局部达18英寸"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "a5d204a679119f4e18a0b92c43ceb1967bf7072116bab6e6f0e46565e9349659",
+    "summary": "周五晚前沿海可能降雨超12英寸，个别地区达18英寸",
+    "title": "周五晚前沿海可能降雨超12英寸，个别地区达18英寸"
+  },
+  "news:title:2 Words From Nvidia’s Colette Kress That Should Reassure Investors": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "2bb7a24ef8f6ef92abd984cb18e839c9a981ae300883daed7ef4005531dd5091",
+    "summary": "英伟达科莱特·克雷斯的2个词应能让投资者安心",
+    "title": "英伟达科莱特·克雷斯的2个词应能让投资者安心"
   },
   "news:title:2026 CMA Awards live updates: A look at the top highlights and biggest moments": {
     "engine": "zh-v1",
@@ -4822,6 +4782,13 @@
     "src_hash": "68319732a21edf7c47f55899830367a8f80971fc28da9a509d0f68f9c2456ff4",
     "summary": "2026年CMA奖实时更新：精彩亮点与重要时刻",
     "title": "2026年CMA奖实时更新：精彩亮点与重要时刻"
+  },
+  "news:title:2026 CMA Awards: A look at the top highlights and biggest moments": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "cc9a4d854775ee4c64d0c877a116d059c57814877dbbbb2404f2d264d3ceafe5",
+    "summary": "2026年CMA奖：精彩亮点与重大时刻回顾",
+    "title": "2026年CMA奖：精彩亮点与重大时刻回顾"
   },
   "news:title:2026 CMA Awards: Red carpet fashion from Country Music's Biggest Night": {
     "engine": "zh-v1",
@@ -4872,12 +4839,26 @@
     "summary": "3个数字解释为何黄仁勋缺席财报电话会，英伟达股价仍在上涨",
     "title": "3个数字解释为何黄仁勋缺席财报电话会，英伟达股价仍在上涨"
   },
+  "news:title:4 Things the Headlines Missed in Nvidia's First Post-Jensen Earnings Report": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "dd6f1bad88981d95fba9e55b9ca6ec04131ae2ccafa800d101f90c55e5dd82fa",
+    "summary": "英伟达黄仁勋卸任后首份财报中，头条遗漏的4件事",
+    "title": "英伟达黄仁勋卸任后首份财报中，头条遗漏的4件事"
+  },
   "news:title:A Muslim Author Is Suing xAI After People Used Grok to Strip Her Hijab": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
     "src_hash": "640a4059d15d17220682a3bfb0637e2f77688f84854afa9db161b70b3443ac84",
     "summary": "一位穆斯林作家起诉xAI，因有人用Grok脱下她的头巾",
     "title": "一位穆斯林作家起诉xAI，因有人用Grok脱下她的头巾"
+  },
+  "news:title:A Village Burned, Its People Killed or Exiled. Was It Genocide?": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "48fb365949bf625d18887bccdfe93f7492e4992fd6bd75126151c27a9d966cd6",
+    "summary": "村庄被焚毁，居民被杀或流亡，这算种族灭绝吗？",
+    "title": "村庄被焚毁，居民被杀或流亡，这算种族灭绝吗？"
   },
   "news:title:A Visual Tour of President Trump’s Visits to Asia": {
     "engine": "zh-v1",
@@ -4893,12 +4874,12 @@
     "summary": "一场完美风暴正在逼近AI行业",
     "title": "一场完美风暴正在逼近AI行业"
   },
-  "news:title:A tropical Chinese city is half-empty and ready for the summit.": {
+  "news:title:A tech fund manager sold Nvidia before the drama. Here’s why it won’t buy the dip.": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "8574b8fa4378792f3e96b321294914cbfcc853ccbf73f4bbe24d464d5aa2024a",
-    "summary": "一座热带中国城市半空，为峰会做好准备",
-    "title": "一座热带中国城市半空，为峰会做好准备"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "9fa8a5c518943169a1a914da3a15facacdb970fb541442ff4fca726263a3a19c",
+    "summary": "一位科技基金经理在风波前抛售英伟达，称不会抄底",
+    "title": "一位科技基金经理在风波前抛售英伟达，称不会抄底"
   },
   "news:title:A wave of personal AI gadgets is coming": {
     "engine": "zh-v1",
@@ -4941,6 +4922,20 @@
     "src_hash": "b98e3cd848e807b139cc742fc8256e65e240e55e70b93623e1d2d280396a8694",
     "summary": "AI巨头Anthropic在上市前估值最高达1.5万亿美元",
     "title": "AI巨头Anthropic在上市前估值最高达1.5万亿美元"
+  },
+  "news:title:AI in African education: Benefits, risks & policy solutions": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b941f71071bcd3fc8f9b75e589c8578791302bc170e63b1f1731f4d19643a7e3",
+    "summary": "非洲教育中的AI：益处、风险与政策方案",
+    "title": "非洲教育中的AI：益处、风险与政策方案"
+  },
+  "news:title:AI is changing the world. College of Computing and Artificial Intelligence wants to help decide how": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "d8813cf0d620f8043b8d89a13b58bd4984e679e76101e1f5287e04d273c3b32b",
+    "summary": "AI正在改变世界，计算与人工智能学院希望帮助决定其走向",
+    "title": "AI正在改变世界，计算与人工智能学院希望帮助决定其走向"
   },
   "news:title:AI is killing All About Berlin": {
     "engine": "zh-v1",
@@ -5028,10 +5023,17 @@
   },
   "news:title:After A.I. Cheating Scandal, South Korea Adopts New Restrictions for Grueling College Entrance Exam": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "164d55f81c4a3c14c1ec7db1a34f5aa8a46ac778df5ec406b8e09375aeb03df5",
-    "summary": "AI作弊丑闻后，韩国对严苛的高考采取新限制",
-    "title": "AI作弊丑闻后，韩国对严苛的高考采取新限制"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1f787bbbfbf027d2d7492defc7517edecb526a1db9b9782c2375aea9dc182641",
+    "summary": "AI作弊丑闻后，韩国为严苛的高考采取新限制",
+    "title": "AI作弊丑闻后，韩国为严苛的高考采取新限制"
+  },
+  "news:title:After Crippling Crimea Bridge, Ukraine Attacks It Again": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "68b30064bffc6144fe9307d2861cde1263248e47cb2e31335ae4b16584c28ff6",
+    "summary": "重创克里米亚大桥后，乌克兰再次发动袭击",
+    "title": "重创克里米亚大桥后，乌克兰再次发动袭击"
   },
   "news:title:After Nvidia’s Earnings, Here’s My Prediction for the Stock Price by the End of the Year": {
     "engine": "zh-v1",
@@ -5039,6 +5041,13 @@
     "src_hash": "dffbacb0c40c6031aa6e33751ca25f3fb0e5d35c92d7947067d4f7cef417cdb6",
     "summary": "英伟达财报之后，我对年底股价的预测",
     "title": "英伟达财报之后，我对年底股价的预测"
+  },
+  "news:title:After Train Crash, Spain Asks if High-Speed Rail Grew Too Fast": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b5420fae978aef022821c4eda1be21e58c83ce57e67216a1ea73574162f8155a",
+    "summary": "列车事故后，西班牙反思高铁是否发展过快",
+    "title": "列车事故后，西班牙反思高铁是否发展过快"
   },
   "news:title:After a 13-year wait, ‘Grand Theft Auto VI’ arrives with enormous hype and expectations": {
     "engine": "zh-v1",
@@ -5060,13 +5069,6 @@
     "src_hash": "25a79995b505a0b008a911d0cc2715f5b0adeb576228537c19414631eb18c884",
     "summary": "美国和中国的 AI 路径将趋同",
     "title": "美国和中国的 AI 路径将趋同"
-  },
-  "news:title:American soldier arrested in UK taken into US military custody": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "2ef81397113b578b231a3fc0f214566b8a2c32573f0cd4f3c5621a774afb3381",
-    "summary": "在英国被捕的美国士兵移交美军羁押",
-    "title": "在英国被捕的美国士兵移交美军羁押"
   },
   "news:title:Americans misled on Social Security for decades as clock counts down on benefits, explosive report reveals": {
     "engine": "zh-v1",
@@ -5159,6 +5161,13 @@
     "summary": "Anthropic 上市，AI 或将走向大众化",
     "title": "Anthropic 上市，AI 或将走向大众化"
   },
+  "news:title:Anthropic IPO (Live Updates): $81 Billion Raised—Breaking SpaceX’s Record": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "d4678eacf6f99d3ad058e21a48ea54002122ea87ead99cebbcba85b5bd12323d",
+    "summary": "Anthropic IPO（直播更新）：融资810亿美元，打破SpaceX纪录",
+    "title": "Anthropic IPO（直播更新）：融资810亿美元，打破SpaceX纪录"
+  },
   "news:title:Anthropic IPO Price Could Top $80 And Pre-IPO Traders Are Copying the SpaceX Script: What Traders Should Expect": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -5179,13 +5188,6 @@
     "src_hash": "d8d6e2348266901bbdcdeb412e1fdafbb1cccc1a74da7cec3bc21b3cf695187b",
     "summary": "受AI强劲需求推动，Anthropic IPO募资813亿美元创纪录",
     "title": "受AI强劲需求推动，Anthropic IPO募资813亿美元创纪录"
-  },
-  "news:title:Anthropic IPO set to redraw venture capital’s power rankings": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "33e98fb1811faf813e2447c7c0a5b5aa1dd913351a0d61c65777cf5edfbaa0b5",
-    "summary": "Anthropic IPO将重塑风投权力排名",
-    "title": "Anthropic IPO将重塑风投权力排名"
   },
   "news:title:Anthropic IPO to mint thousands of millionaires": {
     "engine": "zh-v1",
@@ -5250,6 +5252,20 @@
     "summary": "Anthropic在强劲需求下将IPO定价为每股83美元",
     "title": "Anthropic在强劲需求下将IPO定价为每股83美元"
   },
+  "news:title:Anthropic Raises $107.3 Billion to Top SpaceX’s Record Debut": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:59+09:00",
+    "src_hash": "e090f279c45f098d3316819edd31bce2de5c4fdca5a397a896a5f62c56ebad8d",
+    "summary": "Anthropic融资107.3 Billion美元（约1073亿），超过SpaceX纪录首秀",
+    "title": "Anthropic融资107.3 Billion美元（约1073亿），超过SpaceX纪录首秀"
+  },
+  "news:title:Anthropic Raises $81 Billion in Biggest IPO Ever": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "3e565bd0aa49602f3f2e27ae07d0ac1e817aa81602fe0d08daf611fe50a31dfb",
+    "summary": "Anthropic融资810亿美元，成史上最大IPO",
+    "title": "Anthropic融资810亿美元，成史上最大IPO"
+  },
   "news:title:Anthropic Said to Be Weighing IPO Price as High as $85 Per Share": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T09:26:26+09:00",
@@ -5294,10 +5310,17 @@
   },
   "news:title:Anthropic prices initial public offering": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "aaaf98ff04f8c5c0a73915c44c9bd792c35cbcff8e5ad7adf01d4770d4ed0ae6",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "978bb622868f0eb5039a9c74aca01855f4566e86499b54e78067927612e3a139",
     "summary": "Anthropic确定首次公开募股价格",
     "title": "Anthropic确定首次公开募股价格"
+  },
+  "news:title:Anthropic retail investors face squeeze in blockbuster IPO": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "c215f1b4b40c8a5af8444d138bd29e9b85a149e38bdb9210aa79f96f717ff95d",
+    "summary": "Anthropic散户投资者在大型IPO中面临挤压",
+    "title": "Anthropic散户投资者在大型IPO中面临挤压"
   },
   "news:title:Anthropic set to price IPO today: Here's what to expect": {
     "engine": "zh-v1",
@@ -5305,6 +5328,20 @@
     "src_hash": "852d60ae33dc0cb386f63a9bdff5bda7e45ab468c7c8cf44de34476dc9873e22",
     "summary": "Anthropic将于今日IPO定价：预期如何",
     "title": "Anthropic将于今日IPO定价：预期如何"
+  },
+  "news:title:Anthropic valued at $1.5 trillion ahead of AI giant's stock market debut": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "8ca6a03c13b73214d0ac914ad93c475b01102368d13bfa1d43e934ee3acec089",
+    "summary": "Anthropic在上市前估值达1.5万亿美元",
+    "title": "Anthropic在上市前估值达1.5万亿美元"
+  },
+  "news:title:Anthropic valued at over $1 trillion in historic IPO": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "c4638c787577124c381f08735a4c3b35269c6e6fb7254de6de672a658e22c593",
+    "summary": "Anthropic在历史性IPO中估值超1万亿美元",
+    "title": "Anthropic在历史性IPO中估值超1万亿美元"
   },
   "news:title:Anthropic vs. OpenAI: The Financial Metrics Behind the AI Battle": {
     "engine": "zh-v1",
@@ -5340,13 +5377,6 @@
     "src_hash": "3f379fc127465f3e908ccdc650c7b28fe61e6af9aa7b40008d63f530a301242d",
     "summary": "Anthropic每股83美元的IPO定价将迎来华尔街创纪录首秀，这意味着什么",
     "title": "Anthropic每股83美元的IPO定价将迎来华尔街创纪录首秀，这意味着什么"
-  },
-  "news:title:Anthropic’s IPO Is the Signal Amid the AI Noise": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "dc7b5a587784854619046ce53ef937a0cf5e2a57eaa7a29e26222d6802537bd8",
-    "summary": "Anthropic的IPO是AI喧嚣中的信号",
-    "title": "Anthropic的IPO是AI喧嚣中的信号"
   },
   "news:title:Anthropic’s IPO asks investors to bet that a product can build a company, not the other way around": {
     "engine": "zh-v1",
@@ -5390,13 +5420,6 @@
     "summary": "Anthropic 的重磅 IPO 出现在 AI 热潮转为恐惧的一年之后",
     "title": "Anthropic 的重磅 IPO 出现在 AI 热潮转为恐惧的一年之后"
   },
-  "news:title:Apec summit live: Xi and Putin start talks; Rubio says Trump serious about meeting Kim Jong-un": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "bc80879a61d1ea76dffbc710e1792fc7aaf7431f81487350f3f08975e710ef96",
-    "summary": "亚太经合组织峰会直播：习近平与普京开始会谈；卢比奥称特朗普认真考虑会见金正恩",
-    "title": "亚太经合组织峰会直播：习近平与普京开始会谈；卢比奥称特朗普认真考虑会见金正恩"
-  },
   "news:title:Apple Reportedly Developing Two Designs for 20th Anniversary iPhone": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -5425,13 +5448,6 @@
     "summary": "Arm CEO雷内·哈斯被英伟达董事会的猎头公司接洽",
     "title": "Arm CEO雷内·哈斯被英伟达董事会的猎头公司接洽"
   },
-  "news:title:Arm's Rene Haas leads Nvidia CEO race, but company ties could be a hurdle: Analyst": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "dcaceb357b0b6210b461e50b54eb8ea5c4f21586050c02e8413f319d1bd1f5e3",
-    "summary": "分析师：Arm的雷内·哈斯领跑英伟达CEO人选，但公司关联可能成障碍",
-    "title": "分析师：Arm的雷内·哈斯领跑英伟达CEO人选，但公司关联可能成障碍"
-  },
   "news:title:As Meta bets big on Muse AI agent, early safety mishaps surface": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -5439,26 +5455,19 @@
     "summary": "Meta大举押注Muse AI智能体，早期安全事故浮现",
     "title": "Meta大举押注Muse AI智能体，早期安全事故浮现"
   },
-  "news:title:Asia stocks choppy after Nvidia earnings as Anthropic pricing looms": {
+  "news:title:At COP31, Venezuela touts AI as path to cleaner oil production": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c9fd8f1af3528ea771cb04aa1e47ac9a1960e55319cbb1804392e8e449de7725",
-    "summary": "英伟达财报后亚洲股市震荡，Anthropic定价在即",
-    "title": "英伟达财报后亚洲股市震荡，Anthropic定价在即"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "f1eea3f0e10c1c834c894d852a97473f8974defb87629e4689cdf549c9c86c05",
+    "summary": "在COP31上，委内瑞拉称AI是更清洁石油生产之路",
+    "title": "在COP31上，委内瑞拉称AI是更清洁石油生产之路"
   },
-  "news:title:Asian Equities Mixed as Investors Parse Nvidia’s Quarterly Results, Guidance": {
+  "news:title:Aung San Suu Kyi did not condemn the pogroms against the Rohingya.": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "1a337ea8d26bc12ebed329608eec9a0fd80f1daae2b691c8bec6a0be3a6099f9",
-    "summary": "投资者消化英伟达季度业绩和指引，亚洲股市涨跌互现",
-    "title": "投资者消化英伟达季度业绩和指引，亚洲股市涨跌互现"
-  },
-  "news:title:Asian markets mostly decline after Wall Street losses as AI stocks swing": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "b2c943f318a81de7e542489ab21bcdd07a10165291511150f6dd08afbf908274",
-    "summary": "华尔街下跌后亚洲市场多数下跌，AI股剧烈波动",
-    "title": "华尔街下跌后亚洲市场多数下跌，AI股剧烈波动"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "47666a0cbe913affd25160f9f86b156b8e79a148b6dc979b27ed812a1970a0d6",
+    "summary": "昂山素季没有谴责针对罗兴亚人的迫害",
+    "title": "昂山素季没有谴责针对罗兴亚人的迫害"
   },
   "news:title:BYD spotted testing another boxy midsize SUV": {
     "engine": "zh-v1",
@@ -5544,13 +5553,6 @@
     "summary": "AI误把多力多滋薯片袋当枪，黑人高中生提起诉讼",
     "title": "AI误把多力多滋薯片袋当枪，黑人高中生提起诉讼"
   },
-  "news:title:Blackhawks' Connor Bedard exits with apparent shoulder injury, set for testing": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "fb6f8ec66b226c101851c8f802e09f436225838a66ee284ad028646624d110a4",
-    "summary": "黑鹰队的康纳·贝达德疑似肩伤离场，将接受检查",
-    "title": "黑鹰队的康纳·贝达德疑似肩伤离场，将接受检查"
-  },
   "news:title:Bond role was ‘Josh O’Connor’s to lose’ but actor pulled out of the running, report suggests": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T09:26:26+09:00",
@@ -5585,13 +5587,6 @@
     "src_hash": "02c33b44a677f8c33e93369b20a934f2eb13d93acae5f80b658651921032ea6d",
     "summary": "英国黑客因GTA 6数据泄露和加密货币盗窃面临牢狱之灾",
     "title": "英国黑客因GTA 6数据泄露和加密货币盗窃面临牢狱之灾"
-  },
-  "news:title:CFP Selection Committee Completes Its Third Rankings of 2026": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "61fb6530feee006337d6f6bbeebc114b45b1917aecbb2bb045a8e671ed3dc081",
-    "summary": "大学橄榄球季后赛遴选委员会完成2026年第三次排名",
-    "title": "大学橄榄球季后赛遴选委员会完成2026年第三次排名"
   },
   "news:title:Can Peer Review Survive AI-Generated Text? [pdf]": {
     "engine": "zh-v1",
@@ -5642,12 +5637,12 @@
     "summary": "卡西迪批评白宫撤回“很可能有票数”的FDA提名人",
     "title": "卡西迪批评白宫撤回“很可能有票数”的FDA提名人"
   },
-  "news:title:Charges shed light on Hopkins Uber driver attack; suspect facing attempted murder": {
+  "news:title:Cathie Wood Doubles Down On ‘Highest Conviction Names’ Nvidia, Tesla and AMD As Cyclical Tech Stocks Get": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "f0340d872ced46c2551622876484f6901593ac82ebeb2a1981305434a5bb1ae2",
-    "summary": "指控披露霍普金斯大学优步司机遇袭案细节，嫌疑人面临谋杀未遂指控",
-    "title": "指控披露霍普金斯大学优步司机遇袭案细节，嫌疑人面临谋杀未遂指控"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "daeb6e14c4d4271608d0882f36271a8853b6efe6deb3a39881e286579eff13b4",
+    "summary": "凯西·伍德加码“最高信念”股英伟达、特斯拉和AMD",
+    "title": "凯西·伍德加码“最高信念”股英伟达、特斯拉和AMD"
   },
   "news:title:China dominates battery graphite, but this startup could break the monopoly": {
     "engine": "zh-v1",
@@ -5670,26 +5665,12 @@
     "summary": "特习峰会前关于中国AI和另外2项的紧急警告",
     "title": "特习峰会前关于中国AI和另外2项的紧急警告"
   },
-  "news:title:Claude was trained on protein sequences at scale": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "28d62fe9f6671c4595dcdda6a45e4a8a766eda4cc6d2bd19647c4e516e64d673",
-    "summary": "Claude曾在大规模蛋白质序列上训练",
-    "title": "Claude曾在大规模蛋白质序列上训练"
-  },
   "news:title:Claude-maker Anthropic poised for more than $1.4tn stock market debut": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
     "src_hash": "233d3ce5499ee3b74e68fd430fa7bbc64c27579ec3bad9292b250476bc87687b",
     "summary": "Claude开发商Anthropic有望以超1.4万亿美元市值上市",
     "title": "Claude开发商Anthropic有望以超1.4万亿美元市值上市"
-  },
-  "news:title:Colette Kress Just Delivered Excellent News for Nvidia Investors": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "2d27fc6fd45a24294b9b1818e146f191cb0f915cf53bbf338bdf42aef7973381",
-    "summary": "科莱特·克雷斯为英伟达投资者带来好消息",
-    "title": "科莱特·克雷斯为英伟达投资者带来好消息"
   },
   "news:title:College basketball rankings: Duke plummets in updated Top 25 And 1 after embarrassing home loss to Illinois": {
     "engine": "zh-v1",
@@ -5742,10 +5723,10 @@
   },
   "news:title:Cornyn blocks Trump’s nomination to federal district court because he didn’t choose a Texan": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "801b6303983e8d9344eeb29577a07b3c0b2a726f6594d3ee060316cfde1a8150",
-    "summary": "科宁阻止特朗普的联邦地区法院提名，因其未选德州人",
-    "title": "科宁阻止特朗普的联邦地区法院提名，因其未选德州人"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "554f8ff358958bd2be3192927526d7b8c5dfe23e371757af67566cad5cd7b86b",
+    "summary": "参议员科宁阻止特朗普的联邦地区法院提名，因其人选不是得州人",
+    "title": "参议员科宁阻止特朗普的联邦地区法院提名，因其人选不是得州人"
   },
   "news:title:Could SpaceX Actually Climb 465%? Or Is Raymond James Totally Wrong?": {
     "engine": "zh-v1",
@@ -5760,6 +5741,13 @@
     "src_hash": "07ea30fd96197da51014a814c75c41fc4df73d17684f31562427f50efaeb8b49",
     "summary": "俄方任命的克里米亚州长称克里米亚大桥再次遭袭",
     "title": "俄方任命的克里米亚州长称克里米亚大桥再次遭袭"
+  },
+  "news:title:Crimean Bridge attacked again, Russia says": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "dba5cc53cdd56ca2f369d486db561a1636ff2325a8dd4b68c5e9b4c576ba6ad6",
+    "summary": "俄方称克里米亚大桥再遭袭击",
+    "title": "俄方称克里米亚大桥再遭袭击"
   },
   "news:title:Crimean Bridge attacked again, Russian official says": {
     "engine": "zh-v1",
@@ -5831,19 +5819,19 @@
     "summary": "SpaceX股票粉丝们，请标记11月19日",
     "title": "SpaceX股票粉丝们，请标记11月19日"
   },
-  "news:title:Deepfake Elon Musk Scam: Coinbase Says AI Blocked $4.7M": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "101c5f7d3d09e75f5fc46424e00f6b2d3272d0a0498557511e644579c3afcf5f",
-    "summary": "马斯克深度伪造诈骗：Coinbase称AI拦截470万美元",
-    "title": "马斯克深度伪造诈骗：Coinbase称AI拦截470万美元"
-  },
   "news:title:Democrat Hakeem Jeffries nominated to be first Black speaker of House next year": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "ea96af4b066a558601aa83c5c1cf2cbd127823f17978bf46fc8e6a357a6bf9b2",
-    "summary": "民主党人哈基姆·杰弗里斯获提名，将成为明年首位黑人众议院议长",
-    "title": "民主党人哈基姆·杰弗里斯获提名，将成为明年首位黑人众议院议长"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "533a32d1a69af2d80855f0097bb0138d185905a3279b7c5177912b772d8cf275",
+    "summary": "民主党人杰弗里斯获提名，将成明年首位黑人众议院议长",
+    "title": "民主党人杰弗里斯获提名，将成明年首位黑人众议院议长"
+  },
+  "news:title:Democrats flipped 9 U.S. Senate seats — the most in almost 70 years": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "0e8cf6f81d2b54026aab36e18cd5623f2d0a92eac78987474369baff53b937e7",
+    "summary": "民主党赢得9个美国参议院席位，为近70年来最多",
+    "title": "民主党赢得9个美国参议院席位，为近70年来最多"
   },
   "news:title:Democrats formally nominate Rep. Hakeem Jeffries, paving way for him to be the first Black speaker": {
     "engine": "zh-v1",
@@ -5893,6 +5881,13 @@
     "src_hash": "d03c635798c134a55f5a2c622e21c896033e71e3004ae6fab9527c1cf138a187",
     "summary": "道指下跌500点，纳指震荡，英伟达财报行情消退：实时更新",
     "title": "道指下跌500点，纳指震荡，英伟达财报行情消退：实时更新"
+  },
+  "news:title:E-quipment highlight: 110 hp Greenworks OPTIMUS electric UTV [video]": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "ab958fb295273dcdb9b32844c20304296e1cc3f10eb9684a6e798524e76494cf",
+    "summary": "设备亮点：110马力Greenworks OPTIMUS电动多功能车［视频］",
+    "title": "设备亮点：110马力Greenworks OPTIMUS电动多功能车［视频］"
   },
   "news:title:ENGWE Eagle e-dirt bike new $799 low + M20 3.0 e-bike $647 off, Anker eufy Wall Light Cam S4 new lows from $150, more": {
     "engine": "zh-v1",
@@ -5985,6 +5980,13 @@
     "summary": "马斯克称 SpaceX 回收的 Starship 经数周翻新后可能再次飞行",
     "title": "马斯克称 SpaceX 回收的 Starship 经数周翻新后可能再次飞行"
   },
+  "news:title:Elon Musk Says Starship Catch Clears Major Hurdle for SpaceX's Plan to Move AI Computing Into Orbit: 'Las": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "5890e223ebfe6da63ed52a8703cfcbf6c3cb12275030c20836f8190db9b057bf",
+    "summary": "马斯克称星舰回收越过重大障碍，利好SpaceX将AI算力送入轨道的计划",
+    "title": "马斯克称星舰回收越过重大障碍，利好SpaceX将AI算力送入轨道的计划"
+  },
   "news:title:Elon Musk Told SNL to \"Try Harder.\" Why His Reaction Is a Warning for Every Founder on Social Media": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -6055,12 +6057,26 @@
     "summary": "马斯克在为特朗普及其盟友花费数百万美元后称自己“不是MAGA”",
     "title": "马斯克在为特朗普及其盟友花费数百万美元后称自己“不是MAGA”"
   },
+  "news:title:Elon Musk says his 6-year-old son loves China because it’s a ‘toy paradise’": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "85e9e452e0ef31e54d193530dec070d28ff78430024ca0cc75bc942847373080",
+    "summary": "马斯克称6岁儿子喜欢中国，因为那是“玩具天堂”",
+    "title": "马斯克称6岁儿子喜欢中国，因为那是“玩具天堂”"
+  },
   "news:title:Elon Musk says ousting Jensen Huang is like ‘kicking Michael Jordan off your team’": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
     "src_hash": "78a3f9dfaf3952cd648c61cfc0ddfba51333d96b3a0718be73cb28319051c9fc",
     "summary": "马斯克称罢免黄仁勋如同“把迈克尔·乔丹踢出球队”",
     "title": "马斯克称罢免黄仁勋如同“把迈克尔·乔丹踢出球队”"
+  },
+  "news:title:Elon Musk says record $446m spending on US midterms was 'pretty foolish'": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "627415690fb5358944aa5d5e20167ccdc7458b782815e1fc43f002d393e16dd3",
+    "summary": "马斯克称在美国中期选举上创纪录的4.46亿美元（$446m）支出“相当愚蠢”",
+    "title": "马斯克称在美国中期选举上创纪录的4.46亿美元（$446m）支出“相当愚蠢”"
   },
   "news:title:Elon Musk says: ‘I’m not MAGA’": {
     "engine": "zh-v1",
@@ -6076,12 +6092,26 @@
     "summary": "马斯克试图解释乌克兰与星链的最新状况",
     "title": "马斯克试图解释乌克兰与星链的最新状况"
   },
+  "news:title:Elon Musk turns back on MAGA": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "ef981c7e07b2bdb3562a360c0d55e7b8cd09cfd9b284882d378fe18a542e328d",
+    "summary": "埃隆·马斯克转身背离MAGA",
+    "title": "埃隆·马斯克转身背离MAGA"
+  },
   "news:title:Elon Musk's Jet Logged Stops Across Texas and Several Other States in Third Quarter, Flight Tracking Shows - Avi-Go": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
     "src_hash": "2f211a5a2c505c61b8e7e978feedfb26223c00c0d6104c1a4aaf690a8e0fe978",
     "summary": "马斯克的私人飞机第三季度停靠德州及其他多个州，航班追踪显示",
     "title": "马斯克的私人飞机第三季度停靠德州及其他多个州，航班追踪显示"
+  },
+  "news:title:Elon Musk, GOP Megadonor and MAGA Hat Wearer, Says He Is “Not MAGA”": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "223a4ec907b0c66f5aefd4770655fd8cd792cda6d4589bdf3ce81ad36f22b020",
+    "summary": "共和党大金主、戴MAGA帽的马斯克称自己“不是MAGA”",
+    "title": "共和党大金主、戴MAGA帽的马斯克称自己“不是MAGA”"
   },
   "news:title:Elon Musk: If I could rewind the clock, I would have spent less money on U.S. midterms": {
     "engine": "zh-v1",
@@ -6167,13 +6197,6 @@
     "summary": "洛杉矶问题垃圾填埋场周边爆发爆炸性垃圾喷泉，加剧健康危机担忧",
     "title": "洛杉矶问题垃圾填埋场周边爆发爆炸性垃圾喷泉，加剧健康危机担忧"
   },
-  "news:title:FAA holds first online public meetings on SpaceX request to expand Boca Chica launches": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "9dd956219a96025655f10a12e221e4d2a105cfa355d714af4c2b260b1548593d",
-    "summary": "FAA就SpaceX扩大博卡奇卡发射申请举行首次线上公众会议",
-    "title": "FAA就SpaceX扩大博卡奇卡发射申请举行首次线上公众会议"
-  },
   "news:title:FAA oversaw and signed off on repair work before nationwide ground stop": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -6230,6 +6253,13 @@
     "summary": "对师生而言，AI 正迫使人们讨论在 AI 世界中如何学与教",
     "title": "对师生而言，AI 正迫使人们讨论在 AI 世界中如何学与教"
   },
+  "news:title:Four Maryland high school students sue after AI mistakes Doritos bag for gun": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "bd2c4baf6fa2272514c7cd4143d04977f2cec477a38d8a6be82cf0945e6cd423",
+    "summary": "AI把多力多滋袋子误认为枪，四名马里兰高中生起诉",
+    "title": "AI把多力多滋袋子误认为枪，四名马里兰高中生起诉"
+  },
   "news:title:Four takeaways from Nvidia’s first earnings report after Jensen Huang scandal": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -6250,13 +6280,6 @@
     "src_hash": "aa4d1d8c05e0340dc093357e3b0bc6accc3c843c28d0310c54a753cf795e02c9",
     "summary": "炸鸡和与老友聊天：马科斯如何款待特朗普",
     "title": "炸鸡和与老友聊天：马科斯如何款待特朗普"
-  },
-  "news:title:Fund managers bid big for Anthropic stake, but manage expectations": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c818226f90210db82bcd41bdb74b966ccb62f79978a165e6dfc6af491e749797",
-    "summary": "基金经理竞相认购Anthropic股份，但需降低预期",
-    "title": "基金经理竞相认购Anthropic股份，但需降低预期"
   },
   "news:title:Futures Mixed; Nvidia Tops, Fed's Waller Warns Of 'Shock' Rate Hike": {
     "engine": "zh-v1",
@@ -6335,6 +6358,13 @@
     "summary": "高盛和摩根士丹利对AI过于乐观了",
     "title": "高盛和摩根士丹利对AI过于乐观了"
   },
+  "news:title:Google AI Ultra upgrade adds YouTube Premium Family": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "76c2c29110890d4ce4eb5675cf877cc7979e223082001fefb75360140056b681",
+    "summary": "谷歌 AI Ultra 升级新增 YouTube Premium 家庭版",
+    "title": "谷歌 AI Ultra 升级新增 YouTube Premium 家庭版"
+  },
   "news:title:Google And Amazon Will Own More Anthropic Stock Than All Cofounders Combined": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T15:34:22+09:00",
@@ -6355,6 +6385,13 @@
     "src_hash": "48ad1b66526922564fdb85d4050a0333cafe5e2e400e3f53cca99269152459fa",
     "summary": "谷歌Home音箱将“很快”获得重大Gemini升级，但仅限付费订阅用户",
     "title": "谷歌Home音箱将“很快”获得重大Gemini升级，但仅限付费订阅用户"
+  },
+  "news:title:Google declines UK request for Russell Brand YouTube video to be removed, sources say": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "ac95cf60ee9eef55233023bbb0e2f53d839f7a9028d3f8407ad1042f6cc38647",
+    "summary": "谷歌拒绝英国删除拉塞尔·布兰德YouTube视频的要求，消息人士称",
+    "title": "谷歌拒绝英国删除拉塞尔·布兰德YouTube视频的要求，消息人士称"
   },
   "news:title:Google launches Gemini 4 Neon with Carbon quality at Flash speeds, live for AI Pro": {
     "engine": "zh-v1",
@@ -6426,19 +6463,19 @@
     "summary": "是黑客、AI还是更新拖延？为何近来宕机频发",
     "title": "是黑客、AI还是更新拖延？为何近来宕机频发"
   },
+  "news:title:Half a world from The Hague, Rohingya refugees know nothing of a genocide trial.": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "de1d4d6455528f01db53baebae021a491ed0fec55308b88c9757a9af6c40012f",
+    "summary": "远在海牙之外，罗兴亚难民对种族灭绝审判一无所知",
+    "title": "远在海牙之外，罗兴亚难民对种族灭绝审判一无所知"
+  },
   "news:title:Health Costs Are Way Up. Can You Trust AI to Help You Save?": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
     "src_hash": "c96a3e900725685057ac5c55d3e78386ed994715861fee01239496044e442723",
     "summary": "医疗费用大涨。能相信AI帮你省钱吗？",
     "title": "医疗费用大涨。能相信AI帮你省钱吗？"
-  },
-  "news:title:Helping AI text detectors keep up with changing conditions": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "06a06c6dde5067557903c0e0d258c1513cc080af6f2a2303a5a36c80e3a81ce9",
-    "summary": "帮助AI文本检测器适应不断变化的条件",
-    "title": "帮助AI文本检测器适应不断变化的条件"
   },
   "news:title:Here are Wednesday's biggest analyst calls: Nvidia, SpaceX, Tesla, Apple, Microsoft, Oracle, Coca-Cola & more": {
     "engine": "zh-v1",
@@ -6449,10 +6486,10 @@
   },
   "news:title:Here’s the latest.": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T12:30:48+09:00",
-    "src_hash": "65723a8d155a0e57122e2227ea622f709af7155cacb6668039d05a10df81772a",
-    "summary": "最新消息如下。",
-    "title": "最新消息如下。"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "fbeead929352823db34269a974815a73be28413ef0a110a62d26d3c3c1f2c531",
+    "summary": "最新进展如下。",
+    "title": "最新进展如下。"
   },
   "news:title:House Democrat warns a dozen Trump allies to save their records, calling it ‘just the beginning’": {
     "engine": "zh-v1",
@@ -6489,6 +6526,13 @@
     "summary": "AI如何改变学术界和艺术界",
     "title": "AI如何改变学术界和艺术界"
   },
+  "news:title:How Everyday Investors Are Playing the Nvidia Drama": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "7674dfa0ad5a87ef249a6595fd186ca728b410a0449a662bbbc495594692c88b",
+    "summary": "普通投资者如何参与英伟达风波中的交易",
+    "title": "普通投资者如何参与英伟达风波中的交易"
+  },
   "news:title:How I Used AI to Make My Grandson a Children’s Book for Less Than $200": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T09:26:26+09:00",
@@ -6512,8 +6556,8 @@
   },
   "news:title:How We Broke Open the Nvidia Investigation": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T12:30:48+09:00",
-    "src_hash": "86490e8d8ba2d9755ac18386bbc9ed1900462ffaf31e407e52b9dba67b499d1d",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "86adcc5ddf1f4cdf395a52b856a0875e19c0a3fb980f0c5b40c62d6ae17eed8a",
     "summary": "我们如何揭开英伟达调查的内幕",
     "title": "我们如何揭开英伟达调查的内幕"
   },
@@ -6523,6 +6567,20 @@
     "src_hash": "6c594d1dcef13e4db9c3d63bf129708e910cb30d29323238c2edf7650011cc29",
     "summary": "Anthropic的IPO与SpaceX相比如何",
     "title": "Anthropic的IPO与SpaceX相比如何"
+  },
+  "news:title:How the War in Iran Will Remake the Global Energy Order": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "6d9855183c702787f3ad9b21324230b7e5b843b357328d3cbd0bc889f0cbbff6",
+    "summary": "伊朗战争将如何重塑全球能源秩序",
+    "title": "伊朗战争将如何重塑全球能源秩序"
+  },
+  "news:title:How to Decode the Xi-Trump Hug": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "3e0335930a27a5737676ded062cf183b02d3cefc95135273211ca8db7abfa1d7",
+    "summary": "如何解读习近平与特朗普的拥抱",
+    "title": "如何解读习近平与特朗普的拥抱"
   },
   "news:title:I Bought an AI Tool for My HR Team. It Failed. So I Built My Own": {
     "engine": "zh-v1",
@@ -6537,6 +6595,13 @@
     "src_hash": "c1ad12bb0d6145aa6c01801d3bdf794039ad70e4fb77a455f34e893a4eff3f11",
     "summary": "我是资深对冲基金投资者，黄仁勋辞职为何没吓跑我对英伟达股票的信心",
     "title": "我是资深对冲基金投资者，黄仁勋辞职为何没吓跑我对英伟达股票的信心"
+  },
+  "news:title:ICJ to rule on Rohingya genocide case against Myanmar: What’s at stake?": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1ff06a56323a460a0fb8c13a4b27c77f0218b2cf10615a623093dd674a4478d5",
+    "summary": "国际法院将裁决罗兴亚人诉缅甸种族灭绝案：利害何在？",
+    "title": "国际法院将裁决罗兴亚人诉缅甸种族灭绝案：利害何在？"
   },
   "news:title:IGN 给《GTA 6》打出 10 分满分：史无前例，难以置信，不容错过": {
     "engine": "zh-v1",
@@ -6565,6 +6630,13 @@
     "src_hash": "8a2ed1913622e250a4cd33478b54c109ee13e6694067153bfdfae76e402d0aee",
     "summary": "罕见之举：习近平在特朗普抵达中国时迎接",
     "title": "罕见之举：习近平在特朗普抵达中国时迎接"
+  },
+  "news:title:In the 'Year of AI,' the humanities ask what makes us human": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "102f3b979f6801488d8e0edf8980344a16714378b4a89b7984e8f6a692346805",
+    "summary": "在“AI之年”，人文学科追问何为人",
+    "title": "在“AI之年”，人文学科追问何为人"
   },
   "news:title:India is not in the room at Shenzhen, but it’s watching closely.": {
     "engine": "zh-v1",
@@ -6621,13 +6693,6 @@
     "src_hash": "b55f0c910c6572b4f17411a7f2ca7924f729de8e7feb573ca32da5c51c0f39ca",
     "summary": "Instagram的\"校园安全\"举措也是吸引更多青少年使用应用的手段",
     "title": "Instagram的\"校园安全\"举措也是吸引更多青少年使用应用的手段"
-  },
-  "news:title:Interim Nvidia CEO Says It’s No Longer Sending AI Chips to China": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "69e27c3fcbe45fafbe44ad456ddd477b0f19f4d56c4cf7075a3c4710eb7ed1af",
-    "summary": "英伟达临时CEO称不再向中国出货AI芯片",
-    "title": "英伟达临时CEO称不再向中国出货AI芯片"
   },
   "news:title:Invested in Nvidia? Here's how financial planners say you should handle your portfolio": {
     "engine": "zh-v1",
@@ -6706,26 +6771,12 @@
     "summary": "Java 语言曝出安全漏洞，美国、韩国紧急呼吁用户安装安全更新",
     "title": "Java 语言曝出安全漏洞，美国、韩国紧急呼吁用户安装安全更新"
   },
-  "news:title:Jeff Bezos has some advice for Nvidia’s board on its CEO search": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c92039e09675bcbd3fe892b973efd8d015e2048a52ee7baf16daa93016051686",
-    "summary": "贝佐斯就英伟达董事会的CEO人选给出建议",
-    "title": "贝佐斯就英伟达董事会的CEO人选给出建议"
-  },
   "news:title:Jensen Huang Scandal: Timeline That Led To His Resignation—And Potential Comeback": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
     "src_hash": "60c462b257bace2b9f8ed760c1aaf63a4eb4b936a008480de02e8250707d5f09",
     "summary": "黄仁勋丑闻：导致他辞职的时间线与可能的复出",
     "title": "黄仁勋丑闻：导致他辞职的时间线与可能的复出"
-  },
-  "news:title:Jensen Huang agrees to testify in Senate": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e6cfd02b0c650aca416cbfe7701960abc57d4ef968980ecbcc3ffc6a76d75e59",
-    "summary": "黄仁勋同意在参议院作证",
-    "title": "黄仁勋同意在参议院作证"
   },
   "news:title:Jensen Huang and Howard Lutnick will appear publicly before a powerful Senate panel": {
     "engine": "zh-v1",
@@ -6748,6 +6799,13 @@
     "summary": "黄仁勋的陨落显示了投资SpaceX、Anthropic这类公司的风险",
     "title": "黄仁勋的陨落显示了投资SpaceX、Anthropic这类公司的风险"
   },
+  "news:title:Jensen Huang's Return to Nvidia Ruled Out as 'Zero' Chance; Reporter Predicts He'll Raise $50 Billion to Launch New Venture": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "194315812c7fbe32ad48426adc8584eef58b42a4778b7eb92c61150bdcfd5831",
+    "summary": "黄仁勋回归英伟达“零”可能，记者预测他将融资500亿美元创办新企业",
+    "title": "黄仁勋回归英伟达“零”可能，记者预测他将融资500亿美元创办新企业"
+  },
   "news:title:Jim Cramer says Nvidia has a new problem — and it has nothing to do with earnings": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T15:34:22+09:00",
@@ -6762,12 +6820,12 @@
     "summary": "胡里奥·伊格莱西亚斯因涉嫌性犯罪面临法院调查",
     "title": "胡里奥·伊格莱西亚斯因涉嫌性犯罪面临法院调查"
   },
-  "news:title:Kelly knocks Hun Cao’s analogy about food shortages on Navy ships": {
+  "news:title:Kevin O’Leary Sees No Way Back for Jensen Huang at Nvidia: ‘Forget About the Affairs...There’s Another Problem’": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c428f24cccbad5374ec36d60a56e88d82492cc015aff78e58efb469f945387bc",
-    "summary": "凯利批评赫格塞思关于海军舰艇食物短缺的类比",
-    "title": "凯利批评赫格塞思关于海军舰艇食物短缺的类比"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b1cd35f504c4575778cf8ba93726791ca316db0af3192268ef58280f68b65735",
+    "summary": "凯文·奥利里认为黄仁勋无法回归英伟达：“别管那些风流韵事……还有另一个问题”",
+    "title": "凯文·奥利里认为黄仁勋无法回归英伟达：“别管那些风流韵事……还有另一个问题”"
   },
   "news:title:Key House Republican pours cold water on $50 billion FAA funding ask": {
     "engine": "zh-v1",
@@ -6783,19 +6841,19 @@
     "summary": "克雷斯在英伟达业绩上挑大梁，芯片商业绩超预期",
     "title": "克雷斯在英伟达业绩上挑大梁，芯片商业绩超预期"
   },
-  "news:title:Kuwait reports drone attacks as Iran, US trade attacks on Qeshm and Bahrain": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "7c21e4c0d98a68368060567727e99dde34fb7505c0ce68f3ed602244fdec67ac",
-    "summary": "科威特报告遭无人机袭击，伊朗与美国在盖什姆岛和巴林互相攻击",
-    "title": "科威特报告遭无人机袭击，伊朗与美国在盖什姆岛和巴林互相攻击"
-  },
   "news:title:Kuwait says it repelled first Iranian attack in two months after US strikes island": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
     "src_hash": "eb1c03d437034912078763bd655bf59287022ba6bdc6d59be45f9307cb8e3e12",
     "summary": "科威特称击退两个月来伊朗首次袭击，此前美国打击了一座岛屿",
     "title": "科威特称击退两个月来伊朗首次袭击，此前美国打击了一座岛屿"
+  },
+  "news:title:L.A. County issues evacuation warnings as storm nears; snow, flooding expected": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "43e84c92f8c8c21104b9ba0680786f5529936cdff73e2d82e275cc089586b925",
+    "summary": "风暴临近，洛杉矶县发布疏散警告，预计降雪和洪水",
+    "title": "风暴临近，洛杉矶县发布疏散警告，预计降雪和洪水"
   },
   "news:title:LLM assisted reverse engineering": {
     "engine": "zh-v1",
@@ -6832,6 +6890,13 @@
     "summary": "中日领导人在政治争端之际会面",
     "title": "中日领导人在政治争端之际会面"
   },
+  "news:title:Leading House Democrat targets Trump’s inner circle for first investigations": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "d6f6e59ffc791598596fb33e916570bfd8a97c27f36c8825448bab5f6161b8aa",
+    "summary": "众议院民主党领袖瞄准特朗普核心圈，启动首批调查",
+    "title": "众议院民主党领袖瞄准特朗普核心圈，启动首批调查"
+  },
   "news:title:Leading the next era of AI-enabled drug discovery": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T09:26:26+09:00",
@@ -6845,6 +6910,13 @@
     "src_hash": "f83924002143e6a5d6c1d1a9c02dac002cbf61054521a310cdb52de4f6bc8c55",
     "summary": "直播更新：习近平罕见地在特朗普抵华时迎接",
     "title": "直播更新：习近平罕见地在特朗普抵华时迎接"
+  },
+  "news:title:Live Updates: Trump Holds 1st Summit With Xi and Putin, Whom He Calls ‘Friend’": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "646bce79e84990c250fc113e0c69fce49effbb4e56c4c3a4196100a87c7262ec",
+    "summary": "直播：特朗普举行第1次与习近平、普京的峰会，称二人为“朋友”",
+    "title": "直播：特朗普举行第1次与习近平、普京的峰会，称二人为“朋友”"
   },
   "news:title:MAGA’s Richest Backer Brutally Dumps Trump—While Traveling With Him": {
     "engine": "zh-v1",
@@ -6860,33 +6932,12 @@
     "summary": "管理前沿AI风险：从训练到部署",
     "title": "管理前沿AI风险：从训练到部署"
   },
-  "news:title:Marcos Is Hosting Trump on Grounds Where He Spent Much of His Childhood": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "08bb78539e3fea44f14e9d976657e0ee6f8b9a585d64e0014a445131a305cade",
-    "summary": "马科斯在自己童年时期大部分时间生活的场地接待特朗普",
-    "title": "马科斯在自己童年时期大部分时间生活的场地接待特朗普"
-  },
-  "news:title:Markwayne Mullin Defends Flight to L.S.U.-Texas Game After Ground Stop": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "5fb4f888eaba2294f2472a9fa42251e926fd75fa8548db81dcbf0a6e01ca34c6",
-    "summary": "马克韦恩·马林为停飞后前往路易斯安那州立大学对德克萨斯大学比赛的行程辩护",
-    "title": "马克韦恩·马林为停飞后前往路易斯安那州立大学对德克萨斯大学比赛的行程辩护"
-  },
   "news:title:Markwayne Mullin Is in Hot Seat After String of Glitches (and a Football Game)": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T09:26:26+09:00",
     "src_hash": "c1eb655a242dc5708b10134b93ae1ff5cbb803bef15d272f60d676bee96e815b",
     "summary": "马克韦恩·马林在一连串故障（和一场橄榄球赛）后处境艰难",
     "title": "马克韦恩·马林在一连串故障（和一场橄榄球赛）后处境艰难"
-  },
-  "news:title:Mary Peltola beats Republican Dan Sullivan in Alaska to give Democrats 56 Senate seats": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "67fed74e4825d4489608399e642aa7f61c863712350d734326ec9b142f526daa",
-    "summary": "佩尔托拉在阿拉斯加击败共和党人沙利文，民主党获56个参议院席位",
-    "title": "佩尔托拉在阿拉斯加击败共和党人沙利文，民主党获56个参议院席位"
   },
   "news:title:Mary Peltola flips Alaska seat, giving Democrats a 56-44 edge in Senate": {
     "engine": "zh-v1",
@@ -6946,10 +6997,10 @@
   },
   "news:title:Moody’s Lowers Nvidia’s Ratings Outlook to Stable From Positive": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T12:30:48+09:00",
-    "src_hash": "e186d1138a14241bcf45876d979778dc31051ecb692d074a551f9164d6e25efa",
-    "summary": "穆迪将英伟达评级展望从“正面”下调至“稳定”",
-    "title": "穆迪将英伟达评级展望从“正面”下调至“稳定”"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "4773af2ae2d384db5f38a40a70565f0b702f42ea07ce805ac67ce7b00c65bbf8",
+    "summary": "穆迪将英伟达评级展望由正面下调至稳定",
+    "title": "穆迪将英伟达评级展望由正面下调至稳定"
   },
   "news:title:More banks say customers using AI agents are on their own — even if they get hacked": {
     "engine": "zh-v1",
@@ -6979,12 +7030,40 @@
     "summary": "马斯克称SpaceX首批员工被告知\"可能会死\"，星舰回收为24年豪赌画上句号",
     "title": "马斯克称SpaceX首批员工被告知\"可能会死\"，星舰回收为24年豪赌画上句号"
   },
+  "news:title:Musk accuses Zelenskyy of lying about Starshield restrictions in Ukraine": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "07f5155858c9505e393e7f921831ba67e95a2855ff432900f3e7337f5431f097",
+    "summary": "马斯克指责泽连斯基在乌克兰星盾限制问题上撒谎",
+    "title": "马斯克指责泽连斯基在乌克兰星盾限制问题上撒谎"
+  },
   "news:title:Musk on midterms spending: ‘I feel pretty foolish’": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T15:34:22+09:00",
     "src_hash": "22ad49497ae5ad0318c2dc75e0f58f88ce93126701fe72303a11587066b6ea53",
     "summary": "马斯克谈中期选举花费：“我觉得自己挺傻的”",
     "title": "马斯克谈中期选举花费：“我觉得自己挺傻的”"
+  },
+  "news:title:Musk pledges higher Tesla output at China plant, Chinese state media says": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "a5d974224040f669dd1ef94dbd57d31d918eba34b0f6bed1d5a2d822aa5a288d",
+    "summary": "中国官媒称马斯克承诺提高特斯拉中国工厂产量",
+    "title": "中国官媒称马斯克承诺提高特斯拉中国工厂产量"
+  },
+  "news:title:Musk regrets nearly $500 million midterm elections spending, says he’s not MAGA - ABC News": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "bf9aef816b7f152fdb5c26c9ab1182ab07db5c4be5d504ae46539446f5ae70db",
+    "summary": "马斯克后悔近5亿美元（约$500 million）中期选举支出，称自己不是MAGA",
+    "title": "马斯克后悔近5亿美元（约$500 million）中期选举支出，称自己不是MAGA"
+  },
+  "news:title:Musk says he feels ‘foolish’ after GOP election spending spree": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b05d5133ab9b07f7fed6e28dd9115c1a623cff103de69ae1bcf4e36bb60f1d7c",
+    "summary": "马斯克称在共和党选举支出狂潮后感到“愚蠢”",
+    "title": "马斯克称在共和党选举支出狂潮后感到“愚蠢”"
   },
   "news:title:Musk's xAI urges US appeals court to block California AI disclosure law": {
     "engine": "zh-v1",
@@ -7049,13 +7128,6 @@
     "summary": "NASA旅行者1号探测器现在已在一光日之外",
     "title": "NASA旅行者1号探测器现在已在一光日之外"
   },
-  "news:title:NVIDIA Announces Financial Results for Third Quarter Fiscal 2027": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "1d52ca288280a6dd4e3d4e17f874556e6ce1bb8c73337bbd6149e76257afbb4c",
-    "summary": "英伟达公布2027财年第三季度财务业绩",
-    "title": "英伟达公布2027财年第三季度财务业绩"
-  },
   "news:title:NYC Comptroller Says Pensions Are Ready to Fight for AI Safety": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -7084,12 +7156,33 @@
     "summary": "尼泊尔带着严峻需求来到COP31，这是对世界的一次考验",
     "title": "尼泊尔带着严峻需求来到COP31，这是对世界的一次考验"
   },
+  "news:title:Netanyahu Associates Acknowledge Role in Setting Off Election Day Arrests": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "88628695ecf9a339d4a11d5ef6125172b506ad84e169aa9a4a8b4bf2022a4997",
+    "summary": "内塔尼亚胡身边人士承认在选举日抓捕行动中起了作用",
+    "title": "内塔尼亚胡身边人士承认在选举日抓捕行动中起了作用"
+  },
   "news:title:Newsom touts an AI kill switch to halt dangerous OpenAI, Anthropic releases": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
     "src_hash": "9484f2073c7869d8fd9721a38aa7379362ceadb87978fb7d498f2c42fb6675c8",
     "summary": "纽森鼓吹设立AI“紧急停止开关”，以阻止OpenAI、Anthropic发布危险模型",
     "title": "纽森鼓吹设立AI“紧急停止开关”，以阻止OpenAI、Anthropic发布危险模型"
+  },
+  "news:title:Nuclear arms and ending wars in Iran and Ukraine will top the agenda at Trump-Xi-Putin meeting": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "95993d4c6e92e9eb73e53d1c2dea41db98c61b897ef3d568e458006504760a73",
+    "summary": "核武器与结束伊朗、乌克兰战争将成特朗普、习近平、普京会晤首要议题",
+    "title": "核武器与结束伊朗、乌克兰战争将成特朗普、习近平、普京会晤首要议题"
+  },
+  "news:title:Nvidia (NVDA) Rules Out Jensen Huang Return As Record Q3 Reshapes Leadership": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "94f71d51b98015e0c39ca5085464260aa50ae7052caf6e73887a78c10e07893c",
+    "summary": "英伟达（NVDA）排除黄仁勋回归，创纪录Q3业绩重塑领导层",
+    "title": "英伟达（NVDA）排除黄仁勋回归，创纪录Q3业绩重塑领导层"
   },
   "news:title:Nvidia Chaos Is the Perfect Setup for Anthropic IPO": {
     "engine": "zh-v1",
@@ -7112,20 +7205,6 @@
     "summary": "英伟达财报与预期均超预期",
     "title": "英伟达财报与预期均超预期"
   },
-  "news:title:Nvidia Earnings: Business as Usual as Forecasts Suggest That All Is Well and Shares Are Cheap": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "2366b93d54e9a261b0193dbba3aacd05df78148efbeb038973fdf1733035244e",
-    "summary": "英伟达财报：一切照常，预测显示形势良好、股价便宜",
-    "title": "英伟达财报：一切照常，预测显示形势良好、股价便宜"
-  },
-  "news:title:Nvidia Gives Upbeat Outlook While Quashing Idea of Huang Return": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "783e5c339f9e292d2896cea8030906171c8601da2fae60e2e0b40b60da1915db",
-    "summary": "英伟达给出乐观展望，同时否定黄仁勋回归的说法",
-    "title": "英伟达给出乐观展望，同时否定黄仁勋回归的说法"
-  },
   "news:title:Nvidia Has No Plans to Bring Back Jensen Huang": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T18:34:26+09:00",
@@ -7139,13 +7218,6 @@
     "src_hash": "f33068fc6d16cbe1f4ad714e192fb823fc757c5430cd105e333093d9d95229eb",
     "summary": "英伟达已较峰值下跌32%，这是我愿意买入的价格",
     "title": "英伟达已较峰值下跌32%，这是我愿意买入的价格"
-  },
-  "news:title:Nvidia Introduced Alibaba to Alice Huang for Workaround on U.S. Export Controls": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "715f7088ef9472f30f4e3731362ebc638e7bf717dbd2561eb9ce67c8d3fcf75b",
-    "summary": "英伟达将阿里巴巴介绍给爱丽丝·黄，以绕开美国出口管制",
-    "title": "英伟达将阿里巴巴介绍给爱丽丝·黄，以绕开美国出口管制"
   },
   "news:title:Nvidia Is in Turmoil, But Earnings Are Still Rocketing Higher. Is the Stock a Buy?": {
     "engine": "zh-v1",
@@ -7181,6 +7253,13 @@
     "src_hash": "8cae8d76415b36a389332a3bdcef01bc36bda94c505ca40a3a4b2f2573698420",
     "summary": "英伟达称黄仁勋被罢免后“一切照常”，华尔街不买账",
     "title": "英伟达称黄仁勋被罢免后“一切照常”，华尔街不买账"
+  },
+  "news:title:Nvidia Sizes Up Arm CEO Haas in Search for Huang Successor": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1d9c974334cad2630c32b2a9c28961da67f06aa8f5667731c73f9c798f6ea374",
+    "summary": "英伟达评估Arm CEO哈斯，寻找黄仁勋接班人",
+    "title": "英伟达评估Arm CEO哈斯，寻找黄仁勋接班人"
   },
   "news:title:Nvidia Stock Is One of the Best Deals on Offer With 1 Big Catch": {
     "engine": "zh-v1",
@@ -7315,13 +7394,6 @@
     "summary": "英伟达称在黄仁勋离任后开源AI战略不变",
     "title": "英伟达称在黄仁勋离任后开源AI战略不变"
   },
-  "news:title:Nvidia shoots down calls for Jensen Huang’s return amid strong earnings": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "b8fa85c717d3fba37ec042446beee543a0fb384b09097b22e129cee23b94e874",
-    "summary": "英伟达财报强劲，驳斥黄仁勋回归的呼声",
-    "title": "英伟达财报强劲，驳斥黄仁勋回归的呼声"
-  },
   "news:title:Nvidia stock erases earnings pop as investors face life after Jensen Huang": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -7342,13 +7414,6 @@
     "src_hash": "63f09a4ed3084cd1410e940e837c5300c2a43658e5fee8a7676615c26b27f058",
     "summary": "英伟达停止向中国发运美国批准的AI芯片",
     "title": "英伟达停止向中国发运美国批准的AI芯片"
-  },
-  "news:title:Nvidia takes positive step forward with stronger sales outlook. Here’s our thoughts on the stock": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "44133177a212f8d93de4ba355fc3fae6ab3f33adec5934028d31bc333f1ffd21",
-    "summary": "英伟达以更强销售展望迈出积极一步，我们对该股的看法",
-    "title": "英伟达以更强销售展望迈出积极一步，我们对该股的看法"
   },
   "news:title:Nvidia's Board Chairman Says Jensen Huang Isn't Coming Back, but He May Have a Poker Move for the Ages Hiding up His Sleeve": {
     "engine": "zh-v1",
@@ -7392,19 +7457,19 @@
     "summary": "英伟达董事会不打算让黄仁勋复职，但他仍有另一条路可重返CEO之位",
     "title": "英伟达董事会不打算让黄仁勋复职，但他仍有另一条路可重返CEO之位"
   },
+  "news:title:Nvidia’s Crisis Has Boosted Competing Stocks": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1f6664ad02980433c9e6d1a1a1a5678a63a78221f1f5c96e7d8c323f7284b81c",
+    "summary": "英伟达的危机提振了竞争对手股票",
+    "title": "英伟达的危机提振了竞争对手股票"
+  },
   "news:title:Nvidia’s Days as an Open Checkbook for the AI Economy Are Numbered": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
     "src_hash": "8824d467663f454bfebcaedac1f9cd23775f541506430225660f7c83608c3c61",
     "summary": "英伟达充当 AI 经济“空白支票”的日子屈指可数",
     "title": "英伟达充当 AI 经济“空白支票”的日子屈指可数"
-  },
-  "news:title:Nvidia’s Earnings Shows The AI Race Must Go On Without Jensen Huang": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "7a6f6d9dbd1d1cce5e6deb51947801d243d610eebe16d483e73aa963726290fb",
-    "summary": "英伟达财报显示AI竞赛没有黄仁勋也要继续",
-    "title": "英伟达财报显示AI竞赛没有黄仁勋也要继续"
   },
   "news:title:Nvidia’s Kress faces a divided workforce as some employees push for Huang’s return": {
     "engine": "zh-v1",
@@ -7447,6 +7512,20 @@
     "src_hash": "9b8bfdd2b7e81f04c54e6853ffece64a4968757953bfd7973585d935cc26093c",
     "summary": "图解英伟达的崛起",
     "title": "图解英伟达的崛起"
+  },
+  "news:title:OVHcloud launches AI cloud products hosted in Europe": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "6e97003d737a72c0e4ee02ccadfc9493f3424e124703eb2ef7c00844193e7859",
+    "summary": "OVHcloud推出欧洲托管的AI云产品",
+    "title": "OVHcloud推出欧洲托管的AI云产品"
+  },
+  "news:title:Official 2026 Amazon Black Friday sale now live! Millions of deals: Apple, Google, TVs, home, more": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "b6a31e7e694414c6949d808f954cdb01ac0a79a6238f88921b8bb7900840b2f1",
+    "summary": "2026亚马逊黑五大促正式开启：苹果、谷歌、电视、家居等数百万件优惠",
+    "title": "2026亚马逊黑五大促正式开启：苹果、谷歌、电视、家居等数百万件优惠"
   },
   "news:title:One of AI's most notorious 'doomers' stands to make billions in Anthropic's IPO": {
     "engine": "zh-v1",
@@ -7511,13 +7590,6 @@
     "summary": "观点｜Anthropic的IPO将改变AI的未来",
     "title": "观点｜Anthropic的IPO将改变AI的未来"
   },
-  "news:title:Over a Third of Gen Z-ers Rely on AI for Friendship": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e027055393c8e74e72bd795514268499a34019103cf22d3672726411c1a172fe",
-    "summary": "超三分之一的Z世代依赖AI获得友谊",
-    "title": "超三分之一的Z世代依赖AI获得友谊"
-  },
   "news:title:Oversight Dems put Trump family, top aides on notice": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -7567,13 +7639,6 @@
     "summary": "陶哲轩称，AI的性能正超过人们对其理解和安全的把握",
     "title": "陶哲轩称，AI的性能正超过人们对其理解和安全的把握"
   },
-  "news:title:Philippines police ask prosecutors to charge Thomas Markle over child sex abuse material": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "4c679a9b7835cee78e3056d45512d184874b7d4c3405c7ca7a63ad014bc6e500",
-    "summary": "菲律宾警方要求检察官就儿童性虐待材料指控托马斯·马克尔",
-    "title": "菲律宾警方要求检察官就儿童性虐待材料指控托马斯·马克尔"
-  },
   "news:title:Prediction: $200 a Month Invested in SpaceX Could Be Worth This Much by 2035": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -7588,19 +7653,12 @@
     "summary": "预测：科莱特·克雷斯对英伟达未来的重要性超过其临时CEO头衔所示",
     "title": "预测：科莱特·克雷斯对英伟达未来的重要性超过其临时CEO头衔所示"
   },
-  "news:title:Prediction: SpaceX Stock Could Go Parabolic After Anthropic's IPO. Here's Why.": {
+  "news:title:Prediction: This Will Be SpaceX's Stock Price by the End of 2030": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e700b42eed3f23cb7b678d1aa10ded69fa2eb82c8d2b174e37bc827909c1dbfb",
-    "summary": "预测：Anthropic上市后SpaceX股价可能飙升",
-    "title": "预测：Anthropic上市后SpaceX股价可能飙升"
-  },
-  "news:title:Prediction: These 2 Stocks Will Be Worth More Than SpaceX 5 Years From Now": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "6656f1ef1ef9ee29876babbaa9089035e7e8b9e4ff398cacf2fd0ace942c30ac",
-    "summary": "预测：这2只股票5年后市值将超过SpaceX",
-    "title": "预测：这2只股票5年后市值将超过SpaceX"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "c0406a9aed50b75f62ecc830dbf3c7656c787a5e5a84130454798a389ec16d25",
+    "summary": "预测：这将是SpaceX到2030年底的股价",
+    "title": "预测：这将是SpaceX到2030年底的股价"
   },
   "news:title:Previous-Token Prediction Based LLM Inversion for Prompt Reconstruction": {
     "engine": "zh-v1",
@@ -7609,12 +7667,12 @@
     "summary": "基于前一词元预测的大模型反演用于提示词重建",
     "title": "基于前一词元预测的大模型反演用于提示词重建"
   },
-  "news:title:Pulsar 发布 X2 CrazyLight 2 鼠标：延续低矮宽大对称设计，升级 XS-2 传感器": {
+  "news:title:Protecting AI Work Product Without Blocking Expert Discovery": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "afac8819851a9310caf8ead5404d3b80470cc7603698a2950d5c3d1fad2fd4a6",
-    "summary": "Pulsar发布X2 CrazyLight 2鼠标：低矮宽大对称设计，升级XS-2传感器",
-    "title": "Pulsar发布X2 CrazyLight 2鼠标：低矮宽大对称设计，升级XS-2传感器"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "1ac58715bd9853cf072830ba30fc3ef922411032009dd9b2b48ef8ade869dfca",
+    "summary": "保护AI工作成果，同时不妨碍专家取证",
+    "title": "保护AI工作成果，同时不妨碍专家取证"
   },
   "news:title:Putin Arrives in Asia With a Show of Force: Nuclear Bombers": {
     "engine": "zh-v1",
@@ -7622,6 +7680,13 @@
     "src_hash": "29db81cba689303c404d1e704db0246b15e2957a08d164b985956a85717e201c",
     "summary": "普京抵达亚洲并展示武力：核轰炸机随行",
     "title": "普京抵达亚洲并展示武力：核轰炸机随行"
+  },
+  "news:title:Putin Returns to APEC ‘Family Photo,’ Testing Western Leaders": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "00ba8fc086b87dd89556b311652337f218456faa154465418fbd9323eb36ae5b",
+    "summary": "普京重返APEC“全家福”，考验西方领导人",
+    "title": "普京重返APEC“全家福”，考验西方领导人"
   },
   "news:title:Putin Will Continue Ukraine War Despite Plans to Meet Trump, Intelligence Says": {
     "engine": "zh-v1",
@@ -7686,13 +7751,6 @@
     "summary": "Rockstar就《GTA 6》备受争议的帧率决定解答了一个重要问题",
     "title": "Rockstar就《GTA 6》备受争议的帧率决定解答了一个重要问题"
   },
-  "news:title:Rubio Says Rush to Secure Systems May Be Causing Failures": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "13ed6789bf930579ddcd99faa7e52820a3b85603398bdb77325f429688f4fd53",
-    "summary": "卢比奥称急于加固系统可能导致故障",
-    "title": "卢比奥称急于加固系统可能导致故障"
-  },
   "news:title:Rubio says US not 'under systemic attack' after series of tech outages": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -7706,13 +7764,6 @@
     "src_hash": "d968075fcd54e4339ace5cfd4bb3cc24f6db71d0c91141888ab63c1d30b635ac",
     "summary": "卢比奥称近期技术故障“毫无证据”相关",
     "title": "卢比奥称近期技术故障“毫无证据”相关"
-  },
-  "news:title:Rubio says there’s ‘zero’ information that US outages are linked or caused by a malign actor": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "fcf2a72baab0a5d76a6162108c22971d74d3db053c43103e1d4489557435c214",
-    "summary": "卢比奥称“没有任何”信息显示美国多地故障相关联或由恶意方造成",
-    "title": "卢比奥称“没有任何”信息显示美国多地故障相关联或由恶意方造成"
   },
   "news:title:Russia Vows to Rebuild Destroyed Crimea Bridge. It Could Take Years.": {
     "engine": "zh-v1",
@@ -7769,13 +7820,6 @@
     "src_hash": "b98572ec467993849d29df1bf2787045cea9ded7b40d1d19c9c9b5481d065437",
     "summary": "学校停课、道路被淹，布劳沃德一夜降雨一英尺",
     "title": "学校停课、道路被淹，布劳沃德一夜降雨一英尺"
-  },
-  "news:title:Scoop: White House drops Heidi Overton's FDA nomination": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e98e4ad67656cc1c3790f9f66eb8dcb146becf040cb461b1d13f913e02984e71",
-    "summary": "独家：白宫撤回海蒂·奥弗顿的FDA提名",
-    "title": "独家：白宫撤回海蒂·奥弗顿的FDA提名"
   },
   "news:title:Sean Duffy fires back at Elon Musk over free Starlink": {
     "engine": "zh-v1",
@@ -7847,6 +7891,13 @@
     "summary": "Snapchat允许开发者借助Claude Code和Cursor等AI助手开发AR滤镜",
     "title": "Snapchat允许开发者借助Claude Code和Cursor等AI助手开发AR滤镜"
   },
+  "news:title:South Korea’s high-stakes university exams upended by AI cheating scandal": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "af82d7cf8e22ffce513288283eb882f4bae07ca1ab16bebd537dc11c8ea04295",
+    "summary": "韩国高风险大学入学考试被AI作弊丑闻搅乱",
+    "title": "韩国高风险大学入学考试被AI作弊丑闻搅乱"
+  },
   "news:title:SpaceX Debt for AI Chips to Hit Market as Soon as This Week": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -7875,20 +7926,6 @@
     "summary": "SpaceX星舰着陆直播：观看捕获尝试",
     "title": "SpaceX星舰着陆直播：观看捕获尝试"
   },
-  "news:title:SpaceX Starship makes historic return": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "fd91c2dd8fcbbc33927f937b9a9f88b3719320688ee210213dc203068b7e850d",
-    "summary": "SpaceX星舰历史性回归",
-    "title": "SpaceX星舰历史性回归"
-  },
-  "news:title:SpaceX Stock Adds $54 Billion Amid Viral AI in Space Discussions": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "a9d05394db369d7f3a92cc7f8a511fb2e5d110cb2bc54ca6a769314440de1fea",
-    "summary": "AI太空话题走红，SpaceX股价增加540亿美元",
-    "title": "AI太空话题走红，SpaceX股价增加540亿美元"
-  },
   "news:title:SpaceX Stock Price Outlook as Four Wall Street Giants Reiterate Bullish Bets After Starship Milestone": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -7909,13 +7946,6 @@
     "src_hash": "c40f4c5182bcf4b86c730000550ef04d677216f4a8d7415a50a58f97867cddd9",
     "summary": "SpaceX计划在空中接住星舰的两半：观看视频",
     "title": "SpaceX计划在空中接住星舰的两半：观看视频"
-  },
-  "news:title:SpaceX readies $40B off-balance chip financing": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "c1c67dbd1789be8e57cda2f8f67c3a5349aaee3b1bebf17e3c7b45024130fb55",
-    "summary": "SpaceX筹备400亿美元表外芯片融资",
-    "title": "SpaceX筹备400亿美元表外芯片融资"
   },
   "news:title:SpaceX seeks tax breaks for $24B data center after land backlash": {
     "engine": "zh-v1",
@@ -7973,19 +8003,19 @@
     "summary": "支出管理平台Payhawk宣布融资280M美元，估值2B美元",
     "title": "支出管理平台Payhawk宣布融资280M美元，估值2B美元"
   },
-  "news:title:Stock futures rise as Nvidia gains on earnings beat and solid outlook: Live updates": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "868b9f82c3284c4410acc483c7fb3759f9244f642f664cf8ed14379c06b6811c",
-    "summary": "英伟达财报超预期、展望稳健，股指期货上涨：实时更新",
-    "title": "英伟达财报超预期、展望稳健，股指期货上涨：实时更新"
-  },
   "news:title:Stocks mixed after Nvidia's blockbuster results": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
     "src_hash": "d11c5b066bcb1f2731624ff254c7bb87326bcc7f66787ac71899d28e70e77e27",
     "summary": "英伟达业绩亮眼后股市涨跌互现",
     "title": "英伟达业绩亮眼后股市涨跌互现"
+  },
+  "news:title:Storm system pounds Bay Area with heavy rain, strong winds; record rainfall in San Francisco": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "62eeb0ff3a746d6a0c68120ea8a2ea2ad325e8061d1839700c72faaf4a0b1619",
+    "summary": "风暴系统袭击湾区，强降雨和大风，旧金山降雨创纪录",
+    "title": "风暴系统袭击湾区，强降雨和大风，旧金山降雨创纪录"
   },
   "news:title:Suno now lets you make AI videos for your AI music": {
     "engine": "zh-v1",
@@ -8000,13 +8030,6 @@
     "src_hash": "f9cf482269166ae0236dae69cd895dca1fc26d19250a7f82ad27b1c9752ca11a",
     "summary": "塔吉特财报大超预期，受通胀困扰的购物者看到超值优惠",
     "title": "塔吉特财报大超预期，受通胀困扰的购物者看到超值优惠"
-  },
-  "news:title:Tech Futures Rise On Nvidia After Market Breaks Lower": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "68931586febe12e131e4a657da35b6bc0a1cc4624020bed9d41b69662d60a90d",
-    "summary": "市场走低后，科技股期货因英伟达上涨",
-    "title": "市场走低后，科技股期货因英伟达上涨"
   },
   "news:title:Tech lawsuits defined 2026 — and lawmakers want more": {
     "engine": "zh-v1",
@@ -8148,12 +8171,12 @@
     "summary": "特斯拉将迈阿密Robotaxi地理围栏扩大一倍",
     "title": "特斯拉将迈阿密Robotaxi地理围栏扩大一倍"
   },
-  "news:title:Tesla to pull the plug on Cybertruck after years of poor sales By Reuters": {
+  "news:title:Tesla needs wireless charging fast, or its $30,000 Cybercab can’t charge at home": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "1a37e56aef31642b9fbbd3e315b8afa9e75821333d8988e6430e34e5ef74eb53",
-    "summary": "特斯拉将在多年销量不佳后停产Cybertruck（路透）",
-    "title": "特斯拉将在多年销量不佳后停产Cybertruck（路透）"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "8ac1d09412bc8cccab28e437c7466c2eb26f22cd66fca971ba2b852517706a1e",
+    "summary": "特斯拉急需无线充电，否则30,000美元的Cybercab无法在家充电",
+    "title": "特斯拉急需无线充电，否则30,000美元的Cybercab无法在家充电"
   },
   "news:title:Tesla toughens FSD driver monitoring in Europe while loosening it in the US": {
     "engine": "zh-v1",
@@ -8162,12 +8185,19 @@
     "summary": "特斯拉在欧洲加强FSD驾驶员监控，在美国则放宽",
     "title": "特斯拉在欧洲加强FSD驾驶员监控，在美国则放宽"
   },
-  "news:title:Tesla unveils world’s most advanced solid-state power platform with 98.86% efficiency": {
+  "news:title:Tesla tuner pleading to save Cybertruck also wants to build CyberSUV": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "4a10a6c46513e39d31470dba3eeb91aee42d6ada70d23d63f857e6481d79bdc7",
-    "summary": "特斯拉发布固态电源平台，效率达98.86%",
-    "title": "特斯拉发布固态电源平台，效率达98.86%"
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "a71c1b8749269396aef9ab03b861e608d4d15d9bcb41210ded542a607f5b86d4",
+    "summary": "为挽救Cybertruck发声的特斯拉改装师还想打造CyberSUV",
+    "title": "为挽救Cybertruck发声的特斯拉改装师还想打造CyberSUV"
+  },
+  "news:title:Tesla unveils 7.4 MW Powercore to take on ex-exec Baglino’s Heron Link": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "18d1cbadffb38ec07af00acef94ec1601dc2d966326a01be44dc6c9e387f81ed",
+    "summary": "特斯拉发布7.4兆瓦Powercore，对标前高管巴格利诺的Heron Link",
+    "title": "特斯拉发布7.4兆瓦Powercore，对标前高管巴格利诺的Heron Link"
   },
   "news:title:Tesla's Cybercab: Your car, Tesla's rules": {
     "engine": "zh-v1",
@@ -8176,19 +8206,19 @@
     "summary": "特斯拉Cybercab：你的车，特斯拉的规矩",
     "title": "特斯拉Cybercab：你的车，特斯拉的规矩"
   },
-  "news:title:Tesla-SpaceX Merger Is 'Almost Inconceivable' to Avoid, Says Elon Musk Biographer — 'You'll Know More' on Dec. 3": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "9ce6f48badbb7f2bd357c88e93dd56f14d8cdec2c4fcee5a942422d4bc20c830",
-    "summary": "马斯克传记作者：特斯拉与SpaceX合并几乎无可避免，12月3日将有更多消息",
-    "title": "马斯克传记作者：特斯拉与SpaceX合并几乎无可避免，12月3日将有更多消息"
-  },
   "news:title:Tesla’s $30,000 Cybercab comes with a $299 monthly catch": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
     "src_hash": "8911c68a1aa78082d313ba062183977ae39455b2182076fd67795bfdd8a181de",
     "summary": "特斯拉30,000美元的Cybercab附带299美元月费的代价",
     "title": "特斯拉30,000美元的Cybercab附带299美元月费的代价"
+  },
+  "news:title:Tesla’s Cybercab fleet just had its biggest day ever": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "857c8780b0a82e30c4106e0a67a1683f3c69d5536a17759186c72aae313786e0",
+    "summary": "特斯拉Cybercab车队迎来有史以来最繁忙的一天",
+    "title": "特斯拉Cybercab车队迎来有史以来最繁忙的一天"
   },
   "news:title:Tesla’s Invite-Only Cybercab Isn’t for You": {
     "engine": "zh-v1",
@@ -8304,8 +8334,8 @@
   },
   "news:title:The first Nvidia RTX Spark mini PCs launch today from Asus, Dell, and MSI": {
     "engine": "zh-v1",
-    "generated_at": "2026-11-19T15:34:22+09:00",
-    "src_hash": "92cbb1e1350f764e5a1dc68aee511c77c254436f4efc8231fa4ff5f4e0a216a1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "48ae279d534b17587a4c168d34a7d0670497969fd3721eafd5f15db1655c5429",
     "summary": "首批英伟达RTX Spark迷你电脑今日由华硕、戴尔和微星推出",
     "title": "首批英伟达RTX Spark迷你电脑今日由华硕、戴尔和微星推出"
   },
@@ -8351,13 +8381,6 @@
     "summary": "全球拥抱AI热潮，如今许多人心生悔意",
     "title": "全球拥抱AI热潮，如今许多人心生悔意"
   },
-  "news:title:These Villagers Wonder if They’re on the Front Line of Russia’s Shadow War": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "e4ec64d19a61aeb961be8ed14113f2e041114aff97bb8d85d4a98a4f08c3fc0a",
-    "summary": "这些村民疑惑自己是否身处俄罗斯影子战争前线",
-    "title": "这些村民疑惑自己是否身处俄罗斯影子战争前线"
-  },
   "news:title:Thinking About Buying Anthropic’s IPO on Nov. 19? Here’s an AI Stock I’d Consider First (Hint: It’s Not Nvidia or Broadcom).": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -8371,6 +8394,13 @@
     "src_hash": "717383120c26486074d0245d927acae418addbadb593d0da987faf45fc36340c",
     "summary": "想在第一天买入Anthropic？财务顾问这样说",
     "title": "想在第一天买入Anthropic？财务顾问这样说"
+  },
+  "news:title:This is a remarkable diplomatic moment for China's Xi - but it comes with pitfalls": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "0e18c217c46e7f97afb2dc59e75c2d1b5a0296f36c00a629655b31810506d141",
+    "summary": "这是习近平的一个非凡外交时刻，但也伴随陷阱",
+    "title": "这是习近平的一个非凡外交时刻，但也伴随陷阱"
   },
   "news:title:Thousands lose power across Bay Area as heavy rain batters the region": {
     "engine": "zh-v1",
@@ -8400,13 +8430,6 @@
     "summary": "特朗普在马尼拉短暂会见老友伊梅尔达·马科斯",
     "title": "特朗普在马尼拉短暂会见老友伊梅尔达·马科斯"
   },
-  "news:title:Trump Meets Philippine Leader Before Flying to China": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "26f1dcd10572cade0a550d0f774e7a265db8af5cc092bac6b349fac67165b355",
-    "summary": "特朗普在飞往中国前会见菲律宾领导人",
-    "title": "特朗普在飞往中国前会见菲律宾领导人"
-  },
   "news:title:Trump admin orders Kalshi to halt wagers on what words Trump will say": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -8434,6 +8457,13 @@
     "src_hash": "1ff2cada54d3a5be681932435876ce85257d577eaae4db7742a5146a03402a88",
     "summary": "特朗普称阿拉斯加选民选错了 Dan Sullivan，数据怎么说？",
     "title": "特朗普称阿拉斯加选民选错了 Dan Sullivan，数据怎么说？"
+  },
+  "news:title:Trump says he referred to ex-Nvidia boss Huang's situation 'briefly' in talk with Xi": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "268814aaa646669e536b0aaf9e78e76f945a5cad8741c51ecaab19fd4efe8f08",
+    "summary": "特朗普称与习近平交谈时“简短”提及前英伟达老板黄仁勋的情况",
+    "title": "特朗普称与习近平交谈时“简短”提及前英伟达老板黄仁勋的情况"
   },
   "news:title:Trump seeks to show strength in China, but a series of technological snafus raises concerns at home": {
     "engine": "zh-v1",
@@ -8519,6 +8549,13 @@
     "summary": "美国议员要求微软就其与字节跳动的AI交易谈判作简报",
     "title": "美国议员要求微软就其与字节跳动的AI交易谈判作简报"
   },
+  "news:title:Uber Co-Founder Kalanick Teases Protest at Nvidia as Calls for Huang’s Return Continue": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "6c4e28e480e6232a89d407ead60817d1fdb9323e2de041683251b98ef741bb31",
+    "summary": "优步联合创始人卡兰尼克暗示将在英伟达抗议，要求黄仁勋回归的呼声不断",
+    "title": "优步联合创始人卡兰尼克暗示将在英伟达抗议，要求黄仁勋回归的呼声不断"
+  },
   "news:title:Ukraine blew up Putin’s bridge using relay drones to bypass Starlink limits": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -8568,6 +8605,13 @@
     "summary": "视频：马斯克称他“不是MAGA”",
     "title": "视频：马斯克称他“不是MAGA”"
   },
+  "news:title:Villa Where Trump, Xi and Putin Met Once Hosted Kim Jong-il": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "85893263c79ab74d7fe2c55f0239120d5e93814a93f7bdd9414e0f245ac3a4a9",
+    "summary": "特朗普、习近平、普京会晤的别墅曾接待金正日",
+    "title": "特朗普、习近平、普京会晤的别墅曾接待金正日"
+  },
   "news:title:Voices From Dartmouth’s AI at 70 Conference": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -8616,6 +8660,13 @@
     "src_hash": "c79dd173f09e1a133a77d937d81191887ffea78d7cd51b16e30e3f6df607b12f",
     "summary": "观看马斯克前顾问：“我们给了科技 CEO 们特权”",
     "title": "观看马斯克前顾问：“我们给了科技 CEO 们特权”"
+  },
+  "news:title:Watch: Elon Musk Says He’s a Political Moderate, ‘Not MAGA’": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "9e92bcecc1fd82e3d12f8f12ceeb5d424fead83344c0fc30175e71a9e19c9a70",
+    "summary": "视频：马斯克称自己是政治温和派，“不是MAGA”",
+    "title": "视频：马斯克称自己是政治温和派，“不是MAGA”"
   },
   "news:title:Waymo’s Speed Bump Is Bad News for Tesla Stock": {
     "engine": "zh-v1",
@@ -8771,13 +8822,6 @@
     "summary": "SpaceX为何需要Anthropic才能增长",
     "title": "SpaceX为何需要Anthropic才能增长"
   },
-  "news:title:Why is Gemini 4 Carbon taking so long?": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "9d1f506bbe65844ab52ee4ed28f7ad534c45e02182c358469474784399699fba",
-    "summary": "Gemini 4 Carbon为何拖了这么久？",
-    "title": "Gemini 4 Carbon为何拖了这么久？"
-  },
   "news:title:Why the Anthropic IPO could be a trap for investors": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -8855,6 +8899,13 @@
     "summary": "Windows Server 2028以兼容性换取开箱即用的安全性",
     "title": "Windows Server 2028以兼容性换取开箱即用的安全性"
   },
+  "news:title:World in Brief: Anthropic’s IPO price; Trump, Xi and Putin to meet in China": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "582a568f5bb292db92152c1d317ea4b00fbcb995b2ae02aa3780c14f12ee0b3c",
+    "summary": "简讯：Anthropic IPO定价；特朗普、习近平、普京将在中国会晤",
+    "title": "简讯：Anthropic IPO定价；特朗普、习近平、普京将在中国会晤"
+  },
   "news:title:Worried about the AI bubble popping? How investing pros say to adjust your strategy": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T03:32:56+09:00",
@@ -8890,6 +8941,13 @@
     "summary": "习近平称亚太需要开放贸易，普京谴责制裁，特朗普抵达中国",
     "title": "习近平称亚太需要开放贸易，普京谴责制裁，特朗普抵达中国"
   },
+  "news:title:Yale Computer Society brings SpaceX-sponsored AI hackathon to coders": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "760d0d17da23273cb0d665c38c034feb702bc3a3906f7341ad9a9f08efc43c50",
+    "summary": "耶鲁计算机协会将SpaceX赞助的AI黑客松带给程序员",
+    "title": "耶鲁计算机协会将SpaceX赞助的AI黑客松带给程序员"
+  },
   "news:title:dynabook 推出笔电新品 M6、C9/C8，分别基于英特尔 \"WCL\"、\"PTL\" 处理器": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
@@ -8903,13 +8961,6 @@
     "src_hash": "972048d38e51cd7c74360464e035fb5e73bfc07af58e8f29d45d12c40bc9e660",
     "summary": "“克里米亚正变成岛屿”：乌克兰如何打击普京的心爱大桥",
     "title": "“克里米亚正变成岛屿”：乌克兰如何打击普京的心爱大桥"
-  },
-  "news:title:‘Dancing With the Stars’ Couples Perform Double Dances as Another Top-Scoring Duo Exits Before Season 35 Finale: See the Scores, Who Went Home": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "9c720cd64de19b51258b336b3519f00812e0de2abfbe22e837eebad98da25403",
-    "summary": "《与星共舞》选手表演双人舞，又一对高分组合在第35季决赛前出局：查看分数和淘汰者",
-    "title": "《与星共舞》选手表演双人舞，又一对高分组合在第35季决赛前出局：查看分数和淘汰者"
   },
   "news:title:‘It Feels Like A Death’: Inside Nvidia After Jensen Huang’s Exit": {
     "engine": "zh-v1",
@@ -8925,6 +8976,13 @@
     "summary": "“这不正常”：大规模技术故障引发对美国关键基础设施和AI的警觉",
     "title": "“这不正常”：大规模技术故障引发对美国关键基础设施和AI的警觉"
   },
+  "news:title:‘I’m Not MAGA’: Musk Plays Down G.O.P. Support After Midterm Loss": {
+    "engine": "zh-v1",
+    "generated_at": "2026-11-19T18:34:52+09:00",
+    "src_hash": "0b39d5d976bd8eb3b90989a5e0ec2e0e6de2e5eb3127df25065d071699de322e",
+    "summary": "“我不是MAGA”：马斯克在中期选举失利后淡化对共和党的支持",
+    "title": "“我不是MAGA”：马斯克在中期选举失利后淡化对共和党的支持"
+  },
   "news:title:‘Just Ridiculous’: A Famed Philosopher Takes on AI Consciousness": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T06:26:30+09:00",
@@ -8939,26 +8997,12 @@
     "summary": "气候变化的“震惊”迹象为COP31谈判增添紧迫感",
     "title": "气候变化的“震惊”迹象为COP31谈判增添紧迫感"
   },
-  "news:title:‘The Noise Will Work Itself Out in Time’: AMD CEO Lisa Su Says Nvidia a ‘Phenomenal Company’ After Jensen": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "276d8bea01542178c7ba5b5d2ac25ed2bade96293a2be24d8c93edfff3651e5f",
-    "summary": "AMD的苏姿丰称“噪音终会平息”，称英伟达在黄仁勋事件后仍是“非凡公司”",
-    "title": "AMD的苏姿丰称“噪音终会平息”，称英伟达在黄仁勋事件后仍是“非凡公司”"
-  },
   "news:title:‘Zero’ evidence that recent cascade of tech outages are linked, says Rubio": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
     "src_hash": "ca65543e65bec0b2ac9badd8706b55ddb42cb1ebf17c42e61e9bfb10b3576749",
     "summary": "鲁比奥称，近期一连串科技故障之间“零”证据显示有关联",
     "title": "鲁比奥称，近期一连串科技故障之间“零”证据显示有关联"
-  },
-  "news:title:“Of Course,” Musk Says When Told Tesla’s $1.6 Trillion Already Prices In Moderate Cybercab Success.": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "793bfb84e920ccf9e7042f32bdf8600aedded662684f85a66cfb979694b8a5de",
-    "summary": "被告知特斯拉1.6万亿美元市值已计入Cybercab中等成功，马斯克答“当然”",
-    "title": "被告知特斯拉1.6万亿美元市值已计入Cybercab中等成功，马斯克答“当然”"
   },
   "news:title:《GTA 6》发售后 R 星总裁山姆 · 豪瑟罕见致谢：愿未来多年与大家同行": {
     "engine": "zh-v1",
@@ -8974,26 +9018,12 @@
     "summary": "《GTA 6》地图究竟有多大？实测步行横穿要 3 小时 21 分钟，开车近 11 分钟",
     "title": "《GTA 6》地图究竟有多大？实测步行横穿要 3 小时 21 分钟，开车近 11 分钟"
   },
-  "news:title:一加 Turbo7 Pro 手机疑似入网：支持 100W 闪充，电池不低于 9000mAh": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "bc90951878ed6004b29cd60ef913fc8f83c7e4ca91445352486b1f729ec543a6",
-    "summary": "一加 Turbo7 Pro 手机疑似入网：支持 100W 闪充，电池不低于 9000mAh",
-    "title": "一加 Turbo7 Pro 手机疑似入网：支持 100W 闪充，电池不低于 9000mAh"
-  },
   "news:title:亚马逊不排除放行外部 AI 购物智能体，前提是带来优质用户体验": {
     "engine": "zh-v1",
     "generated_at": "2026-11-18T21:28:08+09:00",
     "src_hash": "48ec9d401eb2504d45359d237d2b01317794a8ca7450e298adfd9eeaba8ba0ef",
     "summary": "亚马逊不排除放行外部 AI 购物智能体，前提是带来优质用户体验",
     "title": "亚马逊不排除放行外部 AI 购物智能体，前提是带来优质用户体验"
-  },
-  "news:title:人类历史上首次：旅行者 1 号抵达 1 光日位置，还需约 3 万年才能真正飞出太阳系": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "a3784bb867c5fc99c5d853ee5b6f0663c2f48a63d69b52cd5bafba27f795cf16",
-    "summary": "人类历史上首次：旅行者 1 号抵达 1 光日位置，还需约 3 万年才能真正飞出太阳系",
-    "title": "人类历史上首次：旅行者 1 号抵达 1 光日位置，还需约 3 万年才能真正飞出太阳系"
   },
   "news:title:从“S 级客户”到全系自研：曝理想 i6 押宝宁德时代电池惨遭断供后决心自研": {
     "engine": "zh-v1",
@@ -9135,27 +9165,6 @@
     "summary": "纳德拉谈6万人自愿离职计划：部分团队尚未适应AI转型，希望给员工更多自主权",
     "title": "纳德拉谈6万人自愿离职计划：部分团队尚未适应AI转型，希望给员工更多自主权"
   },
-  "news:title:微软 Win11 测试新提醒：切换本地账号前，先备份 BitLocker 密钥": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "8ae038c35a423bebcd7cdb1c0f322c264ce25630803ac6eba8aa84d1edfe2ddd",
-    "summary": "微软 Win11 测试新提醒：切换本地账号前，先备份 BitLocker 密钥",
-    "title": "微软 Win11 测试新提醒：切换本地账号前，先备份 BitLocker 密钥"
-  },
-  "news:title:微软 Win11 预览版提速“此电脑”搜索：基于索引方案，缩短找文件时间": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "07477442b4312a36ebda52da959cab2ef119726f63d9d9a18f055cf3d94bf4ba",
-    "summary": "微软 Win11 预览版提速“此电脑”搜索：基于索引方案，缩短找文件时间",
-    "title": "微软 Win11 预览版提速“此电脑”搜索：基于索引方案，缩短找文件时间"
-  },
-  "news:title:微软 Windows Server 2028 开放测试：默认启用 NVMe 并支持 ReFS 启动，新增本地 AI 推理支持": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "5547fe18adf1dfd3882e54b431ed97893bdb8aa9cb94f64c3bc6f34fa53a3b2e",
-    "summary": "微软Windows Server 2028开放测试：默认启用NVMe，新增本地AI推理支持",
-    "title": "微软Windows Server 2028开放测试：默认启用NVMe，新增本地AI推理支持"
-  },
   "news:title:微软与英特尔深化合作：成 Azure 芯片首个 EMIB 客户，提前锁定下一代 Diamond Rapids 产能": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -9170,26 +9179,12 @@
     "summary": "微软商业业务 CEO：黄仁勋辞任英伟达 CEO，或促使客户寻求 AI 芯片替代方案",
     "title": "微软商业业务 CEO：黄仁勋辞任英伟达 CEO，或促使客户寻求 AI 芯片替代方案"
   },
-  "news:title:微软拟升级 Copilot，要给你的 Win11 电脑“看病”": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "47e3d868804e9db291ec56a43997a7492b906e697c77b4b4a61cf26a0041f049",
-    "summary": "微软拟升级 Copilot，要给你的 Win11 电脑“看病”",
-    "title": "微软拟升级 Copilot，要给你的 Win11 电脑“看病”"
-  },
   "news:title:微软纳德拉示警：比“千年虫”更棘手，AI 正让网络变得越来越脆弱": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
     "src_hash": "ab9ce35b2d7a144dc87ea81033057231275b2628a7b8b9b39aa229818993a27f",
     "summary": "微软纳德拉示警：比“千年虫”更棘手，AI 正让网络变得越来越脆弱",
     "title": "微软纳德拉示警：比“千年虫”更棘手，AI 正让网络变得越来越脆弱"
-  },
-  "news:title:思维链一作Jason Wei离职！怎么去Meta待一年都跑路": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "916389b31e5ba280b145cc585bad98882f7d2a0e0844ef63360d4b205e4ce64e",
-    "summary": "思维链一作Jason Wei离职！怎么去Meta待一年都跑路",
-    "title": "思维链一作Jason Wei离职！怎么去Meta待一年都跑路"
   },
   "news:title:曝英特尔启动新一轮裁员，波及全球 IT 部门": {
     "engine": "zh-v1",
@@ -9212,13 +9207,6 @@
     "summary": "最高每小时狂写 30GB：英伟达 621.24 驱动反馈加速消耗 SSD 寿命",
     "title": "最高每小时狂写 30GB：英伟达 621.24 驱动反馈加速消耗 SSD 寿命"
   },
-  "news:title:波士顿动力人形机器人首次进入半导体制造领域，Atlas 明年在格罗方德工厂测试": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "6a2c6e87c1f903b6fae93cf44ccc6943ae68459f03dafc535ba2e54f2e1e8823",
-    "summary": "波士顿动力人形机器人首次进入半导体制造领域，Atlas 明年在格罗方德工厂测试",
-    "title": "波士顿动力人形机器人首次进入半导体制造领域，Atlas 明年在格罗方德工厂测试"
-  },
   "news:title:派拉蒙天舞 CEO 确认获马斯克投资：能得到他的信任是莫大的荣幸": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T15:34:22+09:00",
@@ -9239,13 +9227,6 @@
     "src_hash": "7a10dbe3bbfbb2912d07f91461308a2b98e26ed75f5efff9964a44af6caf78c6",
     "summary": "消息称黄仁勋曾力推 RTX 5080 24GB 显卡安抚游戏玩家，如今英伟达或将其取消",
     "title": "消息称黄仁勋曾力推 RTX 5080 24GB 显卡安抚游戏玩家，如今英伟达或将其取消"
-  },
-  "news:title:潜伏小红书48h：AI时代，顶尖技术人才都在聊什么？": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "ee577f900f6e17e75215c503419bee7f18156e968963e228c6fa7c72ebccb024",
-    "summary": "潜伏小红书48h：AI时代，顶尖技术人才都在聊什么？",
-    "title": "潜伏小红书48h：AI时代，顶尖技术人才都在聊什么？"
   },
   "news:title:特斯拉第二代 Roadster 将亮相洛杉矶车展：计划 2028 年量产，顶配 Rocket 版能飞": {
     "engine": "zh-v1",
@@ -9303,13 +9284,6 @@
     "summary": "腾讯：更多企业转向国产芯片，将助推国内供应链建设提速",
     "title": "腾讯：更多企业转向国产芯片，将助推国内供应链建设提速"
   },
-  "news:title:英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "4abf5f28b4e9f5edc470c31cee0469553a8fd0cd31bcf80d9301fd601962e955",
-    "summary": "英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿",
-    "title": "英伟达AMD首次联手押注！Genesis完成A轮融资，估值超230亿"
-  },
   "news:title:英伟达员工大会宣布告别“黄仁勋时代”：12 月员工加薪，启动新 CEO 遴选": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T12:30:48+09:00",
@@ -9338,13 +9312,6 @@
     "summary": "英伟达非上市股权投资价值飙升至 655 亿美元，黄仁勋不再掌舵后投资策略成谜",
     "title": "英伟达非上市股权投资价值飙升至 655 亿美元，黄仁勋不再掌舵后投资策略成谜"
   },
-  "news:title:苹果订阅版 Final Cut Pro 加入 MotionVFX，视频特效更省事": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "03820b72b20df9247e0a21419596c3dd92ef1f7778f39b0ae8fb6d101e52f2a7",
-    "summary": "苹果订阅版 Final Cut Pro 加入 MotionVFX，视频特效更省事",
-    "title": "苹果订阅版 Final Cut Pro 加入 MotionVFX，视频特效更省事"
-  },
   "news:title:蓝箭航天：朱雀三号遥二运载火箭回收的一子级 9 台液氧甲烷发动机，已全部完成地面验收和试车": {
     "engine": "zh-v1",
     "generated_at": "2026-11-19T00:30:12+09:00",
@@ -9372,13 +9339,6 @@
     "src_hash": "35eaa0c51c0149399d3f31d8afdef2025c853002c87589d14fa13ec0d32dc8e1",
     "summary": "陈立武：英特尔 18A 芯片制造工艺已签下首家外部客户",
     "title": "陈立武：英特尔 18A 芯片制造工艺已签下首家外部客户"
-  },
-  "news:title:顶刊论文中的实验图片被质疑用 AI 生成，湖南省科技厅同步核查学术不端": {
-    "engine": "zh-v1",
-    "generated_at": "2026-11-18T18:34:26+09:00",
-    "src_hash": "a719a23d06fd2b983731bcc615bd44ae2cb17dabee58bfbb48aaad5934d0ad68",
-    "summary": "顶刊论文中的实验图片被质疑用 AI 生成，湖南省科技厅同步核查学术不端",
-    "title": "顶刊论文中的实验图片被质疑用 AI 生成，湖南省科技厅同步核查学术不端"
   },
   "news:title:马斯克“怒怼”奥尔特曼：SpaceX 预计不会从 OpenAI 处获得任何收入": {
     "engine": "zh-v1",
