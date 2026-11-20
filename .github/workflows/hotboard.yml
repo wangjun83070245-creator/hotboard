@@ -1,8 +1,8 @@
-# 实时热榜：每小时抓取 + 排序 + 发布到 GitHub Pages。不调用 AI，不使用任何 secret / 个人 PAT。
+# 实时热榜：每天抓取一次 + 排序 + 发布到 GitHub Pages。不调用 AI，不使用任何 secret / 个人 PAT。
 name: hotboard
 on:
   schedule:
-    - cron: "21,51 * * * *"  # UTC 每小时第 21、51 分
+    - cron: "21 23 * * *"  # UTC 23:21 = 东京 08:21，每天一次（播报前）
   workflow_dispatch: {}
 permissions: {}
 concurrency:
